@@ -1,0 +1,31 @@
+@import 'base/_variables';
+
+.colors {
+  .color {
+    border-radius: @default-radius;
+    margin: 2% 0 0 2%;
+    padding: 0;
+
+    .square {
+      height: 100px;
+    }
+
+    .color-meta {
+      padding: 5%;
+      background-color: #ffffff;
+      border-bottom-left-radius: @default-radius;
+      border-bottom-right-radius: @default-radius;
+    }
+
+    &.upfluence-primary { background-color: @upfluence-primary; }
+    &.upfluence-primary-light { background-color: @upfluence-primary-light; }
+    &.upfluence-primary-dark { background-color: @upfluence-primary-dark; }
+    &.upfluence-secondary { background-color: @upfluence-secondary; }
+    &.upfluence-secondary-light { background-color: @upfluence-secondary-light; }
+    &.upfluence-secondary-dark { background-color: @upfluence-secondary-dark; }
+    &.upfluence-gray { background-color: @upfluence-gray; }
+    &.upfluence-gray-dark { background-color: @upfluence-gray-dark; }
+    &.upfluence-success { background-color: @upfluence-success; }
+    &.upfluence-error { background-color: @upfluence-error; }
+  }
+}
