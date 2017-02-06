@@ -1,0 +1,94 @@
+@import '_variables';
+
+.fill(@color) {
+  border-color: @color;
+  background-color: @color;
+}
+
+.outline(@color) {
+  border-color: transparent;
+  background-color: @upfluence-gray;
+  color: @color;
+}
+
+.btn {
+  padding: 7px 3em;
+}
+
+.upf-btn {
+  .fill(@upfluence-primary);
+  color: #ffffff;
+  box-shadow: none;
+
+  &:hover {
+    .active;
+  }
+
+  &.active {
+    .fill(@upfluence-primary-dark);
+    color: #ffffff;
+  }
+
+  &.disabled {
+    .fill(@upfluence-primary-light);
+    opacity: 0.5;
+  }
+}
+
+
+.upf-btn--reversed {
+  .outline(@upfluence-primary);
+
+  &:hover {
+    .active;
+  }
+
+  &.active {
+    box-shadow: none;
+    border-color: @upfluence-primary;
+    color: @upfluence-primary;
+  }
+
+  &.disabled {
+    background-color: @upfluence-gray;
+    opacity: 0.5;
+  }
+}
+
+//
+// Dark version of the Primary button.
+//
+.upf-btn--dark {
+  .fill(lighten(@upfluence-secondary-light, 20));
+  color: #fff;
+
+  &:hover {
+    .active;
+  }
+
+  &.active {
+    .fill(@upfluence-secondary-light);
+    color: #fff;
+    opacity: 1;
+  }
+
+  &.disabled {
+    .fill(@upfluence-secondary-light);
+    opacity: 0.5;
+  }
+}
+
+.upf-btn--dark--reversed {
+  .outline(@upfluence-secondary-light);
+  color: @upfluence-secondary-light;
+
+  &:hover {
+    .active;
+  }
+
+  &.active {
+    box-shadow: none;
+    border-color: @upfluence-secondary-light;
+    color: @upfluence-secondary-light;
+  }
+}
