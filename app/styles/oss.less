@@ -33,3 +33,38 @@ h3 {
     &.upfluence-error { background-color: @upfluence-error; }
   }
 }
+
+.fonts {
+  .font {
+    border: 1px solid @upfluence-gray-dark;
+    border-radius: @default-radius;
+    padding: 0;
+
+    .square {
+      height: 100px;
+      border-bottom: 1px solid @upfluence-gray-dark;
+      font-family: inherit;
+
+      span {
+        font-size: 3em;
+        text-align: center;
+        position: absolute;
+        top: 10%;
+        right: 30%;
+        font-family: inherit;
+      }
+    }
+
+    .font-meta {
+      padding: 10%;
+    }
+
+    &.titles {
+      font-family: @title-font-stack;
+    }
+
+    &.text {
+      font-family: @text-font-stack;
+    }
+  }
+}
