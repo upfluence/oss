@@ -15,17 +15,22 @@
   padding: 7px 3em;
 }
 
+.remove-browser-outline {
+  outline: none !important;
+  box-shadow: none;
+}
+
 .upf-btn {
   .fill(@upfluence-primary);
   color: #ffffff;
-  box-shadow: none;
   font-family: @title-font-stack;
 
   &:hover {
     .active;
   }
 
-  &.active {
+  &.active, &:active, .active:active, .active:focus, &:focus {
+    .remove-browser-outline;
     .fill(@upfluence-primary-dark);
     color: #ffffff;
   }
@@ -45,8 +50,8 @@
     .active;
   }
 
-  &.active {
-    box-shadow: none;
+  &.active, &:active, .active:active, .active:focus, &:focus {
+    .remove-browser-outline;
     border-color: @upfluence-primary;
     color: @upfluence-primary;
   }
@@ -69,7 +74,8 @@
     .active;
   }
 
-  &.active {
+  &.active, &:active, .active:active, .active:focus, &:focus {
+    .remove-browser-outline;
     .fill(@upfluence-secondary-light);
     color: #fff;
     opacity: 1;
@@ -90,8 +96,8 @@
     .active;
   }
 
-  &.active {
-    box-shadow: none;
+  &.active, &:active, .active:active, .active:focus, &:focus {
+    .remove-browser-outline;
     border-color: @upfluence-secondary-light;
     color: @upfluence-secondary-light;
   }
