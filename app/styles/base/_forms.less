@@ -1,0 +1,42 @@
+@import '_variables';
+@import '_mixins';
+
+//
+// An input group
+// Any input in a form (or not) should always be wrapped into this.
+//
+.upf-input-container {}
+
+//
+// A simple form input
+//
+.upf-input {
+  border: 1px solid @upfluence-gray-dark;
+  border-radius: @default-radius;
+  padding: 2rem 1em;
+
+  &:focus {
+    .remove-outline;
+    border: 1px solid @upfluence-primary;
+  }
+}
+
+//
+// An input group that has an error attached to it
+//
+.upf-input-container--errorful {
+  .upf-input {
+    .remove-bottom-radius;
+  }
+
+  .upf-input-error {
+    border-top: none;
+    .set-bottom-radius(@default-radius);
+
+    background-color: @upfluence-error;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
