@@ -176,7 +176,7 @@
         <h4>Inputs</h4>
         <div class='row'>
           <div class='col-xs-6'>
-            <div class='form-group'>
+            <div class='form-group upf-input-container'>
               <label>Label</label>
               <input type='text' placeholder='Some random placeholder text'
                      class='form-control upf-input' />
@@ -184,7 +184,7 @@
           </div>
 
           <div class='col-xs-6'>
-            <div class='form-group'>
+            <div class='form-group upf-input-container'>
               <label>Label</label>
               <input type='text' value='This one has a value'
                      class='form-control upf-input' />
@@ -195,9 +195,11 @@
             <div class='form-group upf-input-container upf-input-container--errorful'>
               <label>Label</label>
               <input type='text' value='This one has an error'
-                     class='form-control upf-input upf-input--errorful' />
+                     class='form-control upf-input' />
               <span class='col-xs-12 upf-input-error'>
-                Hi! My name is error. But you can call me Nickelback
+                <i class='fa fa-exclamation-circle'
+                   aria-label='Hi! My name is error. But you can call me Nickelback'>
+                </i>
               </span>
             </div>
           </div>
