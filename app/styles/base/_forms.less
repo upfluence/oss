@@ -36,14 +36,11 @@
   }
 }
 
-      font-family: @text-font-stack;
-      font-size: 14px;
+// An input group offering some help
+.upf-input-container--has-help {
+  .upf-input-container--has-feedback;
 
-      padding: 7px;
-      position: absolute;
-      right: 100%;
-      top: 100%;
-      white-space: nowrap;
-    }
+  .upf-input-feedback--help {
+    .set-feedback-colors(@upfluence-gray-dark, @upfluence-secondary, #ffffff);
   }
 }
