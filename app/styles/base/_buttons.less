@@ -7,7 +7,7 @@
 }
 
 .outline(@color) {
-  border-color: transparent;
+  border: 1px solid @color;
   background-color: @upfluence-gray;
   color: @color;
 }
@@ -27,7 +27,7 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    .fill(@upfluence-primary-dark);
+    .fill(fadeout(@upfluence-primary, 30));
     color: #ffffff;
   }
 
@@ -48,7 +48,7 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    border-color: @upfluence-primary;
+    border-color: fadeout(@upfluence-primary, 30);
     color: @upfluence-primary;
   }
 
@@ -72,7 +72,8 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    .fill(@upfluence-secondary-light);
+    .fill(fadeout(@upfluence-secondary-light, 30));
+
     color: #fff;
     opacity: 1;
   }
@@ -84,8 +85,8 @@
 }
 
 .upf-btn--dark--reversed {
-  .outline(@upfluence-secondary-light);
-  color: @upfluence-secondary-light;
+  .outline(lighten(@upfluence-secondary-light, 20));
+  color: lighten(@upfluence-secondary-light, 20);
   font-family: @title-font-stack;
 
   &:hover {
@@ -94,7 +95,7 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    border-color: @upfluence-secondary-light;
-    color: @upfluence-secondary-light;
+    border-color: fadeout(lighten(@upfluence-secondary-light, 20), 30);
+    color: lighten(@upfluence-secondary-light, 20);
   }
 }
