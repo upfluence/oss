@@ -25,34 +25,16 @@
 // An input group that has an error attached to it
 //
 .upf-input-container--errorful {
-  position: relative;
+  .upf-input-container--has-feedback;
 
   .upf-input {
     border: 1px solid @upfluence-error // or #ff0000
   }
 
-  .upf-input-error {
-    i {
-      color: @upfluence-error;
-      display: block;
-
-      font-size: 1.5em;
-
-      position: absolute;
-
-      right: 1rem;
-      top: -3rem;
-    }
-
-    // Take the title attribute of the icon and use it in a more stylish container
-    // than the default browser's one.
-    i[aria-label]:hover:after {
-      pointer-events: none;
-      content: attr(aria-label);
-
-      background-color: @upfluence-error;
-      border-radius: @default-radius;
-      color: #fff;
+  .upf-input-feedback--error {
+    .set-feedback-colors(@upfluence-error, @upfluence-error, #ffffff);
+  }
+}
 
       font-family: @text-font-stack;
       font-size: 14px;
