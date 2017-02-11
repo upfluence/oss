@@ -1,10 +1,31 @@
 {
-  "name": "oss",
+  "name": "upfluence-oss",
   "dependencies": {
     "ember": "~2.6.0",
-    "ember-cli-shims": "0.1.1",
-    "ember-cli-test-loader": "0.2.2",
-    "ember-qunit-notifications": "0.1.0",
     "bootstrap": "^3.3.7"
-  }
+  },
+  "homepage": "https://github.com/upfluence/oss",
+  "authors": [
+    "Philippe Ndiaye <phndiaye@gmail.com>"
+  ],
+  "description": "A frontend framework for the gentlemen from Upfluence",
+  "main": "",
+  "keywords": [
+    "frontend",
+    "framework",
+    "upfluence",
+    "styleguide",
+    "css",
+    "framework",
+    "bem"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
