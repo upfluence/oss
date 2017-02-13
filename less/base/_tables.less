@@ -1,0 +1,35 @@
+//
+// Tables throughout the apps.
+//
+.upf-table {
+  .table-striped;
+
+  border-collapse: inherit;
+  border: 1px solid lighten(@upfluence-secondary-light, 20);
+  border-radius: @default-radius;
+
+  thead {
+    border: 1px solid lighten(@upfluence-secondary-light, 20);
+    border-radius: @default-radius;
+    background-color: lighten(@upfluence-secondary-light, 20);
+    color: #ffffff;
+
+    tr th {
+      border: none;
+    }
+  }
+
+  tbody {
+    // Zebra-style the table rows with alternate gray background.
+    & > tr:nth-of-type(odd) {
+      background-color: lighten(@upfluence-gray-dark, 30);
+    }
+
+    td {
+      border: none !important;
+      padding-top: 1em !important;
+      padding-bottom: 1em !important;
+    }
+  }
+}
+
