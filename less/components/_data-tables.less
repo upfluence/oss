@@ -1,0 +1,55 @@
+@import '../base/_variables';
+@import '../base/_mixins';
+@import '../base/_buttons';
+
+//
+// Fully-featured Data Table Component.
+//
+.models-table-wrapper {
+
+  //
+  // Columns dropdown
+  //
+  .columns-dropdown .dropdown-menu {
+    // Distinguish hidden columns from visible ones
+    //
+    .fa {
+      color: @upfluence-gray-dark;
+
+      &.fa-dot-circle-o {
+        color: @upfluence-secondary-lighter;
+      }
+    }
+  }
+
+  // Data Table container
+  //
+  .inner-table-wrapper {
+    // Let the search and column filter breath a little.
+    // They were too close to the table
+    margin-top: 0.5em;
+
+    table {
+      // Bring back the data grid and the footer together*/
+      .remove-bottom-radius;
+      margin-bottom: 0;
+    }
+  }
+
+  //
+  // Data Table footer
+  // That's the component displaying the current page, the per page setting and
+  // the navigation.
+  //
+  .table-footer {
+    .set-bottom-radius(@default-radius);
+    background-color: @upfluence-secondary-lighter;
+    color: #ffffff;
+    padding: 1em 0;
+
+    .btn.btn-default {
+      .upf-btn--dark--reversed;
+      color: #ffffff;
+    }
+  }
+}
