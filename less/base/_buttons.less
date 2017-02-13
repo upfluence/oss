@@ -12,14 +12,22 @@
   color: @color;
 }
 
+.icon-color(@color) {
+  .fa {
+    color: @color;
+  }
+}
+
 .btn {
   padding: 7px 3em;
 }
 
 .upf-btn {
   .fill(@upfluence-primary);
+  .icon-color(#ffffff);
   color: #ffffff;
   font-family: @title-font-stack;
+
 
   &:hover {
     .active;
@@ -40,6 +48,7 @@
 
 .upf-btn--reversed {
   .outline(@upfluence-primary);
+  .icon-color(@upfluence-primary);
   font-family: @title-font-stack;
 
   &:hover {
@@ -63,6 +72,7 @@
 //
 .upf-btn--dark {
   .fill(lighten(@upfluence-secondary-light, 20));
+  .icon-color(lighten(@upfluence-secondary-light, 20));
   color: #fff;
   font-family: @title-font-stack;
 
@@ -86,6 +96,7 @@
 
 .upf-btn--dark--reversed {
   .outline(lighten(@upfluence-secondary-light, 20));
+  .icon-color(lighten(@upfluence-secondary-light, 20));
   color: lighten(@upfluence-secondary-light, 20);
   font-family: @title-font-stack;
 
