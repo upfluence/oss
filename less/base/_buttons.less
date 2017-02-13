@@ -95,9 +95,9 @@
 }
 
 .upf-btn--dark--reversed {
-  .outline(lighten(@upfluence-secondary-light, 20));
-  .icon-color(lighten(@upfluence-secondary-light, 20));
-  color: lighten(@upfluence-secondary-light, 20);
+  .outline(@upfluence-secondary-lighter);
+  .icon-color(@upfluence-secondary-lighter);
+  color: @upfluence-secondary-lighter;
   font-family: @title-font-stack;
 
   &:hover {
@@ -106,7 +106,7 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    border-color: fadeout(lighten(@upfluence-secondary-light, 20), 30);
-    color: lighten(@upfluence-secondary-light, 20);
+    border-color: fadeout(@upfluence-secondary-lighter, 30);
+    color: @upfluence-secondary-lighter;
   }
 }
