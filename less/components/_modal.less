@@ -1,0 +1,33 @@
+@import '../base/_variables';
+@import '../base/_buttons';
+
+.modal {
+  .modal-content {
+    box-shadow: none;
+    border-radius: @default-radius;
+
+    .modal-header {
+      background-color: #ffffff;
+      border-bottom: 1px solid @upfluence-gray-dark;
+      border: none;
+      border-radius: @default-radius;
+      box-shadow: none;
+      color: @upfluence-secondary-light;
+      text-align: center;
+
+      button {
+        color: @upfluence-secondary-light;
+        opacity: 1 !important;
+      }
+    }
+
+    .modal-footer {
+      background-color: @upfluence-gray;
+      border-top: 1px solid @upfluence-gray-dark;
+
+      button {
+        .upf-btn--dark;
+      }
+    }
+  }
+}

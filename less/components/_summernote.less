@@ -1,0 +1,42 @@
+@import '../base/_variables';
+@import '../base/_inputs';
+@import '../base/_buttons';
+
+.wysiwyg-editor {
+  .note-editor {
+    border: 1px solid @upfluence-gray-dark;
+
+    .note-toolbar {
+      background-color: @upfluence-secondary-light;
+      text-align: center;
+
+      .note-btn {
+        border: none;
+        border-radius: @default-radius;
+        box-shadow: none;
+        padding-right: 1em;
+        padding-left: 1em;
+      }
+    }
+
+    .note-editable {
+      line-height: 2em;
+    }
+
+    .note-group-select-from-files {
+      display: none;
+    }
+
+    .note-group-image-url {
+      .upf-input-container;
+
+      input {
+        .upf-input;
+      }
+    }
+
+    .modal-footer button {
+      .upf-btn--dark;
+    }
+  }
+}
