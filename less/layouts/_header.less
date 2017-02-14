@@ -1,0 +1,78 @@
+@import '../base/_variables';
+
+.app-header {
+  background-color: @upfluence-secondary;
+
+  .logo-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .header-item {
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.app-header--sidebar {
+  .app-header;
+
+  height: 100vh;
+  width: 5em;
+
+  .logo-container {
+    margin-top: 1em;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .header-item {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+}
+
+.app-header--topbar {
+  .app-header;
+
+  height: 5em;
+  display: inline-flex;
+  align-items: center;
+
+  .header-item {
+    font-size: 1em;
+    margin-left: 1em;
+  }
+
+  .logo-container {
+    left: 50%;
+    margin-top: 2.2em;
+
+    // Horizontally center the Upfluence logo
+    //
+    position: absolute;
+    -webkit-transform: translateX(-50%) translatey(-50%);
+    -moz-transform: translateX(-50%) translatey(-50%);
+    transform: translateX(-50%) translatey(-50%);
+
+    width: 15%;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+
+      img {
+        width: 25%;
+      }
+
+      span {
+        color: #ffffff;
+        font-size: 3em;
+        font-weight: bold;
+      }
+    }
+  }
+}
