@@ -5,17 +5,18 @@
   .table-striped;
 
   border-collapse: inherit;
-  border: 1px solid lighten(@upfluence-secondary-light, 20);
+  border: 1px solid @upfluence-gray-dark;
   border-radius: @default-radius;
 
   thead {
     border: 1px solid lighten(@upfluence-secondary-light, 20);
     border-radius: @default-radius;
-    background-color: lighten(@upfluence-secondary-light, 20);
-    color: #ffffff;
+    background-color: @upfluence-gray;
+    color: #000000;
 
     tr th {
       border: none;
+      border-bottom: 1px solid @upfluence-gray-dark;
     }
   }
 
@@ -32,4 +33,3 @@
     }
   }
 }
-
