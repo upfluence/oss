@@ -66,3 +66,33 @@
     color: @text-color;
   }
 }
+
+
+//
+// Add a "foldable columns" feature to a table
+//
+.expandable-columns {
+  thead {
+    td {
+      min-width: 100%;
+    }
+  }
+
+  tbody {
+    td {
+      max-width: 10px;
+      overflow: hidden;
+      transition: all 0.5s ease-out;
+      width: 5%;
+      white-space: nowrap;
+
+      &:last-child {
+        max-width: 100%;
+      }
+
+      &:hover {
+        width: 15%;
+      }
+    }
+  }
+}
