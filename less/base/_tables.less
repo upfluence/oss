@@ -35,7 +35,22 @@
       border: none;
       padding-top: 1em;
       padding-bottom: 1em;
-      vertical-align: middle;
+      vertical-align: middle !important;
     }
   }
 }
+
+//
+// A primary information in a grouped column of a table.
+//
+.upf-table__group-column {
+  color: #000000;
+}
+
+  //
+  // Any seocndary information in a grouped column of a table.
+  //
+  .upf-table__group-column--secondary {
+    color: fadeout(#000000, 46);
+    font-size: 0.9em;
+  }
