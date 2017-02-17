@@ -20,13 +20,13 @@
 
 .btn {
   padding: 7px 3em;
+  font-family: @font-text-title;
 }
 
 .upf-btn {
   .fill(@upfluence-primary);
-  .icon-color(#ffffff);
-  color: #ffffff;
-  font-family: @title-font-stack;
+  .icon-color(@color-text-contrast);
+  color: @color-text-contrast;
 
 
   &:hover {
@@ -36,7 +36,7 @@
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
     .fill(fadeout(@upfluence-primary, 30));
-    color: #ffffff;
+    color: @color-text-contrast;
   }
 
   &.disabled {
@@ -49,7 +49,6 @@
 .upf-btn--reversed {
   .outline(@upfluence-primary);
   .icon-color(@upfluence-primary);
-  font-family: @title-font-stack;
 
   &:hover {
     .active;
@@ -73,8 +72,7 @@
 .upf-btn--dark {
   .fill(@upfluence-secondary-lighter);
   .icon-color(@upfluence-secondary-lighter);
-  color: #fff;
-  font-family: @title-font-stack;
+  color: @color-text-contrast;
 
   &:hover {
     .active;
@@ -84,7 +82,7 @@
     .remove-outline;
     .fill(fadeout(@upfluence-secondary-light, 30));
 
-    color: #fff;
+    color: @color-text-contrast;
     opacity: 1;
   }
 
@@ -98,7 +96,6 @@
   .outline(@upfluence-secondary-lighter);
   .icon-color(@upfluence-secondary-lighter);
   color: @upfluence-secondary-lighter;
-  font-family: @title-font-stack;
 
   &:hover {
     .active;
@@ -118,17 +115,17 @@
 
 //Larger than x-toggle component's "miedum size", but less than its "large size"
 .upf-toggle-btn .x-toggle-container { width: 4.75em; }
-.upf-toggle-btn .x-toggle-btn {
-  background-color: fadeout(@upfluence-secondary-lighter, 30); // Switch color when OFF
-  border-radius: 20px !important;
-  padding: 2px;
+  .upf-toggle-btn .x-toggle-btn {
+    background-color: fadeout(@upfluence-secondary-lighter, 30); // Switch color when OFF
+    border-radius: 20px !important;
+    padding: 2px;
 
-  &:after {
-    border-radius: 30px !important;
-    background-color: #ffffff;
+    &:after {
+      border-radius: 30px !important;
+      background-color: @color-text-contrast;
+    }
   }
-}
-// Switch color when ON.
-.upf-toggle-btn .x-toggle-container-checked .x-toggle-btn {
-  background-color: @upfluence-secondary-light !important;
-}
+  // Switch color when ON.
+  .upf-toggle-btn .x-toggle-container-checked .x-toggle-btn {
+    background-color: @upfluence-secondary-light !important;
+  }

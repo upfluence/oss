@@ -1,17 +1,46 @@
 @import '_variables';
 
+//
+// Headlines 1
+h1 {
+  font-size: 36px;
+}
+
+//
+// Headlines 2
+h2 {
+  font-size: 30px;
+}
+
+//
+// Headline 3
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+//
+// Titles
+h5 {
+  font-size: 14px; 
+}
+
+//
+// Subheader
 h1, h2, h3, h4, h5, h6 {
-  font-family: @title-font-stack;
+  font-family: @font-text-title;
+  color: @color-text;
 }
 
-p, span, label, input, textarea {
-  font-family: @text-font-stack;
+//
+// Text found accross the apps that are not titles or buttons.
+//
+p, span, label, input, textarea, thead, th, td {
+  font-family: @font-text-body;
   font-weight: 100;
+  color: @color-text-light;
 }
 
-h1 { font-size: 3.5rem; }
-h2 { font-size: 3rem; }
-h3 { font-size: 2.5rem; }
-h4 { font-size: 2rem; }
-h5 { font-size: 1.5rem; }
-h6 { font-size: 1rem; }

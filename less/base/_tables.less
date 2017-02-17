@@ -16,7 +16,6 @@
     border: 1px solid lighten(@upfluence-secondary-light, 20);
     border-radius: @default-radius;
     background-color: @upfluence-gray;
-    color: #000000;
 
     tr th {
       border: none;
@@ -26,7 +25,7 @@
   }
 
   tbody {
-    // Zebra-style the table rows with alternate gray background.
+    // Zebra-style the table rows with alternate grey background.
     & > tr:nth-of-type(odd) {
       background-color: lighten(@upfluence-gray-dark, 30);
     }
@@ -44,13 +43,13 @@
 // A primary information in a grouped column of a table.
 //
 .upf-table__group-column {
-  color: #000000;
+  color: @color-text-light;
 }
 
   //
   // Any seocndary information in a grouped column of a table.
   //
   .upf-table__group-column--secondary {
-    color: fadeout(#000000, 46);
+    color: @color-text-lighter;
     font-size: 0.9em;
   }
