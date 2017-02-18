@@ -1,14 +1,46 @@
-@upfluence-primary: #e14c1a;
-@upfluence-primary-light: lighten(@upfluence-primary, 20);
-@upfluence-primary-dark: darken(@upfluence-primary, 20);
+/*
+ * This files holds all the primary colors, plus their variants (in light and
+ * dark).
+ *
+ * Additionally to those, it also sets some colors that are used accross the
+ * the apps to provide feedbacks such as Errors, Success, or Alerts.
+ *
+*/
 
-@upfluence-secondary: #080222;
-@upfluence-secondary-light: lighten(@upfluence-secondary, 20);
-@upfluence-secondary-lighter: lighten(@upfluence-secondary-light, 20);
-@upfluence-secondary-dark: darken(@upfluence-secondary, 20);
+//
+// (Brand) Primary Colors
+// These are the colors defined by the Upfluence Visual Design Guidelines.
+//
+@upf-primary-bright-purple: #4c00ff;
+@upf-primary-dark-purple: #1b0059;
+@upf-primary-orange: #e24b00;
+@upf-primary-rock-blue: #8a99b3;
+@upf-primary-black: #000000;
+@upf-primary-white: #ffffff;
 
-@upfluence-success: #129d5a;
-@upfluence-error: #eda448;
+//
+// (Brand) Primary Colors Variations
+// These are variations of the primary colors. They can be used when an element
+// needs some to be slightly different, for example, for announcing its state.
+// One use case could be to give a button a different look depending on its
+// state: normal, on hover/active, or disabled.
+//
+@upf-primary-orange-light: lighten(@upf-primary-orange, 10%);
+@upf-primary-orange-dark: darken(@upf-primary-orange, 10%);
+@upf-primary-bright-purple-light: lighten(@upf-primary-bright-purple, 10%);
+@upf-primary-bright-purple-dark: darken(@upf-primary-bright-purple, 10%);
 
-@upfluence-gray: #f9f9f9;
-@upfluence-gray-dark: darken(@upfluence-gray, 20);
+//
+// Status Colors
+// These are the colors used in every feedback provided to
+// the user: informations, help, error, success, alerts, etc.
+//
+@upf-feedback-success: #129d5a;
+@upf-feedback-error: #ff3e00;
+@upf-feedback-alert: #eda448;
+
+//
+// Grays
+//
+@upf-gray: #f9f9f9;
+@upf-gray-dark: darken(@upf-gray, 20);

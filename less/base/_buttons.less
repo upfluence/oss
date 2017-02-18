@@ -8,7 +8,7 @@
 
 .outline(@color) {
   border: 1px solid @color;
-  background-color: @upfluence-gray;
+  background-color: @upf-gray;
   color: @color;
 }
 
@@ -23,8 +23,9 @@
   font-family: @font-text-title;
 }
 
-.upf-btn {
-  .fill(@upfluence-primary);
+.upf-btn {}
+.upf-btn--orange {
+  .fill(@upf-primary-orange);
   .icon-color(@color-text-contrast);
   color: @color-text-contrast;
 
@@ -35,20 +36,20 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    .fill(fadeout(@upfluence-primary, 30));
+    .fill(@upf-primary-orange-dark);
     color: @color-text-contrast;
   }
 
   &.disabled {
-    .fill(@upfluence-primary-light);
+    .fill(@upf-primary-orange-light);
     opacity: 0.5;
   }
 }
 
 
-.upf-btn--reversed {
-  .outline(@upfluence-primary);
-  .icon-color(@upfluence-primary);
+.upf-btn--orange--reversed {
+  .outline(@upf-primary-orange);
+  .icon-color(@upf-primary-orange);
 
   &:hover {
     .active;
@@ -56,12 +57,12 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    border-color: fadeout(@upfluence-primary, 30);
-    color: @upfluence-primary;
+    border-color: @upf-primary-orange-light;
+    color: @upf-primary-orange;
   }
 
   &.disabled {
-    background-color: @upfluence-gray;
+    background-color: @upf-gray;
     opacity: 0.5;
   }
 }
@@ -69,9 +70,9 @@
 //
 // Dark version of the Primary button.
 //
-.upf-btn--dark {
-  .fill(@upfluence-secondary-lighter);
-  .icon-color(@upfluence-secondary-lighter);
+.upf-btn--purple {
+  .fill(@upf-primary-bright-purple);
+  .icon-color(@upf-primary-bright-purple);
   color: @color-text-contrast;
 
   &:hover {
@@ -80,22 +81,26 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    .fill(fadeout(@upfluence-secondary-light, 30));
+
+     // @upf-primary-bright-purple-dark is an alias of upf-primary-dark-purple.
+     // The aliasing is only so we can keep the base-color + tone logic for
+     // buttons states.
+    .fill(@upf-primary-bright-purple-dark);
 
     color: @color-text-contrast;
     opacity: 1;
   }
 
   &.disabled {
-    .fill(@upfluence-secondary-light);
+    .fill(@upf-primary-bright-purple-light);
     opacity: 0.5;
   }
 }
 
-.upf-btn--dark--reversed {
-  .outline(@upfluence-secondary-lighter);
-  .icon-color(@upfluence-secondary-lighter);
-  color: @upfluence-secondary-lighter;
+.upf-btn--purple--reversed {
+  .outline(@upf-primary-bright-purple);
+  .icon-color(@upf-primary-bright-purple);
+  color: @upf-primary-bright-purple;
 
   &:hover {
     .active;
@@ -103,8 +108,8 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    border-color: fadeout(@upfluence-secondary-lighter, 30);
-    color: @upfluence-secondary-lighter;
+    border-color: @upf-primary-bright-purple-light;
+    color: @upf-primary-bright-purple-light;
   }
 }
 
@@ -116,7 +121,7 @@
 //Larger than x-toggle component's "miedum size", but less than its "large size"
 .upf-toggle-btn .x-toggle-container { width: 4.75em; }
   .upf-toggle-btn .x-toggle-btn {
-    background-color: fadeout(@upfluence-secondary-lighter, 30); // Switch color when OFF
+    background-color: @upf-primary-bright-purple; // Switch color when OFF
     border-radius: 20px !important;
     padding: 2px;
 
@@ -127,5 +132,5 @@
   }
   // Switch color when ON.
   .upf-toggle-btn .x-toggle-container-checked .x-toggle-btn {
-    background-color: @upfluence-secondary-light !important;
+    background-color: @upf-primary-dark-purple !important;
   }

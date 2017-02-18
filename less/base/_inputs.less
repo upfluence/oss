@@ -11,13 +11,13 @@
 // A simple form input
 //
 .upf-input {
-  border: 1px solid @upfluence-gray-dark;
+  border: 1px solid @upf-gray-dark;
   border-radius: @default-radius;
   padding: 7px 1em;
 
   &:focus {
     .remove-outline;
-    border: 1px solid @upfluence-secondary;
+    border: 1px solid @upf-primary-dark-purple;
   }
 }
 
@@ -28,11 +28,11 @@
   .upf-input-container--has-feedback;
 
   .upf-input {
-    border: 1px solid @upfluence-error // or #ff0000
+    border: 1px solid @upf-feedback-error;
   }
 
   .upf-input-feedback--error {
-    .set-feedback-colors(@upfluence-error, @upfluence-error, @color-text-contrast);
+    .set-feedback-colors(@upf-feedback-error, @upf-feedback-error, @color-text-contrast);
   }
 }
 
@@ -43,6 +43,6 @@
   .upf-input-container--has-feedback;
 
   .upf-input-feedback--help {
-    .set-feedback-colors(@upfluence-secondary, @upfluence-secondary, @color-text-contrast);
+    .set-feedback-colors(@upf-primary-rock-blue, @upf-primary-rock-blue, @color-text-contrast);
   }
 }
