@@ -10,9 +10,11 @@
 
   .header-item {
     cursor: pointer;
+    font-size: 1.2em;
     text-align: center;
 
-    span, i {
+    a, i {
+      .upf-link--reset;
       color: @color-text-contrast;
     }
   }
@@ -33,9 +35,18 @@
     }
   }
 
-  .header-item {
-    font-size: 1.5em;
-    margin-top: 1em;
+
+  .app-header__top, .app-header__top {
+    .header-item {
+      font-size: 1.5em;
+      margin-top: 1em;
+    }
+  }
+
+  .app-header__bottom {
+    position: absolute;
+    bottom: 1em;
+    transform: translateX(50%); // Keep bottom menu items horizontally centered
   }
 }
 
@@ -46,9 +57,18 @@
   display: inline-flex;
   align-items: center;
 
-  .header-item {
-    font-size: 1em;
-    margin-left: 1em;
+  .app-header__left-side, .app-header__right-side {
+    display: flex;
+
+    .header-item {
+      font-size: 1.2em;
+      margin-left: 1em;
+    }
+  }
+
+  .app-header__right-side {
+    position: absolute;
+    right: 1em;
   }
 
   .logo-container {
