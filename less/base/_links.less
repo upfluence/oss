@@ -1,3 +1,5 @@
+@import '_variables';
+
 //
 // Removes all default behavior from a link
 //
@@ -5,4 +7,17 @@
   &:hover, &:active, &:focus {
     text-decoration: none;
   }
+}
+
+//
+// A route link being currently visited.
+//
+// Disclaimer: The .active class is automatically added by Ember JS to a route
+// currently being visited. Be sure to handle the setting of this class if you
+// are not working with Ember JS.
+//
+a.active {
+  border-bottom: 3px solid @upf-primary-orange;
+  padding-bottom: 6px;
+  transition: all 0.5s ease-in-out;
 }

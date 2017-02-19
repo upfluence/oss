@@ -10,6 +10,13 @@
     a, a:hover {
       .upf-link--reset;
     }
+
+    // Do not style the Upfluence link (leading to homepage) even when it's the
+    // current route.
+    a.active {
+      padding-bottom: 0;
+      border: none;
+    }
   }
 
   .header-item {
@@ -29,28 +36,38 @@
 
   height: 100vh;
   position: fixed;
+  padding: 0;
   width: 5em;
 
   .logo-container {
     margin-top: 1em;
+    text-align: center;
 
     img {
-      width: 100%;
+      width: 80%;
     }
   }
 
 
-  .app-header__top, .app-header__top {
+  .app-header__top, .app-header__bottom {
     .header-item {
       font-size: 1.5em;
       margin-top: 1em;
+      padding: 7px;
+
+      // Only change the color of the icons in the sidebar when it's active 
+      // route.
+      a.active, a.active i {
+        color: @upf-primary-orange;
+        border-bottom: none;
+      }
     }
   }
 
   .app-header__bottom {
+    width: 100%;
     position: absolute;
     bottom: 1em;
-    transform: translateX(50%); // Keep bottom menu items horizontally centered
   }
 }
 
