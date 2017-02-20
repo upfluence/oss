@@ -8,20 +8,6 @@
 .upf-input-container {}
 
 //
-// A simple form input
-//
-.upf-input {
-  border: 1px solid @upf-gray-dark;
-  border-radius: @default-radius;
-  padding: 7px 1em;
-
-  &:focus {
-    .remove-outline;
-    border: 1px solid @upf-primary-dark-purple;
-  }
-}
-
-//
 // An input group that has an error attached to it
 //
 .upf-input-container--errorful {
@@ -44,5 +30,20 @@
 
   .upf-input-feedback--help {
     .set-feedback-colors(@upf-primary-rock-blue, @upf-primary-rock-blue, @color-text-contrast);
+  }
+}
+
+
+//
+// A standard input.
+//
+.upf-input {
+  border: 1px solid @upf-gray-dark;
+  border-radius: @default-radius;
+  padding: 20px 1em;
+
+  &:focus {
+    .remove-outline;
+    border: 1px solid @upf-primary-dark-purple;
   }
 }
