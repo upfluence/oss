@@ -1,14 +1,46 @@
 @import '../base/_variables';
 
 //
-// Style for the dropdowns.
-// This one has no enough examples yet to properly fine tune it. So it's a WIP.
+// A dropdown menu, triggered by an other element (link, button...)
 //
 .upf-dropdown {
+  background-color: @upf-primary-white;
+  border: 1px solid @upf-gray-dark;
   border-radius: @default-radius;
-  border: 1px solid @upf-primary-bright-purple;
+  box-shadow: none;
+  margin-top: 0.5em;
+  padding: 0.5em 1.2em;
+
+  // Do not style the divider the same the same way as the dropdown items
+  //
+  li:not(.divider) {
+    padding: 7px 0;
+    transition: all 0.5s ease-in-out;
+
+    a {
+      color: @color-text;
+      padding: 0;
+
+      &.active {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      // Along with the transition rule above, there will be a little slide
+      // on the right effect on hover.
+      margin-left: 0.5em;
+    }
+  }
 
   .divider {
-    background-color: @upf-primary-bright-purple;
+    background-color: @upf-gray-dark;
   }
 }
