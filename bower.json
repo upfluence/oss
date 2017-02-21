@@ -2,7 +2,9 @@
   "name": "upfluence-oss",
   "dependencies": {
     "ember": "~2.6.0",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "summernote": "^0.8.2",
+    "money-formatter": "^0.1.4"
   },
   "homepage": "https://github.com/upfluence/oss",
   "authors": [
