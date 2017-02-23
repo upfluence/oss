@@ -19,6 +19,15 @@
 }
 
 //
+// An emphasized link in the middle of some content.
+// Because sometimes there are link we want the user to clearly see!
+//
+.upf-link--emphasized {
+  border-bottom: 3px solid @upf-primary-orange;
+  padding-bottom: 6px;
+}
+
+//
 // A route link being currently visited.
 //
 // Disclaimer: The .active class is automatically added by Ember JS to a route
@@ -26,7 +35,6 @@
 // are not working with Ember JS.
 //
 a.active {
-  border-bottom: 3px solid @upf-primary-orange;
-  padding-bottom: 6px;
+  .upf-link--emphasized;
   transition: all 0.5s ease-in-out;
 }
