@@ -4,8 +4,11 @@
 // Removes all default behavior from a link
 //
 .upf-link--reset {
+  color: @color-text !important;
+
   &:hover, &:active, &:focus {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: @color-text !important;
   }
 }
 
