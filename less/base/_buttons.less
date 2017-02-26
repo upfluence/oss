@@ -89,32 +89,27 @@
   }
 }
 
+
+//
+// Main Buttons
+// Those buttons can be used for both Call to Actions or Primary actions.
+// There should be only one main button in a given page or components group.
+//
 .upf-btn--orange {
-  .build-button(
-    @upf-primary-orange,
-    @upf-primary-orange-light,
-    @upf-primary-orange-dark
-  );
+  .build-button(@upf-primary-orange, @upf-primary-orange-light, @upf-primary-orange-dark);
 }
 
-.upf-btn--orange--reversed {
-  .reversed-colors(@upf-primary-orange, @upf-primary-orange-light);
-}
-
-//
-// Dark version of the Primary button.
-//
 .upf-btn--purple {
-  .build-button(
-    @upf-primary-bright-purple,
-    @upf-primary-bright-purple-light,
-    @upf-primary-bright-purple-dark
-  );
+  .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-light, @upf-primary-bright-purple-dark);
 }
 
-.upf-btn--purple--reversed {
-  .reversed-colors(@upf-primary-bright-purple, @upf-primary-bright-purple-light);
-}
+// Secondary Buttons
+// Those can be used to back main buttons. As there can be only one main button
+// in a given page or components group, a Secondary buttons is the way to go
+// if you want to have an alternative button.
+//
+.upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange, @upf-primary-orange-light); }
+.upf-btn--purple--reversed { .reversed-colors(@upf-primary-bright-purple, @upf-primary-bright-purple-light); }
 
 //
 // Toggle Button (Actually a stylish checkbox)
