@@ -80,10 +80,11 @@
 //                 states
 //   - lighter-color: used for active, focus, and hover states
 //
-.reversed-colors(@base-color, @lighter-color) {
+.reversed-colors(@base-color) {
   .outline(@base-color);
   .icon-color(@base-color);
   color: @base-color;
+  transition: all 0.5s ease;
 
   &:hover {
     .active;
@@ -91,8 +92,8 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    border-color: @lighter-color;
-    color: @base-color;
+    .fill(@base-color);
+    color: @color-text-contrast;
   }
 
   &.disabled {
@@ -121,8 +122,8 @@
 // in a given page or components group, a Secondary buttons is the way to go
 // if you want to have an alternative button.
 //
-.upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange, @upf-primary-orange-light); }
-.upf-btn--purple--reversed { .reversed-colors(@upf-primary-bright-purple, @upf-primary-bright-purple-light); }
+.upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange); }
+.upf-btn--purple--reversed { .reversed-colors(@upf-primary-bright-purple); }
 
 //
 // Tertiary Buttons
