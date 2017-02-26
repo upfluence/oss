@@ -23,12 +23,23 @@
   font-family: @font-text-title;
 }
 
-.upf-btn {}
-.upf-btn--orange {
-  .fill(@upf-primary-orange);
+// This way, we can skip using the btn class in HTML code, but it's still
+// compatible with code mentioning it.
+.upf-btn {
+  .btn;
+}
+
+//
+// Mixin for building a button
+// Takes 3 parameters:
+//   - base-color: used for default state,
+//   - lighter-color: used for disabled state
+//   - darker-color: used for active and on hover states
+//
+.build-button(@base-color, @lighter-color, @darker-color) {
+  .fill(@base-color);
   .icon-color(@color-text-contrast);
   color: @color-text-contrast;
-
 
   &:hover {
     .active;
@@ -36,20 +47,31 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    .fill(@upf-primary-orange-dark);
+    .fill(@darker-color);
     color: @color-text-contrast;
+    opacity: 1;
   }
 
   &.disabled {
-    .fill(@upf-primary-orange-light);
+    .fill(@lighter-color);
     opacity: 0.5;
   }
 }
 
-
-.upf-btn--orange--reversed {
-  .outline(@upf-primary-orange);
-  .icon-color(@upf-primary-orange);
+//
+// Mixin for building Ghost Buttons.
+// Those are caracterized by their transparent background, making them able to
+// be almost anywhere, particularly on dark backgrounds.
+//
+// Takes 2 arguments;
+//   - base color: used for button text and outline color in default and disabled
+//                 states
+//   - lighter-color: used for active, focus, and hover states
+//
+.reversed-colors(@base-color, @lighter-color) {
+  .outline(@base-color);
+  .icon-color(@base-color);
+  color: @base-color;
 
   &:hover {
     .active;
@@ -57,60 +79,41 @@
 
   &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
-    border-color: @upf-primary-orange-light;
-    color: @upf-primary-orange;
+    border-color: @lighter-color;
+    color: @base-color;
   }
 
   &.disabled {
-    background-color: @upf-gray;
+    background-color: transparent;
     opacity: 0.5;
   }
+}
+
+.upf-btn--orange {
+  .build-button(
+    @upf-primary-orange,
+    @upf-primary-orange-light,
+    @upf-primary-orange-dark
+  );
+}
+
+.upf-btn--orange--reversed {
+  .reversed-colors(@upf-primary-orange, @upf-primary-orange-light);
 }
 
 //
 // Dark version of the Primary button.
 //
 .upf-btn--purple {
-  .fill(@upf-primary-bright-purple);
-  .icon-color(@upf-primary-bright-purple);
-  color: @color-text-contrast;
-
-  &:hover {
-    .active;
-  }
-
-  &.active, &:active, .active:active, .active:focus, &:focus {
-    .remove-outline;
-
-     // @upf-primary-bright-purple-dark is an alias of upf-primary-dark-purple.
-     // The aliasing is only so we can keep the base-color + tone logic for
-     // buttons states.
-    .fill(@upf-primary-bright-purple-dark);
-
-    color: @color-text-contrast;
-    opacity: 1;
-  }
-
-  &.disabled {
-    .fill(@upf-primary-bright-purple-light);
-    opacity: 0.5;
-  }
+  .build-button(
+    @upf-primary-bright-purple,
+    @upf-primary-bright-purple-light,
+    @upf-primary-bright-purple-dark
+  );
 }
 
 .upf-btn--purple--reversed {
-  .outline(@upf-primary-bright-purple);
-  .icon-color(@upf-primary-bright-purple);
-  color: @upf-primary-bright-purple;
-
-  &:hover {
-    .active;
-  }
-
-  &.active, &:active, .active:active, .active:focus, &:focus {
-    .remove-outline;
-    border-color: @upf-primary-bright-purple-light;
-    color: @upf-primary-bright-purple-light;
-  }
+  .reversed-colors(@upf-primary-bright-purple, @upf-primary-bright-purple-light);
 }
 
 //
