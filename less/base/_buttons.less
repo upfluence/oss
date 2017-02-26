@@ -12,6 +12,18 @@
   color: @color;
 }
 
+
+//
+// Remove outer colors
+//
+.remove-outer-colors {
+  border: none;
+  background-color: transparent;
+}
+
+//
+// Sets an icon's color.
+//
 .icon-color(@color) {
   .fa {
     color: @color;
@@ -103,6 +115,7 @@
   .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-light, @upf-primary-bright-purple-dark);
 }
 
+//
 // Secondary Buttons
 // Those can be used to back main buttons. As there can be only one main button
 // in a given page or components group, a Secondary buttons is the way to go
@@ -111,6 +124,14 @@
 .upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange, @upf-primary-orange-light); }
 .upf-btn--purple--reversed { .reversed-colors(@upf-primary-bright-purple, @upf-primary-bright-purple-light); }
 
+//
+// Tertiary Buttons
+// Buttons extending the Secondary buttons but with no background nor border.
+// They then have the look and feel of a Link and are usable as tertiary buttons
+// if a page or components group already have a Main and a Secondary button.
+//
+.upf-btn--purple--transparent { &:extend(.upf-btn--purple--reversed); .remove-outer-colors; }
+.upf-btn--orange--transparent { &:extend(.upf-btn--orange--reversed); .remove-outer-colors; }
 //
 // Toggle Button (Actually a stylish checkbox)
 //
