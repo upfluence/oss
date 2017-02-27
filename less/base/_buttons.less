@@ -35,11 +35,18 @@
   font-family: @font-text-title;
 }
 
+//
+// Extend the bootstrap buttons for upf-btn class.
+//
 // This way, we can skip using the btn class in HTML code, but it's still
-// compatible with code mentioning it.
-.upf-btn {
-  .btn;
-}
+// compatible with code mentioning it. This is a good way to be only use
+// Upfluence OSS classes in HTML code.And to be independent from Bootstrap on
+// the markup side.
+//
+.upf-btn { .btn; }
+.upf-btn--x-small { .btn-xs; border-radius: @default-radius }
+.upf-btn--small { .btn-sm; border-radius: @default-radius }
+.upf-btn--large { .btn-lg; border-radius: @default-radius }
 
 //
 // Mixin for building a button
