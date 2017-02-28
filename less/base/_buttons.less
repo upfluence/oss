@@ -8,7 +8,7 @@
 
 .outline(@color) {
   border: 1px solid @color;
-  background-color: @upf-gray;
+  background-color: @upf-gray-light;
   color: @color;
 }
 
@@ -140,6 +140,8 @@
 //
 .upf-btn--purple--transparent { &:extend(.upf-btn--purple--reversed); .remove-outer-colors; }
 .upf-btn--orange--transparent { &:extend(.upf-btn--orange--reversed); .remove-outer-colors; }
+
+
 //
 // Toggle Button (Actually a stylish checkbox)
 //
@@ -157,6 +159,7 @@
       background-color: @color-text-contrast;
     }
   }
+
   // Switch color when ON.
   .upf-toggle-btn .x-toggle-container-checked .x-toggle-btn {
     background-color: @upf-primary-dark-purple !important;
