@@ -34,6 +34,16 @@
   font-family: @font-text-title;
 }
 
+
+//
+// The disabled button is the same whatever button variant we are dealing with.
+//
+.disabled-button {
+  .fill(@upf-gray);
+  color: @upf-primary-white;
+  opacity: 0.5;
+}
+
 //
 // Extend the bootstrap buttons for upf-btn class.
 //
@@ -51,10 +61,9 @@
 // Mixin for building a button
 // Takes 3 parameters:
 //   - base-color: used for default state,
-//   - lighter-color: used for disabled state
 //   - darker-color: used for active and on hover states
 //
-.build-button(@base-color, @lighter-color, @darker-color) {
+.build-button(@base-color, @darker-color) {
   .fill(@base-color);
   .icon-color(@color-text-contrast);
   color: @color-text-contrast;
@@ -70,11 +79,11 @@
     opacity: 1;
   }
 
-  &.disabled {
-    .fill(@lighter-color);
-    opacity: 0.5;
+  &:disabled, &.disabled {
+    .disabled-button;
   }
 }
+
 
 //
 // Mixin for building Ghost Buttons.
@@ -103,8 +112,7 @@
   }
 
   &.disabled {
-    background-color: transparent;
-    opacity: 0.5;
+    .disabled-button;
   }
 }
 
@@ -115,11 +123,11 @@
 // There should be only one main button in a given page or components group.
 //
 .upf-btn--orange {
-  .build-button(@upf-primary-orange, @upf-primary-orange-light, @upf-primary-orange-dark);
+  .build-button(@upf-primary-orange, @upf-primary-orange-dark);
 }
 
 .upf-btn--purple {
-  .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-light, @upf-primary-bright-purple-dark);
+  .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
 }
 
 //
