@@ -34,7 +34,6 @@
   font-family: @font-text-title;
 }
 
-
 //
 // The disabled button is the same whatever button variant we are dealing with.
 //
@@ -52,7 +51,10 @@
 // Upfluence OSS classes in HTML code.And to be independent from Bootstrap on
 // the markup side.
 //
-.upf-btn { .btn; }
+.upf-btn {
+  .btn;
+  padding: 7px 3em;
+}
 .upf-btn--x-small { .btn-xs; border-radius: @default-radius }
 .upf-btn--small { .btn-sm; border-radius: @default-radius }
 .upf-btn--large { .btn-lg; border-radius: @default-radius }
