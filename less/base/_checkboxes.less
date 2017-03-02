@@ -15,7 +15,6 @@
 //
 
 .upf-checkbox {
-	width: 20px;
 	position: relative;
 }
 
@@ -28,7 +27,7 @@
 // As we hide the actual checkbox, all of the styling is done on it's label.
 // We then make it look like a checkbox square.
 //
-.upf-checkbox__label {
+.upf-checkbox__fake-checkbox {
 	border: 1px solid @upf-primary-bright-purple;
   border-radius: @default-radius;
 	cursor: pointer;
@@ -40,7 +39,7 @@
 //
 // Checked state of the "checkbox"
 //
-.upf-checkbox__input:checked + label {
+.upf-checkbox__input:checked + .upf-checkbox__fake-checkbox {
   background-color: @upf-primary-bright-purple;
 
   //
