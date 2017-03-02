@@ -1,0 +1,67 @@
+@import '_variables';
+
+//
+// Styling checkboxes accross OSS.
+// Checkboxes can be used when there is a list of options and the user may
+// select any number of choices, including zero, one or several. In other words,
+// each checkbox is independent of all other checkboxes in the list, and
+// checking one checkbox doesn't uncheck the other.
+//
+// If you have two choices which are exclusive, please consider using a Toggle
+// Button.
+//
+// If you have more than two choices which are exclusive, using radio buttons
+// might be the better way to go.
+//
+
+.upf-checkbox {
+	width: 20px;
+	position: relative;
+}
+
+//
+// For one checkbox to be styled, one checkbox must disappear
+//
+.upf-checkbox__input { display: none; }
+
+//
+// As we hide the actual checkbox, all of the styling is done on it's label.
+// We then make it look like a checkbox square.
+//
+.upf-checkbox__label {
+	border: 1px solid @upf-primary-bright-purple;
+  border-radius: @default-radius;
+	cursor: pointer;
+
+	height: 20px;
+	width: 20px;
+}
+
+//
+// Checked state of the "checkbox"
+//
+.upf-checkbox__input:checked + label {
+  background-color: @upf-primary-bright-purple;
+
+  //
+  // Shows the tick at the center of the "checkbox"
+  //
+  &:after {
+    background: transparent;
+    color: @upf-primary-white;
+    content: '';
+    opacity: 1;
+
+    position: absolute;
+    top: 7px;
+    left: 6px;
+
+    // This, my friends, i how you draw a tick ;)
+    border: 2px solid @upf-primary-white;
+    border-top: none;
+    border-right: none;
+    height: 5px;
+    width: 9px;
+    transform: rotate(-45deg);
+  }
+}
