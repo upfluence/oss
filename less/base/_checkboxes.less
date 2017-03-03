@@ -15,7 +15,12 @@
 //
 
 .upf-checkbox {
+  width: 20px;
 	position: relative;
+}
+
+.upf-checkbox--has-label {
+  width: 100%;
 }
 
 //
@@ -63,4 +68,12 @@
     width: 9px;
     transform: rotate(-45deg);
   }
+}
+
+//
+// The real label of a checkbox. Aligned along it.
+//
+.upf-checkbox__label {
+  position: absolute;
+  left: 15%;
 }
