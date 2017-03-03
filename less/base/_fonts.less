@@ -7,34 +7,27 @@
        url(fonts/GT-Eesti-Display-Medium.woff),
 }
 
-.text-xxs {
-  font-size: @font-size-xxs
+@min_font_size: 8;
+@breaking_size: 18; // size after what the pas is 6px;
+
+.text-size(@id, @size) {
+  .text-size-@{id} {
+    font-size: @size/@rem;
+  }
+}
+.text-size-loop(@counter, @size, @max) when (@counter < @max) {
+
+  & when (@size >= @breaking_size) {
+    .text-size-loop(@counter+1, @size+6, @max);
+  }
+
+  & when (@size < @breaking_size) {
+    .text-size-loop(@counter+1, @size+2, @max);
+  }
+
+  .text-size(@counter+1, @size);
 }
 
-.text-xs {
-  font-size: @font-size-xs
-}
+.text-size-loop(0, @min_font_size, 10);
 
-.text-s {
-  font-size: @font-size-s
-}
-
-.text-normal {
-  font-size: @font-size-default
-}
-
-.text-md {
-  font-size: @font-size-md
-}
-
-.text-lg {
-  font-size: @font-size-lg
-}
-
-.text-xl {
-  font-size: @font-size-xl
-}
-
-.text-xxl {
-  font-size: @font-size-xxl
-}
+.text-size(normal, @font-size-body);
