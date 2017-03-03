@@ -6,3 +6,28 @@
        url(fonts/GT-Eesti-Display-Medium.eot),
        url(fonts/GT-Eesti-Display-Medium.woff),
 }
+
+@min_font_size: 8;
+@breaking_size: 18; // size after what the pas is 6px;
+
+.text-size(@id, @size) {
+  .text-size-@{id} {
+    font-size: @size/@rem;
+  }
+}
+.text-size-loop(@counter, @size, @max) when (@counter < @max) {
+
+  & when (@size >= @breaking_size) {
+    .text-size-loop(@counter+1, @size+6, @max);
+  }
+
+  & when (@size < @breaking_size) {
+    .text-size-loop(@counter+1, @size+2, @max);
+  }
+
+  .text-size(@counter+1, @size);
+}
+
+.text-size-loop(0, @min_font_size, 10);
+
+.text-size(normal, @font-size-body);
