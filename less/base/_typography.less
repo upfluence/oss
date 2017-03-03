@@ -3,29 +3,29 @@
 //
 // Headlines 1
 h1 {
-  font-size: 36px;
+ font-size: 36/@rem;
 }
 
 //
 // Headlines 2
 h2 {
-  font-size: 30px;
+  font-size: 30/@rem;
 }
 
 //
 // Headline 3
 h3 {
-  font-size: 24px;
+  font-size: 24/@rem;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 18/@rem;
 }
 
 //
 // Titles
 h5 {
-  font-size: 14px; 
+  font-size: 14/@rem;
 }
 
 //
@@ -40,10 +40,13 @@ h1, h2, h3, h4, h5, h6 {
 //
 p, span, label, input, textarea, thead, th, td, a {
   font-family: @font-text-body;
-  font-size: 16px;
   font-weight: 100;
   color: @color-text-light;
   line-height: 1.6;
+}
+
+body {
+  font-size: unit(@font-size-body, px);
 }
 
 //
