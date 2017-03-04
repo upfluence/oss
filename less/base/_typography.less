@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 {
   color: @color-text;
 }
 
+body {
+  font-size: unit(@font-size-body, px);
+}
+
 //
 // Text found accross the apps that are not titles or buttons.
 //
@@ -45,10 +49,13 @@ p, span, label, input, textarea, thead, th, td, a {
   line-height: 1.6;
 }
 
-body {
-  font-size: unit(@font-size-body, px);
+//
+// Labels must be slightly bigger than the controls they provide informations
+// for.
+//
+label {
+  .text-size-5;
 }
-
 //
 // Line height configurations.
 // Sometimes, the nature of the text inside a paragraph makes that the line
