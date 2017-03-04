@@ -33,6 +33,18 @@
       // Bring back the data grid and the footer together*/
       .remove-bottom-radius;
       margin-bottom: 0;
+
+      tbody {
+        // The row added by the Data Table when user clicks on the expand
+        // trigger button.
+        tr.expand-row {
+          background-color: @upf-primary-white;
+
+          .upf-table__details-view {
+            padding: 1%;
+          }
+        }
+      }
     }
   }
 
