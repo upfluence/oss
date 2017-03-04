@@ -1,0 +1,70 @@
+@import '../base/_variables';
+@import '../base/_grid';
+@import '../base/_typography';
+
+/*
+ * Standard Stat.
+ * A standard stat is the tiniest item of the Stats widget. It only provides a
+ * number about a given indicator.
+*/
+.upf-stat {
+  .upf-align--center;
+  display: block;
+}
+
+// The number value of a given stat
+.upf-stat__number {
+  .text-size-7;
+  display: inherit;
+}
+
+// The title of a given stat. Generally the indicator the stat provides an
+// insight for
+.upf-stat__title {
+  .text-size-6;
+  .text-color-default-light;
+  display: inherit;
+}
+
+/*
+ * Standard Stat Block.
+ * A Standard stat block is a group of stats relative to a the same context.
+ * Along with providing some stats, it also comes with a Title and a Description
+ * for introducing the displayed stats and explain the context to the user.
+*/
+.upf-stat-block {
+  .upf-align--center;
+  padding: 1em 0;
+}
+
+// The title of a standard stat block.
+.upf-stat-block__title {
+  .upf-align--center;
+  .text-size-6;
+}
+
+// The description of a standard stat block.
+.upf-stat-block__description {
+  .upf-align--center;
+  .text-size-5;
+  margin-top: 2%;
+}
+
+// As the stats grouped in the standard stats block are more likely to be parts
+// of a bigger number, one common pattern is to highlight that total number.
+.upf-stat-block__stats-total {
+  cursor: pointer;
+  border-bottom: 1px dotted @upf-primary-orange;
+  font-weight: bold;
+}
+
+// The container of the displayed stats.
+.upf-stat-block__stats {
+  display: inline-flex;
+  margin-top: 1%;
+}
+
+// Give those stats some space, please!
+.upf-stat-block__stat:not(:first-child) {
+  margin-left: 5em;
+}
