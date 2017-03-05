@@ -3,8 +3,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "summernote": "^0.8.2",
-    "money-formatter": "^0.1.4",
-    "font-awesome": "^4.7.0"
+    "money-formatter": "^0.1.4"
   },
   "homepage": "https://github.com/upfluence/oss",
   "authors": [
