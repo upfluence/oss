@@ -147,8 +147,22 @@
 // They then have the look and feel of a Link and are usable as tertiary buttons
 // if a page or components group already have a Main and a Secondary button.
 //
-.upf-btn--purple--transparent { &:extend(.upf-btn--purple--reversed); .remove-outer-colors; }
-.upf-btn--orange--transparent { &:extend(.upf-btn--orange--reversed); .remove-outer-colors; }
+.upf-btn--purple--transparent {
+  &:extend(.upf-btn--purple--reversed);
+  .remove-outer-colors;
+
+  &:hover {
+    color: @upf-primary-bright-purple;
+  }
+}
+.upf-btn--orange--transparent {
+  &:extend(.upf-btn--orange--reversed);
+  .remove-outer-colors;
+
+  &:hover {
+    color: @upf-primary-orange;
+  }
+}
 
 
 //
