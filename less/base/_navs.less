@@ -1,0 +1,22 @@
+.upf-nav {
+  display: flex;
+  border-bottom: 4px solid @upf-gray;
+  list-style-type: none;
+  padding: 1% 1% 0.3% 0;
+}
+
+.upf-nav__item {
+  &:not(:first-child) {
+    margin-left: 3em;
+  }
+
+  a {
+    .text-size-6;
+    color: @color-text-light;
+  }
+
+  a.active {
+    color: @color-text;
+    font-weight: bold;
+  }
+}
