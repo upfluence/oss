@@ -1,0 +1,29 @@
+@import '_variables';
+@import '_mixins';
+@import '_typography';
+
+/*
+ * Tags
+ * Tags are used to provide additional informations about something.
+ */
+.upf-tag {
+  .outline(@upf-gray);
+  border-radius: @default-radius;
+  float: left;
+  min-width: 65px;
+  padding: 2px 25px;
+}
+
+.upf-tag__text {
+  .text-color-default-light;
+  text-transform: capitalize;
+}
+
+// Orange Tag
+.upf-tag--orange {
+  .fill(@upf-primary-orange);
+
+  .upf-tag__text {
+    .text-color-contrast;
+  }
+}
