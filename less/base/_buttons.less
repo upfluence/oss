@@ -152,6 +152,23 @@
   }
 }
 
+//
+// Destructive Button
+// Destructive Buttons, are buttons used to perform any action that leads to
+// dangerous/undoable changes.
+//
+// Any action that leads to huge changes or loss of data, must be considered as
+// dangerous.
+//
+.upf-btn--destructive {
+  .outline(@upf-feedback-error);
+  color: @upf-feedback-error;
+
+  &:hover, &:focus {
+    color: @upf-feedback-error;
+  }
+}
+
 // A Button with a right icon
 // This type is of button can be typically used to announce that clicking it
 // will lead to somewhere, making it useful for MultiSteps processes, Actions
