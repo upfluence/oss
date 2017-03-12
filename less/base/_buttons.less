@@ -152,6 +152,26 @@
   }
 }
 
+// A Button with a right icon
+// This type is of button can be typically used to announce that clicking it
+// will lead to somewhere, making it useful for MultiSteps processes, Actions
+// leading to visual results (like performing a search), etc.
+//
+.upf-btn--has-right-icon {
+  transition: all 0.5s ease;
+
+  &:hover {
+    .upf-btn__right-icon {
+      transition: margin 0.5s ease;
+      margin-left: 1.5em;
+    }
+  }
+
+
+  .upf-btn__right-icon {
+    margin-left: 1em;
+  }
+}
 
 //
 // Toggle Button (Actually a stylish checkbox)
