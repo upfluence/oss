@@ -42,6 +42,11 @@
 .upf-btn {
   .btn;
   padding: 7px 3em;
+
+  &:focus,
+  &:active {
+    outline: none !important; // fix that bootstrap outline once and for all
+  }
 }
 .upf-btn--x-small { .btn-xs; border-radius: @default-radius }
 .upf-btn--small { .btn-sm; border-radius: @default-radius }
