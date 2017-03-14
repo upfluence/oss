@@ -43,3 +43,34 @@
 .upf-align--center {
   text-align: center !important;
 }
+
+//
+// Spacers variables and helper classes
+// Spacers are used to reduce or increase the space between multiple elements
+// (margins) or within one (paddings).
+//
+
+.for(@array)   when (default()) {.for-impl_(length(@array))}
+.for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
+.for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
+
+@spacing-none: 0;
+@spacing-xxx-sm: 0.5em;
+@spacing-xx-sm: 1em;
+@spacing-x-sm: 1.5em;
+@spacing-sm: 2em;
+@spacing-md: 2.5em;
+@spacing-lg: 3em;
+@spacing-x-lg: 4em;
+
+@spacers: none, xxx-sm, xx-sm, x-sm, sm, md, lg, x-lg;
+.for(@spacers); .-each(@spacer-size) {
+  .margin-top-@{spacer-size} { margin-top: ~"@{spacing-@{spacer-size}}" }
+  .margin-right-@{spacer-size} { margin-right: ~"@{spacing-@{spacer-size}}" }
+  .margin-bottom-@{spacer-size} { margin-bottom: ~"@{spacing-@{spacer-size}}" }
+  .margin-left-@{spacer-size} { margin-left: ~"@{spacing-@{spacer-size}}" }
+  .padding-top-@{spacer-size} { padding-top: ~"@{spacing-@{spacer-size}}" }
+  .padding-right-@{spacer-size} { padding-right: ~"@{spacing-@{spacer-size}}" }
+  .padding-bottom-@{spacer-size} { padding-bottom: ~"@{spacing-@{spacer-size}}" }
+  .padding-left-@{spacer-size} { padding-left: ~"@{spacing-@{spacer-size}}" }
+}
