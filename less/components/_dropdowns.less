@@ -9,13 +9,11 @@
   border-radius: @default-radius;
   box-shadow: none;
   margin-top: 0.5em;
-  padding: 0.5em 1.2em;
 
   // Do not style the divider the same the same way as the dropdown items
   //
   li:not(.divider) {
-    padding: 7px 0;
-    transition: all 0.5s ease-in-out;
+    padding: 0.5em 1.2em;
 
     a {
       color: @color-text;
@@ -31,12 +29,24 @@
       }
     }
 
-    &:hover {
+    &.disabled {
+      background-color: @upf-gray-light !important;
+
+      a, a:hover {
+        color: @color-text-light;
+        cursor: not-allowed;
+      }
+    }
+
+    &:not(.disabled):hover {
       background-color: transparent;
 
       // Along with the transition rule above, there will be a little slide
       // on the right effect on hover.
-      margin-left: 0.5em;
+      a {
+        transition: all 0.5s ease-in-out;
+        margin-left: 0.5em;
+      }
     }
   }
 
