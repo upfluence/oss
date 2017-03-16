@@ -1,5 +1,19 @@
 @import '_variables';
 
+//
+// OSS Icons. Base styles for the OSS Icons Set.
+// Because the icons SVGs are exported from Sketch app, and because we can't
+// afford to convert them all manually, we use CSS to harmonize all the icons.
+// They are then all black, and the liberty is let to the developer to style
+// them accordingly.
+//
+.upf-icon {
+  path {
+    stroke-width: 1;
+    stroke: @color-text;
+  }
+}
+
 .upf-icon-group { font-size: 1.5em; }
 .upf-icon-group__superior {
   color: @upf-feedback-success;
