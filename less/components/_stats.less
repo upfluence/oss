@@ -19,6 +19,12 @@
 .upf-stat__icon {
   .text-size-7;
   .text-color-default-light;
+
+  // This concerns only the Flaticon case and has no side-effect on FontAwesome.
+  // It's because there is a 10px margin-left defined by Flaticon.
+  i:before {
+    margin-left: 0;
+  }
 }
 
 // The number value of a given stat
