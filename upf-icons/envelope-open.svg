@@ -1,18 +1,12 @@
 <svg class='upf-icon upf-icon-envelope-open' width="36px" height="36px" viewBox="40 13 25 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <desc>Created by the Upfluence's Design Squad with Sketch.</desc>
   <defs>
-    <path d="M0.757575758,13.6767655 C0.757575758,12.9714847 1.51235993,12.3997416 2.42772115,12.3997416 L22.5722789,12.3997416 C23.4946747,12.3997416 24.2424242,12.9768635 24.2424242,13.6767655 L24.2424242,29.0796655 C24.2424242,29.7849464 23.4876401,30.3566895 22.5722789,30.3566895 L2.42772115,30.3566895 C1.50532532,30.3566895 0.757575758,29.7795676 0.757575758,29.0796655 L0.757575758,13.6767655 Z" id="path-1"></path>
-    <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="23.4848485" height="17.9569479" fill="white">
-        <use xlink:href="#path-1"></use>
-    </mask>
-    <path d="M5.25993471,7.8984483 C5.3910791,6.80542003 6.38404227,5.81337774 7.48036461,5.68235094 L19.1714373,4.28509414 C20.2666024,4.15420564 21.1544092,4.9398696 21.1544092,6.05530963 L21.1544092,19.5386018 C21.1544092,20.6471533 20.2608957,21.5458118 19.160344,21.5458118 L5.61655355,21.5458118 C4.51526172,21.5458118 3.72866327,20.6608923 3.85994623,19.5667091 L5.25993471,7.8984483 Z" id="path-3"></path>
-    <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="17.3087746" height="17.2749577" fill="white">
-        <use xlink:href="#path-3"></use>
-    </mask>
+    <path d="M0.757575758,13.6767655 C0.757575758,12.9714847 1.51235993,12.3997416 2.42772115,12.3997416 L22.5722789,12.3997416 C23.4946747,12.3997416 24.2424242,12.9768635 24.2424242,13.6767655 L24.2424242,29.0796655 C24.2424242,29.7849464 23.4876401,30.3566895 22.5722789,30.3566895 L2.42772115,30.3566895 C1.50532532,30.3566895 0.757575758,29.7795676 0.757575758,29.0796655 L0.757575758,13.6767655 Z" id="envelope-open-path-1"></path>
+    <path d="M5.25993471,7.8984483 C5.3910791,6.80542003 6.38404227,5.81337774 7.48036461,5.68235094 L19.1714373,4.28509414 C20.2666024,4.15420564 21.1544092,4.9398696 21.1544092,6.05530963 L21.1544092,19.5386018 C21.1544092,20.6471533 20.2608957,21.5458118 19.160344,21.5458118 L5.61655355,21.5458118 C4.51526172,21.5458118 3.72866327,20.6608923 3.85994623,19.5667091 L5.25993471,7.8984483 Z" id="envelope-open-path-3"></path>
   </defs>
   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(40.000000, 13.000000)">
-    <use id="Rectangle-33" stroke="#F5A623" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
-    <use id="Rectangle-34" stroke="#F5A623" mask="url(#mask-4)" stroke-width="4" fill="#FFFFFF" transform="translate(12.500022, 12.908333) rotate(-315.000000) translate(-12.500022, -12.908333) " xlink:href="#path-3"></use>
-    <path d="M23.4848485,19.6857064 L13.9928977,28.1791264 C13.1683931,28.916895 11.8293844,28.9149062 11.0071023,28.1791264 L1.51515152,19.6857064" id="Triangle-5-Copy-2" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(12.500000, 24.208707) rotate(-180.000000) translate(-12.500000, -24.208707) "></path>
+    <use id="envelope-open-Rectangle-33" stroke="#F5A623" stroke-width="4" xlink:href="#envelope-open-path-1"></use>
+    <use id="envelope-open-Rectangle-34" stroke="#F5A623" stroke-width="4" fill="#FFFFFF" transform="translate(12.500022, 12.908333) rotate(-315.000000) translate(-12.500022, -12.908333) " xlink:href="#envelope-open-path-3"></use>
+    <path d="M23.4848485,19.6857064 L13.9928977,28.1791264 C13.1683931,28.916895 11.8293844,28.9149062 11.0071023,28.1791264 L1.51515152,19.6857064" id="envelope-open-Triangle-5-Copy-2" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(12.500000, 24.208707) rotate(-180.000000) translate(-12.500000, -24.208707) "></path>
   </g>
 </svg>
