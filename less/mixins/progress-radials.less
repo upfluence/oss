@@ -72,7 +72,9 @@
 
 //
 // Now the actual things.
-// From start, here are the available progress radial sizes and colors.
+//
+// From start, we have some progress radial sizes and colors (from the palette).
+//
 // Success, Alert and Error progress radials are to be used in matching or
 // closely matching cases.
 //
@@ -111,6 +113,22 @@
   .overlay {
     background-color: transparent;
   }
+}
+
+.upf-progress-radial--bright-purple {
+  .build-progress-radial(@upf-primary-bright-purple);
+}
+
+.upf-progress-radial--dark-purple {
+  .build-progress-radial(@upf-primary-dark-purple);
+}
+
+.upf-progress-radial--orange {
+  .build-progress-radial(@upf-primary-orange);
+}
+
+.upf-progress-radial--rock-blue {
+  .build-progress-radial(@upf-primary-rock-blue);
 }
 
 .upf-progress-radial--success {
