@@ -1,0 +1,11 @@
+<svg class='upf-icon upf-icon-envelope' width="25px" height="19px" viewBox="354 120 25 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Created by the Upfluence's Design Squad with Sketch.</desc>
+  <defs>
+    <path d="M0.757575758,1.67676551 C0.757575758,0.97148466 1.51235993,0.399741568 2.42772115,0.399741568 L22.5722789,0.399741568 C23.4946747,0.399741568 24.2424242,0.976863454 24.2424242,1.67676551 L24.2424242,17.0796655 C24.2424242,17.7849464 23.4876401,18.3566895 22.5722789,18.3566895 L2.42772115,18.3566895 C1.50532532,18.3566895 0.757575758,17.7795676 0.757575758,17.0796655 L0.757575758,1.67676551 Z" id="path-1"></path>
+  </defs>
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(354.000000, 120.000000)">
+      <use id="Rectangle-33" stroke="#9B9B9B" stroke-width="4" xlink:href="#path-1"></use>
+      <path d="M23,7.70415479 L13.95998,16.1667054 C13.1536553,16.9215228 11.843178,16.9185583 11.04002,16.1667054 L2,7.70415479" id="Triangle-5-Copy-2" stroke="#9B9B9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(12.500000, 12.217931) rotate(-180.000000) translate(-12.500000, -12.217931) "></path>
+      <path d="M23,2.68570641 L13.95998,11.1482571 C13.1536553,11.9030744 11.843178,11.90011 11.04002,11.1482571 L2,2.68570641" id="Triangle-5-Copy-2" stroke="#9B9B9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(12.500000, 7.199483) rotate(-360.000000) translate(-12.500000, -7.199483) "></path>
+  </g>
+</svg>

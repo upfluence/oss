@@ -1,0 +1,6 @@
+<svg class='upf-icon upf-icon-exclamation-mark' width="10px" height="30px" viewBox="46 15 10 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Created by the Upfluence's Design Squad with Sketch.</desc>
+  <defs></defs>
+  <path d="M51.7499548,37.1103229 C51.4854321,38.7062475 51.0694775,38.6975206 50.8221098,37.0986876 L48.0189637,18.9808736 C47.8497016,17.8868673 48.8319428,17 50.2284596,17 L52.5672458,17 C53.9567788,17 54.9361101,17.8875343 54.7548903,18.9808736 L51.7499548,37.1103229 Z" id="exclamation-mark-Triangle" stroke="#D0021B" stroke-width="2" fill="none"></path>
+  <circle id="exclamation-mark-Oval-15" stroke="none" fill="transparent" fill-rule="evenodd" cx="51" cy="43" r="2"></circle>
+</svg>

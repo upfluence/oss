@@ -1,0 +1,9 @@
+<svg class='upf-icon upf-icon-paper-plane' width="36px" height="36px" viewBox="39 10 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Created by the Upfluence's Design Squad with Sketch.</desc>
+  <defs></defs>
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(41.000000, 12.000000)">
+    <path d="M15.750188,3.11755031 C16.1062955,2.0714844 16.6822867,2.06745042 17.0397675,3.11755031 L25.350188,27.5294106 C25.7062955,28.5754765 25.0946742,29.4234804 23.9945764,29.4234804 L8.79537907,29.4234804 C7.69058793,29.4234804 7.08228668,28.5795104 7.43976749,27.5294106 L15.750188,3.11755031 Z" id="Triangle-4" stroke="#4D84E1" stroke-width="2" transform="translate(16.394505, 15.877484) rotate(47.000000) translate(-16.394505, -15.877484) "></path>
+    <path d="M5.4,24.2 L5.4,27.1189211 C5.4,28.2241549 6.29071198,29.1201239 7.40159454,29.1201239 L9.6,29.1201239" id="Path-17" stroke="#4D84E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M25.9019531,7.13105469 L6,23.6" id="Line" stroke="#4D84E1" stroke-width="2" stroke-linecap="square"></path>
+  </g>
+</svg>

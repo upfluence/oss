@@ -1,5 +1,36 @@
 @import '_variables';
 
+//
+// OSS Icons. Base styles for the OSS Icons Set.
+// Because the icons SVGs are exported from Sketch app, and because we can't
+// afford to convert them all manually, we use CSS to harmonize all the icons.
+// They are then all black, and the liberty is let to the developer to style
+// them accordingly.
+//
+.upf-icon * {
+  stroke-width: 0.5;
+  stroke: @color-text;
+}
+
+//
+// Some Helper Classes to change the look and feel of an icon.
+// `.upf-icon--stroke-*` allows to change the stroke colors of the icon.
+// `.upf-icon--stroke-thick` allows us to increase the thickness of the icon.
+//
+.upf-icon--orange * { stroke: @upf-primary-orange; };
+.upf-icon--bright-purple * { stroke: @upf-primary-bright-purple; };
+.upf-icon--dark-purple * { stroke: @upf-primary-dark-purple; };
+.upf-icon--rock-blue * { stroke: @upf-primary-rock-blue; };
+.upf-icon--feedback-error * { stroke: @upf-feedback-error; };
+.upf-icon--feedback-success * { stroke: @upf-feedback-success; };
+.upf-icon--feedback-alert * { stroke: @upf-feedback-alert; };
+.upf-icon--gray * { stroke: @upf-gray; };
+.upf-icon--gray-light * { stroke: @upf-gray-light; };
+.upf-icon--gray-dark * { stroke: @upf-gray-dark; };
+
+.upf-icon--stroke-thick * { stroke-width: 1; }
+.upf-icon--stroke-thicker * { stroke-width: 1.5; }
+
 .upf-icon-group { font-size: 1.5em; }
 .upf-icon-group__superior {
   color: @upf-feedback-success;
