@@ -37,24 +37,24 @@
 // The mixin used to decide how much drawing will be done depending on the
 // progression passed via the `.progress-*` class.
 //
-.progress-radial-loop(@count, @loops, @increment, @half, @bar-color, @back-color) when (@count <= @loops) {
-  &.progress-@{count} {
+.upf-progress-radial-loop(@count, @loops, @increment, @half, @bar-color, @back-color) when (@count <= @loops) {
+  &.upf-progress-@{count} {
     .upf-progress-radial-def(@count, @increment, @half, @bar-color, @back-color)
   }
-  .progress-radial-loop(@count + 1, @loops, @increment, @half, @bar-color, @back-color);
+  .upf-progress-radial-loop(@count + 1, @loops, @increment, @half, @bar-color, @back-color);
 }
 
-.progress-radial-steps(@loops, @bar-color, @back-color) {
+.upf-progress-radial-steps(@loops, @bar-color, @back-color) {
   @increment: 360/@loops;
   @half: round(@loops/2);
 
-  .progress-radial-loop(0, @loops, @increment, @half, @bar-color, @back-color);
+  .upf-progress-radial-loop(0, @loops, @increment, @half, @bar-color, @back-color);
 }
 
 //
 // The mixin used to set the colors of the progress radial.
 //
-.progress-radial-color(@color, @overlay-color) {
+.upf-progress-radial-color(@color, @overlay-color) {
   background-color: @color;
   .overlay {
     background-color: @overlay-color;
@@ -65,8 +65,8 @@
 // A mixin available to all products to create new Progress Radial colors
 //
 .build-progress-radial(@color) {
-  .progress-radial-color(@color, #fff);
-  .progress-radial-steps(100, @color, @upf-gray);
+  .upf-progress-radial-color(@color, #fff);
+  .upf-progress-radial-steps(100, @color, @upf-gray);
 }
 
 
