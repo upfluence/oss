@@ -1,0 +1,12 @@
+<svg class='upf-icon upf-icon-heart' width="11px" height="9px" viewBox="735 469 11 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Created by the Upfluence's Design Squad with Sketch.</desc>
+  <defs>
+    <path d="M5.5,9 C3.85458333,9 0,4.9905 0,3.375 C0,1.7595 1.33375,0 2.97916667,0 C4.04708333,0 5.5,1.38105 5.5,1.38105 C5.5,1.38105 7.39291667,0 8.02083333,0 C9.66625,0 11,1.7595 11,3.375 C11,4.9905 7.14541667,9 5.5,9 L5.5,9 Z" id="heart-path-1"></path>
+    <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11" height="9" fill="white">
+      <use xlink:href="#heart-path-1"></use>
+    </mask>
+  </defs>
+  <g id="heart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(735.000000, 469.000000)">
+    <use stroke="#3D5A98" mask="url(#mask-2)" stroke-width="2" xlink:href="#heart-path-1"></use>
+  </g>
+</svg>
