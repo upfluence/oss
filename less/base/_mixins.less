@@ -35,7 +35,8 @@
 //
 // Offer some feedback on an input.
 // Feedbacks can be either an Error or a Help offer.
-// For documentation about input feedback positions, see: https://medium.com/@andrew.burton/form-validation-best-practices-8e3bec7d0549#.oij0nsm6o
+// For documentation about input feedback positions, see:
+// https://medium.com/@andrew.burton/form-validation-best-practices-8e3bec7d0549#.oij0nsm6o
 //
 .upf-input-container--has-feedback {
   position: relative;
@@ -77,36 +78,6 @@
   i[aria-label]:hover:after {
     background-color: @bg-color;
     color: @text-color;
-  }
-}
-
-
-//
-// Add a "foldable columns" feature to a table
-//
-.expandable-columns {
-  thead {
-    td {
-      min-width: 100%;
-    }
-  }
-
-  tbody {
-    td {
-      max-width: 10px;
-      overflow: hidden;
-      transition: all 0.5s ease-out;
-      width: 5%;
-      white-space: nowrap;
-
-      &:last-child {
-        max-width: 100%;
-      }
-
-      &:hover {
-        width: 15%;
-      }
-    }
   }
 }
 
