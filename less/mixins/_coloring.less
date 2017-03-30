@@ -1,0 +1,30 @@
+.fill(@color) {
+  border-color: @color;
+  background-color: @color;
+}
+
+.outline(@color) {
+  border: 1px solid @color;
+  background-color: transparent;
+  color: @color;
+}
+
+.remove-outline {
+  outline: none !important;
+  box-shadow: none;
+}
+
+//
+// Reset the radius state of an element
+//
+.set-bottom-radius(@value) {
+  border-bottom-left-radius: @value;
+  border-bottom-right-radius: @value;
+}
+
+//
+// .remove-*-radius is just an alias for .set-*-radius(0)
+//
+.remove-bottom-radius {
+  .set-bottom-radius(0);
+}
