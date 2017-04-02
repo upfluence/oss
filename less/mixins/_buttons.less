@@ -1,0 +1,56 @@
+//
+// Mixin for building a button
+// Takes 3 parameters:
+//   - base-color: used for default state,
+//   - darker-color: used for active and on hover states
+//
+.build-button(@base-color, @darker-color) {
+  .fill(@base-color);
+  .icon-color(@color-text-contrast);
+  color: @color-text-contrast;
+
+  &:hover {
+    .active;
+  }
+
+  &.active, &:active, .active:active, .active:focus, &:focus {
+    .remove-outline;
+    .fill(@darker-color);
+    color: @color-text-contrast;
+    opacity: 1;
+  }
+
+  &:disabled, &.disabled {
+    .disabled-button;
+  }
+}
+
+//
+// Mixin for building Ghost Buttons.
+// Those are caracterized by their transparent background, making them able to
+// be almost anywhere, particularly on dark backgrounds.
+//
+// Takes 1 arguments;
+//   - base color: used for button text and outline color in default and disabled
+//                 states
+//
+.reversed-colors(@base-color) {
+  .outline(@base-color);
+  .icon-color(@base-color);
+  color: @base-color;
+  transition: all 0.5s ease;
+
+  &:hover {
+    .active;
+  }
+
+  &.active, &:active, .active:active, .active:focus, &:focus {
+    .remove-outline;
+    .fill(@base-color);
+    color: @color-text-contrast;
+  }
+
+  &.disabled {
+    .disabled-button;
+  }
+}
