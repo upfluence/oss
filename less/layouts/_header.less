@@ -1,4 +1,6 @@
-@import '../base/_variables';
+@import '../core/_colors';
+@import '../core/_variables';
+@import '../mixins/_links';
 
 .app-header {
   background-color: @upf-primary-dark-purple;
@@ -8,7 +10,7 @@
     width: 100%;
 
     a, a:hover {
-      .upf-link--reset;
+      /*.reset-link;*/
     }
 
     // Do not style the Upfluence link (leading to homepage) even when it's the
@@ -107,7 +109,7 @@
     width: 45%;
 
     a {
-      .upf-align--center;
+      text-align: center;
       display: block;
 
       img {

@@ -1,6 +1,10 @@
-@import '../base/_variables';
-@import '../base/_mixins';
-@import '../base/_buttons';
+@import '../core/_colors';
+@import '../core/_variables';
+@import '../mixins/_buttons';
+@import '../mixins/_shapes';
+/*@import '../base/_variables';*/
+/*@import '../base/_mixins';*/
+/*@import '../base/_buttons';*/
 
 //
 // Fully-featured Data Table Component.
@@ -63,8 +67,8 @@
     padding: 1em 0;
 
     .btn.btn-default {
-      .upf-btn--purple--reversed;
-      padding: 0.5em 2em !important;
+      .reversed-colors(@upf-primary-orange);
+      padding: @spacing-xxx-sm @spacing-sm !important;
     }
   }
 }

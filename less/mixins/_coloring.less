@@ -15,16 +15,18 @@
 }
 
 //
-// Reset the radius state of an element
+// Remove outer colors
 //
-.set-bottom-radius(@value) {
-  border-bottom-left-radius: @value;
-  border-bottom-right-radius: @value;
+.remove-outer-colors {
+  border: none;
+  background-color: transparent;
 }
 
 //
-// .remove-*-radius is just an alias for .set-*-radius(0)
+// Sets a Font Awesome icon's color.
 //
-.remove-bottom-radius {
-  .set-bottom-radius(0);
+.icon-color(@color) {
+  .fa {
+    color: @color;
+  }
 }

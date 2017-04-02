@@ -1,15 +1,11 @@
 @import '../core/_variables';
+@import '../mixins/_grid';
 
 //
-// Bootstrap fix
-// Bootstrap has a known issue on the .center-block class (which horizontally
-// centers a block in a row. The float rule is initially missing.
+// Horizontally center a block in a row. The float rule is initially missing.
 //
 .center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
+  .horizontally-center-block;
 }
 
 //

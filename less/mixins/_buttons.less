@@ -1,3 +1,15 @@
+@import '../core/_colors';
+@import '_coloring';
+
+//
+// The disabled button is the same whatever button variant we are dealing with.
+//
+.disabled-button {
+  .fill(@upf-gray);
+  color: @upf-primary-white;
+  opacity: 0.5;
+}
+
 //
 // Mixin for building a button
 // Takes 3 parameters:

@@ -1,6 +1,8 @@
-@import '../base/_variables';
+@import '../core/_colors';
+@import '../core/_variables';
 @import '../base/_inputs';
-@import '../base/_buttons';
+@import '../mixins/_inputs';
+@import '../mixins/_buttons';
 
 .wysiwyg-editor {
   .note-editor {
@@ -38,7 +40,7 @@
     }
 
     .modal-footer button {
-      .upf-btn--purple;
+      .build-button(@upf-primary-orange, @upf-primary-orange-dark);
     }
   }
 }

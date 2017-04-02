@@ -1,0 +1,10 @@
+// Bootstrap fix
+// Bootstrap has a known issue on the .center-block class (which horizontally
+// centers a block in a row. The float rule is initially missing.
+//
+.horizontally-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}

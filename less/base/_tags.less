@@ -1,6 +1,6 @@
-@import '_variables';
-@import '_mixins';
-@import '_typography';
+@import '../core/_colors';
+@import '../core/_variables';
+@import '../mixins/_coloring';
 
 /*
  * Tags
@@ -15,7 +15,7 @@
 }
 
 .upf-tag__text {
-  .text-color-default-light;
+  color: @color-text-light;
   text-transform: capitalize;
 }
 
@@ -24,6 +24,6 @@
   .fill(@upf-primary-orange);
 
   .upf-tag__text {
-    .text-color-contrast;
+    color: @color-text-contrast;
   }
 }
