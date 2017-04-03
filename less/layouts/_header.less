@@ -44,11 +44,11 @@
   width: 5em;
 
   .logo-container {
-    margin-top: 1em;
+    margin-top: 0;
     text-align: center;
 
     img {
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -56,7 +56,8 @@
   .app-header__top, .app-header__bottom {
     .header-item {
       font-size: 1.5em;
-      padding: 7px;
+      margin-top: 0;
+      padding: @spacing-xx-sm;
 
       // Only change the color of the icons in the sidebar when it's active
       // route.
@@ -68,9 +69,9 @@
   }
 
   .app-header__bottom {
-    width: 100%;
+    bottom: 0;
     position: absolute;
-    bottom: 1em;
+    width: 100%;
   }
 }
 
