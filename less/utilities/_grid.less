@@ -1,13 +1,11 @@
+@import '../core/_variables';
+@import '../mixins/_grid';
+
 //
-// Bootstrap fix
-// Bootstrap has a known issue on the .center-block class (which horizontally
-// centers a block in a row. The float rule is initially missing.
+// Horizontally center a block in a row. The float rule is initially missing.
 //
 .center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
+  .horizontally-center-block;
 }
 
 //
@@ -53,15 +51,6 @@
 .for(@array)   when (default()) {.for-impl_(length(@array))}
 .for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
 .for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
-
-@spacing-none: 0;
-@spacing-xxx-sm: 0.5em;
-@spacing-xx-sm: 1em;
-@spacing-x-sm: 1.5em;
-@spacing-sm: 2em;
-@spacing-md: 2.5em;
-@spacing-lg: 3em;
-@spacing-x-lg: 4em;
 
 @spacers: none, xxx-sm, xx-sm, x-sm, sm, md, lg, x-lg;
 .for(@spacers); .-each(@spacer-size) {

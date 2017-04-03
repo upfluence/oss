@@ -1,0 +1,14 @@
+//
+// Reset the radius state of an element
+//
+.set-bottom-radius(@value) {
+  border-bottom-left-radius: @value;
+  border-bottom-right-radius: @value;
+}
+
+//
+// .remove-*-radius is just an alias for .set-*-radius(0)
+//
+.remove-bottom-radius {
+  .set-bottom-radius(0);
+}

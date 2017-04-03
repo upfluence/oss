@@ -1,5 +1,6 @@
-@import '../base/_variables';
-@import '../base/_buttons';
+@import '../core/_colors';
+@import '../core/_variables';
+@import '../mixins/_buttons';
 
 .modal {
   .modal-content {
@@ -25,7 +26,7 @@
       border-top: 1px solid @upf-gray-dark;
 
       button {
-        .upf-btn--purple;
+        .build-button(@upf-primary-orange, @upf-primary-orange-dark);
       }
     }
   }

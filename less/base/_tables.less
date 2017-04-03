@@ -1,8 +1,12 @@
+@import '../core/_colors';
+@import '../core/_variables';
+@import '../mixins/_grid';
+
 //
 // Tables throughout the apps.
 //
 .upf-table {
-  .table-striped;
+  /*.table-striped; // FROM_BOOTSTRAP*/
 
   border-collapse: inherit;
   border: 1px solid @upf-gray-dark;
@@ -50,7 +54,7 @@
 }
 
   //
-  // Any seocndary information in a grouped column of a table.
+  // Any secondary information in a grouped column of a table.
   //
   .upf-table__group-column--secondary {
     color: @color-text-light;
@@ -64,6 +68,6 @@
   width: 4em;
 
   .row-selector__input-wrapper {
-    .center-block;
+    .horizontally-center-block;
   }
 }

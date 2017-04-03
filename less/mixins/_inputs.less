@@ -1,0 +1,49 @@
+@import '../core/_colors';
+@import '../core/_variables';
+
+//
+// Custom style for an input group => an input with a prefix or suffix.
+// The prefix or suffix is generally an icon, but can be any text.
+// In case the prefix or suffix is text, it can be used as a label.
+//
+.setup-input-group-addon(@color) {
+  .input-group-addon {
+    background-color: @color;
+    border: 1px solid @color;
+    color: @color-text-contrast;
+    font-weight: bold;
+    padding: 0 1.5em;
+    text-align: center;
+  }
+
+  .upf-input {
+    border-left: none; // Bootstrap adds a gray border to prefixed inputs.
+
+    &:focus {
+      // #CHECK Don't know if bug or not, but on focus, input overlaps
+      // feedback icons.
+      z-index: 1;
+    }
+  }
+}
+
+//
+// An input container
+// Any input in a form (or not) should always be wrapped into this.
+//
+.upf-input-container {
+  .input-group {
+    .setup-input-group-addon(@upf-primary-dark-purple);
+  }
+}
+
+.set-feedback-colors(@icon-color, @bg-color, @text-color) {
+  i {
+    color: @icon-color;
+  }
+
+  i[aria-label]:hover:after {
+    background-color: @bg-color;
+    color: @text-color;
+  }
+}

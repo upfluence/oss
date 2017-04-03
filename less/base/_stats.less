@@ -1,6 +1,4 @@
-@import '../base/_variables';
-@import '../base/_grid';
-@import '../base/_typography';
+@import '../core/_variables';
 
 /*
  * Standard Stat.
@@ -8,17 +6,17 @@
  * number about a given indicator.
 */
 .upf-stat {
-  .upf-align--center;
+  text-align: center;
   display: block;
 }
 
 .upf-stat__number-container {
-  .padding-xx-sm;
+  padding: @spacing-xx-sm;
 }
 
 .upf-stat__icon {
-  .text-size-7;
-  .text-color-default-light;
+  font-size: 24/@rem;
+  color: @color-text-light;
 
   .upf-icon {
     display: block;
@@ -27,16 +25,16 @@
 
 // The number value of a given stat
 .upf-stat__number {
-  .text-style-bold;
-  .text-size-8;
+  font-weight: bold;
+  font-size: 30/@rem;
   display: inherit;
 }
 
 // The title of a given stat. Generally the indicator the stat provides an
 // insight for
 .upf-stat__title {
-  .text-size-6;
-  .text-color-default-light;
+  font-size: 18/@rem;
+  color: @color-text-light;
   display: inherit;
   text-transform: uppercase;
 }
@@ -48,20 +46,20 @@
  * for introducing the displayed stats and explain the context to the user.
 */
 .upf-stat-block {
-  .upf-align--center;
-  padding: 1em 0;
+  text-align: center;
+  padding: 0;
 }
 
 // The title of a standard stat block.
 .upf-stat-block__title {
-  .upf-align--center;
-  .text-size-6;
+  text-align: center;
+  font-size: 18/@rem;
 }
 
 // The description of a standard stat block.
 .upf-stat-block__description {
-  .upf-align--center;
-  .text-size-5;
+  text-align: center;
+  font-size: 16/@rem;
   margin-top: 2%;
 }
 

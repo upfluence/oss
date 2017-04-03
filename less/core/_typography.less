@@ -1,0 +1,52 @@
+@import '../core/_variables';
+
+//
+// Headlines 1
+h1 {
+ font-size: 36/@rem;
+}
+
+//
+// Headlines 2
+h2 {
+  font-size: 30/@rem;
+}
+
+//
+// Headline 3
+h3 {
+  font-size: 24/@rem;
+}
+
+h4 {
+  font-size: 18/@rem;
+}
+
+//
+// Titles
+h5 {
+  font-size: 14/@rem;
+}
+
+//
+// Subheader
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-text-title;
+  color: @color-text;
+}
+
+body {
+  color: @color-text;
+  font-size: unit(@font-size-body, px);
+  font-family: @font-text-body;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+//
+// Labels must be slightly bigger than the controls they provide informations
+// for.
+//
+label {
+  font-size: 16/@rem;
+}
