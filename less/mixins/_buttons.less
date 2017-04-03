@@ -21,11 +21,7 @@
   .icon-color(@color-text-contrast);
   color: @color-text-contrast;
 
-  &:hover {
-    .active;
-  }
-
-  &.active, &:active, .active:active, .active:focus, &:focus {
+  &:hover, &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
     .fill(@darker-color);
     color: @color-text-contrast;
@@ -42,7 +38,7 @@
 // Those are caracterized by their transparent background, making them able to
 // be almost anywhere, particularly on dark backgrounds.
 //
-// Takes 1 arguments;
+// Takes 1 arguments:
 //   - base color: used for button text and outline color in default and disabled
 //                 states
 //
@@ -52,11 +48,7 @@
   color: @base-color;
   transition: all 0.5s ease;
 
-  &:hover {
-    .active;
-  }
-
-  &.active, &:active, .active:active, .active:focus, &:focus {
+  &:hover, &.active, &:active, .active:active, .active:focus, &:focus {
     .remove-outline;
     .fill(@base-color);
     color: @color-text-contrast;
