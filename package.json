@@ -1,0 +1,25 @@
+{
+  "name": "upfluence-oss",
+  "version": "0.1.3",
+  "description": "![Mr Bonisseur de La Bath](http://flat-tv.net/uploads/posts/2015-07/1437715605_agent-117.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upfluence/oss.git"
+  },
+  "author": "Philippe Ndiaye <phndiaye@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/upfluence/oss/issues"
+  },
+  "homepage": "https://github.com/upfluence/oss#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "countdown.js": "git+ssh://git@github.com/gumroad/countdown.js.git",
+    "money-formatter": "^0.1.4",
+    "summernote": "^0.8.2"
+  }
+}
