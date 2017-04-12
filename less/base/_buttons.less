@@ -42,6 +42,10 @@
   .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
 }
 
+.upf-btn--rock-blue {
+  .build-button(@upf-primary-rock-blue, darken(@upf-primary-rock-blue, 10%));
+}
+
 //
 // Secondary Buttons
 // Those can be used to back main buttons. As there can be only one main button
@@ -50,6 +54,7 @@
 //
 .upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange); }
 .upf-btn--purple--reversed { .reversed-colors(@upf-primary-bright-purple); }
+.upf-btn--rock-blue--reversed { .reversed-colors(@upf-primary-rock-blue); }
 
 //
 // Tertiary Buttons
