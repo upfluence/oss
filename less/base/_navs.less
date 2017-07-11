@@ -2,24 +2,30 @@
 @import '../core/_variables';
 
 .upf-nav {
+  background-color: @upf-primary-orange;
+  border-bottom: none;
+
   display: flex;
-  border-bottom: 4px solid @upf-gray;
   list-style-type: none;
-  padding: 1% 1% 0.3% 0;
+
+  padding: @spacing-x-sm;
 }
 
 .upf-nav__item {
   &:not(:first-child) {
-    margin-left: 3em;
+    margin-left: @spacing-lg;
   }
 
   a {
+    color: @color-text-contrast;
     font-size: 18/@rem;
-    color: @color-text-light;
+
+    padding: @spacing-xxx-sm;
   }
 
-  a.active {
-    color: @color-text;
-    font-weight: bold;
+  a.active, a:hover {
+    border-radius: @default-radius;
+    background-color: @upf-primary-orange-dark;
+    color: @color-text-contrast;
   }
 }
