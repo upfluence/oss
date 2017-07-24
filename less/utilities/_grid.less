@@ -52,7 +52,7 @@
 .for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
 .for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
 
-@spacers: none, xxx-sm, xx-sm, x-sm, sm, md, lg, x-lg;
+@spacers: none, xxx-sm, xx-sm, x-sm, sm, md, lg, x-lg, xx-lg;
 .for(@spacers); .-each(@spacer-size) {
   .margin-top-@{spacer-size} { margin-top: ~"@{spacing-@{spacer-size}}" }
   .margin-right-@{spacer-size} { margin-right: ~"@{spacing-@{spacer-size}}" }
