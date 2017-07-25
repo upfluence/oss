@@ -32,7 +32,7 @@
   .upf-datatable__column {
     height: @spacing-xx-lg;
 
-    &:hover:not(.upf-datatable__column--unsortable) {
+    &:hover:not(.upf-datatable__column--unsortable):not(.upf-datatable__column--uneditable) {
       cursor: pointer;
       color: @upf-primary-bright-purple;
       transition: color 0.4s;
