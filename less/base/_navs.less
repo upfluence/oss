@@ -35,5 +35,23 @@
 //
 .upf-contextual-nav {
   background-color: @upf-primary-orange-dark;
+  display: flex;
+  list-style-type: none;
+
   padding: @spacing-x-sm;
+}
+
+.upf-contextual-nav__item {
+  .upf-nav__item;
+
+  a.active, a:hover {
+    border-bottom: none;
+    border-radius: @default-radius;
+    background-color: @upf-primary-orange;
+    color: @color-text-contrast;
+  }
+}
+
+.upf-contextual-nav__item--pull-right {
+  margin-left: auto;
 }
