@@ -1,3 +1,5 @@
+@import '../core/_variables';
+
 .upf-loading {
   .spinner {
     margin: 4*@spacing-xx-lg auto 4*@spacing-xx-lg;
@@ -5,14 +7,13 @@
   }
 
   .spinner > div {
-    width: 18px;
-    height: 18px;
-    background-color: @dark-blue;
-
-    border-radius: 100%;
-    display: inline-block;
     -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
     animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    border-radius: 100%;
+    display: inline-block;
+
+    width: 18px;
+    height: 18px;
   }
 
   .spinner .bounce1 {

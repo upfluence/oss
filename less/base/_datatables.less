@@ -44,12 +44,8 @@
   }
 }
 
-.upf-datatable__row--selected {
-  background-color: lighten(@upf-primary-bright-purple, 30%);
-
-  &:hover {
-    background-color: lighten(@upf-primary-bright-purple, 30%) !important;
-  }
+.upf-datatable__row--selected, .upf-datatable__row--selected:hover {
+  background-color: @upf-gray-light !important;
 }
 
 .upf-datatable__row--header {
