@@ -2,7 +2,7 @@
 @import '../core/_variables';
 
 .upf-nav {
-  background-color: @upf-primary-orange;
+  background-color: @upf-primary-bright-purple;
   border-bottom: none;
 
   display: flex;
@@ -13,12 +13,13 @@
 }
 
 .upf-nav__item {
+
   &:not(:first-child) {
     margin-left: @spacing-lg;
   }
 
   a {
-    color: @color-text-contrast;
+    color: rgba(255, 255, 255, 0.75);
     font-size: 18/@rem;
 
     padding: @spacing-xxx-sm @spacing-xx-sm;
@@ -27,8 +28,19 @@
   a.active, a:hover {
     border-bottom: none;
     border-radius: @default-radius;
-    background-color: @upf-primary-orange-dark;
-    color: @color-text-contrast;
+    transition: color 0.2s linear, background 0.2s linear;
+    background-color: @upf-primary-bright-purple-dark;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  a:active {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .ember-transitioning-in{
+    color: rgba(255, 255, 255, 1);
+    background-color: @upf-primary-bright-purple-dark;
+;
   }
 }
 
@@ -50,7 +62,7 @@
 // A Subnavigation, with actions that are more contextual to the current page.
 //
 .upf-contextual-nav {
-  background-color: @upf-primary-orange-dark;
+  background-color: @upf-primary-bright-purple-dark;
   display: flex;
   list-style-type: none;
 
@@ -63,8 +75,7 @@
   a.active, a:hover {
     border-bottom: none;
     border-radius: @default-radius;
-    background-color: @upf-primary-orange;
-    color: @color-text-contrast;
+    background-color: @upf-primary-bright-purple;
   }
 }
 
