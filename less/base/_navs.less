@@ -9,18 +9,18 @@
   align-items: baseline;
   list-style-type: none;
 
-  padding: @spacing-xxx-sm;
+  padding: @spacing-xx-sm;
 }
 
 .upf-nav__item {
 
   &:not(:first-child) {
-    margin-left: @spacing-lg;
+    margin-left: @spacing-x-sm;
   }
 
   a {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 18/@rem;
+    font-size: 1.4rem;
 
     padding: @spacing-xxx-sm @spacing-xx-sm;
   }
@@ -51,10 +51,11 @@
 .upf-nav__item--title {
   a {
     color: @color-text-contrast;
-    font-size: 30/@rem;
-    font-family: @font-text-title;
-
+    font-size: 2.2rem;
+    line-height: 2.7rem;
     padding: 0;
+    margin-left: @spacing-xx-sm;
+    margin-right: @spacing-xx-sm;
   }
 
   a.active, a:hover {
