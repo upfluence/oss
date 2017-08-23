@@ -2,43 +2,60 @@
 @import '../core/_variables';
 
 .upf-nav {
-  background-color: @upf-primary-orange;
+  background-color: @upf-primary-bright-purple;
   border-bottom: none;
 
   display: flex;
   align-items: baseline;
   list-style-type: none;
 
-  padding: @spacing-x-sm;
+  padding: @spacing-xx-sm;
 }
 
 .upf-nav__item {
+
   &:not(:first-child) {
-    margin-left: @spacing-lg;
+    margin-left: @spacing-x-sm;
   }
 
   a {
-    color: @color-text-contrast;
-    font-size: 18/@rem;
-
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.4rem;
     padding: @spacing-xxx-sm @spacing-xx-sm;
+    user-select: none;
   }
 
   a.active, a:hover {
     border-bottom: none;
     border-radius: @default-radius;
-    background-color: @upf-primary-orange-dark;
-    color: @color-text-contrast;
+    transition: color 0.2s linear, background 0.2s linear;
+    background-color: @upf-primary-bright-purple-dark;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  a:active {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .ember-transitioning-in {
+    color: rgba(255, 255, 255, 1);
+    background-color: @upf-primary-bright-purple-dark;
+  }
+
+  .ember-transitioning-out {
+    color: rgba(255, 255, 255, 0.8) !important;
+    background-color: rgba(0,0,0,0) !important;
   }
 }
 
 .upf-nav__item--title {
   a {
     color: @color-text-contrast;
-    font-size: 30/@rem;
-    font-family: @font-text-title;
-
+    font-size: 2.2rem;
+    line-height: 2.7rem;
     padding: 0;
+    margin-left: @spacing-xx-sm;
+    margin-right: @spacing-xx-sm;
   }
 
   a.active, a:hover {
@@ -50,11 +67,11 @@
 // A Subnavigation, with actions that are more contextual to the current page.
 //
 .upf-contextual-nav {
-  background-color: @upf-primary-orange-dark;
+  background-color: @upf-primary-bright-purple-dark;
   display: flex;
   list-style-type: none;
 
-  padding: @spacing-x-sm;
+  padding: @spacing-xx-sm;
 }
 
 .upf-contextual-nav__item {
@@ -63,8 +80,7 @@
   a.active, a:hover {
     border-bottom: none;
     border-radius: @default-radius;
-    background-color: @upf-primary-orange;
-    color: @color-text-contrast;
+    background-color: @upf-primary-bright-purple;
   }
 }
 
