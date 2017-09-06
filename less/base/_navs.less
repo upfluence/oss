@@ -1,15 +1,19 @@
 @import '../core/_colors';
 @import '../core/_variables';
 
-.upf-nav {
+.upf-nav--container{
   background-color: @upf-primary-bright-purple;
+  padding: @spacing-xx-sm;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.upf-nav {
   border-bottom: none;
 
   display: flex;
   align-items: baseline;
   list-style-type: none;
-
-  padding: @spacing-xx-sm;
+  padding-left: 0px;
 }
 
 .upf-nav__item {
@@ -34,7 +38,7 @@
   }
 
   a:active {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.75);
   }
 
   .ember-transitioning-in {
@@ -43,7 +47,7 @@
   }
 
   .ember-transitioning-out {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.75) !important;
     background-color: rgba(0,0,0,0) !important;
   }
 }
