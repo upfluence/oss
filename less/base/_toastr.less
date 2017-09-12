@@ -1,9 +1,41 @@
 @import '../core/_colors';
 @import '../core/_variables';
 
-/* Toastr error, info & success message styling */
+/* Toastr messages styling */
+#toast-container.upf-toastr--container{
+  .toast {
+    width: 600px;
+    box-shadow: none;
+    border: 1px solid @upf-primary-white;
+    border-
+    border-radius: @default-radius;
+    padding: 15px 15px 15px 15px;
+    background-image: none !important;
+    opacity: 0.95;
 
-// @upf-feedback-success: #129d5a;
-// @upf-feedback-error: #c0392b;
-// @upf-feedback-alert: #eda448;
-// @upf-feedback-info: @upf-primary-rock-blue;
+    &:hover{
+      opacity: 1;
+    }
+
+    .toast-message {
+    	opacity: 0.75;
+    }
+  }
+
+  .toast-error{
+    background-color: @upf-feedback-error;
+    background-image: none;
+  }
+
+  .toast-success{
+    background-color: @upf-feedback-success;
+  }
+
+  .toast-alert{
+    background-color: @upf-feedback-alert;
+  }
+
+  .toast-info{
+    background-color: @upf-primary-rock-blue-dark;
+  }
+}
