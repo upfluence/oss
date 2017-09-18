@@ -7,7 +7,43 @@
   font-family: @font-text-title;
 }
 
+.btn-xs {
+  padding: 0.2rem 1.5rem;
+}
 
+.btn-sm {
+  padding: 0.6rem 2rem;
+}
+
+.btn-md {
+  padding: 0.8rem 3rem;
+}
+
+.btn-lg {
+  padding: 1.1rem 5rem;
+}
+
+// make inversed buttons 1px smaller since there is no borders.
+a.upf-btn.upf-btn--x-small.upf-btn--purple--reversed,
+a.upf-btn.upf-btn--x-small.upf-btn--orange--reversed,
+a.upf-btn.upf-btn--x-small.upf-btn--rock-blue--reversed {
+  padding: 0.1rem 1.5rem;
+}
+a.upf-btn.upf-btn--small.upf-btn--purple--reversed,
+a.upf-btn.upf-btn--small.upf-btn--orange--reversed,
+a.upf-btn.upf-btn--small.upf-btn--rock-blue--reversed {
+  padding: 0.5rem 2rem;
+}
+a.upf-btn.upf-btn--purple--reversed:not(.upf-btn--x-small):not(.upf-btn--small):not(.upf-btn--large),
+a.upf-btn.upf-btn--orange--reversed:not(.upf-btn--x-small):not(.upf-btn--small):not(.upf-btn--large),
+a.upf-btn.upf-btn--rock-blue--reversed:not(.upf-btn--x-small):not(.upf-btn--small):not(.upf-btn--large) {
+  padding: 0.7rem 3rem;
+}
+a.upf-btn.upf-btn--large.upf-btn--purple--reversed,
+a.upf-btn.upf-btn--large.upf-btn--orange--reversed,
+a.upf-btn.upf-btn--large.upf-btn--rock-blue--reversed {
+  padding: 1rem 5rem;
+}
 //
 // Extend the bootstrap buttons for upf-btn class.
 //
@@ -18,7 +54,6 @@
 //
 .upf-btn {
   .btn;
-  padding: 7px 3em;
 
   &:focus,
   &:active {
