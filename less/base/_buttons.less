@@ -28,6 +28,10 @@
 .upf-btn--x-small { .btn-xs; border-radius: @default-radius }
 .upf-btn--small { .btn-sm; border-radius: @default-radius }
 .upf-btn--large { .btn-lg; border-radius: @default-radius }
+.upf-btn:not(.upf-btn--x-small):not(.upf-btn--small):not(.upf-btn--large) {
+  .btn-md;
+  border-radius: @default-radius
+}
 
 //
 // Main Buttons
