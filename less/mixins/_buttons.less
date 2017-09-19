@@ -21,13 +21,21 @@
 .build-button(@base-color, @darker-color) {
   .fill(@base-color);
   .icon-color(@color-text-contrast);
-  color: @color-text-contrast;
+  color: rgba(255,255,255,0.9);
+  border: 0px;
 
   &:hover {
     .remove-outline;
     .fill(@darker-color);
     color: @color-text-contrast;
     opacity: 1;
+    transition: all 200ms ease-out;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(255,255,255,0.9);
+    background-color: @base-color;
   }
 
   &:disabled, &.disabled {
@@ -56,12 +64,21 @@
   .outline(@base-color);
   .icon-color(@base-color);
   color: @base-color;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 
   &:hover {
     .remove-outline;
     .fill(@base-color);
-    color: @color-text-contrast;
+    .icon-color(@upf-primary-white);
+    color: @upf-primary-white;
+  }
+
+  &:focus,
+  &:active {
+    .icon-color(@base-color);
+    color: @base-color;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   &.disabled {
