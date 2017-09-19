@@ -4,9 +4,24 @@
 @import '../mixins/_coloring';
 
 .btn {
-  font-family: @font-text-body;
+  font-family: @font-text-title;
 }
 
+.btn-xs {
+  padding: 0.2rem 1.5rem;
+}
+
+.btn-sm {
+  padding: 0.6rem 2rem;
+}
+
+.btn-md {
+  padding: 0.8rem 3rem;
+}
+
+.btn-lg {
+  padding: 1.1rem 5rem;
+}
 
 //
 // Extend the bootstrap buttons for upf-btn class.
@@ -18,11 +33,47 @@
 //
 .upf-btn {
   .btn;
-  padding: 7px 3em;
+  .btn-md;
+  border-radius: @default-radius;
 
   &:focus,
   &:active {
     outline: none !important; // fix that bootstrap outline once and for all
+  }
+
+  &.disabled {
+    opacity: 0.5;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+
+  // make inversed buttons 1px smaller since there is no borders.
+  &.upf-btn--purple--reversed,
+  &.upf-btn--orange--reversed,
+  &.upf-btn--rock-blue--reversed,
+  &.upf-btn.disabled {
+    padding: 0.7rem 3rem;
+  }
+  &.upf-btn--x-small.upf-btn--purple--reversed,
+  &.upf-btn--x-small.upf-btn--orange--reversed,
+  &.upf-btn--x-small.upf-btn--rock-blue--reversed,
+  &.upf-btn--x-small.disabled {
+    padding: 0.1rem 1.5rem;
+  }
+  &.upf-btn--small.upf-btn--purple--reversed,
+  &.upf-btn--small.upf-btn--orange--reversed,
+  &.upf-btn--small.upf-btn--rock-blue--reversed,
+  &.upf-btn--small.disabled {
+    padding: 0.5rem 2rem;
+  }
+  &.upf-btn--large.upf-btn--purple--reversed,
+  &.upf-btn--large.upf-btn--orange--reversed,
+  &.upf-btn--large.upf-btn--rock-blue--reversed,
+  &.upf-btn--large.disabled {
+    padding: 1rem 5rem;
   }
 }
 .upf-btn--x-small { .btn-xs; border-radius: @default-radius }
@@ -34,16 +85,34 @@
 // Those buttons can be used for both Call to Actions or Primary actions.
 // There should be only one main button in a given page or components group.
 //
-.upf-btn--orange {
-  .build-button(@upf-primary-orange, @upf-primary-orange-dark);
-}
 
 .upf-btn--purple {
   .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
 }
 
-.upf-btn--rock-blue {
+.upf-btn--orange { // depreciated
+  .build-button(@upf-primary-orange, @upf-primary-orange-dark);
+}
+
+.upf-btn--rock-blue { // depreciated
   .build-button(@upf-primary-rock-blue, darken(@upf-primary-rock-blue, 10%));
+}
+
+// secondary buttons
+.upf-btn--yellow {
+  .build-button(@upf-secondary-yellow, @upf-secondary-yellow-dark);
+}
+
+.upf-btn--pink {
+  .build-button(@upf-secondary-pink, @upf-secondary-pink-dark);
+}
+
+.upf-btn--green {
+  .build-button(@upf-secondary-green, @upf-secondary-green-dark);
+}
+
+.upf-btn--blue {
+  .build-button(@upf-secondary-blue, @upf-secondary-blue-dark);
 }
 
 //
