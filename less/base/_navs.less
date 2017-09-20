@@ -1,92 +1,94 @@
 @import '../core/_colors';
 @import '../core/_variables';
 
-.upf-nav--container{
+.upf-nav--container, .inf-panel--nav-container {
   background-color: @upf-primary-bright-purple;
   padding: @spacing-xx-sm;
   color: rgba(255, 255, 255, 0.75);
-}
 
-.upf-nav {
-  border-bottom: none;
-  display: flex;
-  align-items: baseline;
-  list-style-type: none;
-  padding-left: 0px;
-}
-
-.upf-nav__item {
-
-  &:not(:first-child) {
-    margin-left: @spacing-x-sm;
-  }
-
-  a {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 1.4rem;
-    padding: @spacing-xxx-sm @spacing-xx-sm;
-    user-select: none;
-  }
-
-  a.active, a:hover {
+  .upf-nav, .inf-panel--nav {
     border-bottom: none;
-    border-radius: @default-radius;
-    transition: color 0.2s linear, background 0.2s linear;
-    background-color: @upf-primary-bright-purple-dark;
-    color: rgba(255, 255, 255, 1);
-  }
+    display: flex;
+    align-items: baseline;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
 
-  a:active {
-    color: rgba(255, 255, 255, 0.75);
-  }
+    .upf-nav__item, .inf-panel--item {
+      line-height: 2.7rem;
 
-  .ember-transitioning-in {
-    color: rgba(255, 255, 255, 1);
-    background-color: @upf-primary-bright-purple-dark;
-  }
+      &:not(:first-child) {
+        margin-left: @spacing-x-sm;
+      }
 
-  .ember-transitioning-out {
-    color: rgba(255, 255, 255, 0.75) !important;
-    background-color: rgba(0,0,0,0) !important;
+      a {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 1.4rem;
+        padding: @spacing-xxx-sm @spacing-xx-sm;
+        user-select: none;
+        text-decoration: none !important;
+      }
+
+      a.active, a:hover {
+        border-bottom: none;
+        border-radius: @default-radius;
+        transition: color 0.2s linear, background 0.2s linear;
+        background-color: @upf-primary-bright-purple-dark;
+        color: rgba(255, 255, 255, 1);
+      }
+
+      a:active {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .ember-transitioning-in {
+        color: rgba(255, 255, 255, 1);
+        background-color: @upf-primary-bright-purple-dark;
+      }
+
+      .ember-transitioning-out {
+        color: rgba(255, 255, 255, 0.75) !important;
+        background-color: rgba(0,0,0,0) !important;
+      }
+    }
+
+    .upf-nav__item--title {
+      a {
+        color: @color-text-contrast;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        padding: 0;
+        margin-left: @spacing-xx-sm;
+        margin-right: @spacing-xx-sm;
+      }
+
+      a.active, a:hover {
+        border: none;
+        background-color: transparent;
+      }
+    }
   }
 }
 
-.upf-nav__item--title {
-  a {
-    color: @color-text-contrast;
-    font-size: 2.2rem;
-    line-height: 2.7rem;
-    padding: 0;
-    margin-left: @spacing-xx-sm;
-    margin-right: @spacing-xx-sm;
-  }
-
-  a.active, a:hover {
-    border: none;
-    background-color: transparent;
-  }
-}
-
-// A Subnavigation, with actions that are more contextual to the current page.
+// A Subnavigation, with tabs that are more contextual to the current page.
 //
 .upf-contextual-nav {
   background-color: @upf-primary-bright-purple-dark;
   display: flex;
   list-style-type: none;
-
   padding: @spacing-xx-sm;
-}
 
-.upf-contextual-nav__item {
-  .upf-nav__item;
+  .upf-contextual-nav__item {
+    //.upf-nav__item;
 
-  a.active, a:hover {
-    border-bottom: none;
-    border-radius: @default-radius;
-    background-color: @upf-primary-bright-purple;
+    a.active, a:hover {
+      border-bottom: none;
+      border-radius: @default-radius;
+      background-color: @upf-primary-bright-purple;
+    }
   }
-}
 
-.upf-contextual-nav__item--pull-right {
-  margin-left: auto !important;
+  .upf-contextual-nav__item--pull-right {
+    margin-left: auto !important;
+  }
 }
