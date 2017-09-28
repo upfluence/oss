@@ -5,6 +5,7 @@
   background-color: @upf-primary-bright-purple;
   padding: @spacing-xx-sm;
   color: rgba(255, 255, 255, 0.75);
+  height: 48px;
 
   .upf-nav {
     border-bottom: none;
@@ -14,49 +15,12 @@
     padding-left: 0px;
     margin-bottom: 0px;
 
-    .upf-nav__item {
-      line-height: 2.7rem;
-
-      &:not(:first-child) {
-        margin-left: @spacing-x-sm;
-      }
-
-      a {
-        color: rgba(255, 255, 255, 0.75);
-        font-size: 1.4rem;
-        padding: @spacing-xxx-sm @spacing-xx-sm;
-        user-select: none;
-        text-decoration: none !important;
-      }
-
-      a.active, a:hover {
-        border-bottom: none;
-        border-radius: @default-radius;
-        transition: color 0.2s linear, background 0.2s linear;
-        background-color: @upf-primary-bright-purple-dark;
-        color: rgba(255, 255, 255, 1);
-      }
-
-      a:active {
-        color: rgba(255, 255, 255, 0.75);
-      }
-
-      .ember-transitioning-in {
-        color: rgba(255, 255, 255, 1);
-        background-color: @upf-primary-bright-purple-dark;
-      }
-
-      .ember-transitioning-out {
-        color: rgba(255, 255, 255, 0.75) !important;
-        background-color: rgba(0,0,0,0) !important;
-      }
-    }
-
     .upf-nav__item--title {
       a {
         color: @color-text-contrast;
         font-size: 2.2rem;
-        line-height: 2.7rem;
+        line-height: 2rem;
+
         padding: 0;
         margin-left: @spacing-xx-sm;
         margin-right: @spacing-xx-sm;
@@ -70,6 +34,44 @@
   }
 }
 
+.upf-nav__item {
+  line-height: 2.6rem;
+
+  &:not(:first-child) {
+    margin-left: @spacing-x-sm;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.4rem;
+    padding: @spacing-xxx-sm @spacing-xx-sm;
+    user-select: none;
+    text-decoration: none !important;
+  }
+
+  a.active, a:hover {
+    border-bottom: none;
+    border-radius: @default-radius;
+    transition: color 0.2s linear, background 0.2s linear;
+    background-color: @upf-primary-bright-purple-dark;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  a:active {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .ember-transitioning-in {
+    color: rgba(255, 255, 255, 1);
+    background-color: @upf-primary-bright-purple-dark;
+  }
+
+  .ember-transitioning-out {
+    color: rgba(255, 255, 255, 0.75) !important;
+    background-color: rgba(0,0,0,0) !important;
+  }
+}
+
 // A Subnavigation, with tabs that are more contextual to the current page.
 //
 .upf-contextual-nav {
@@ -77,8 +79,11 @@
   display: flex;
   list-style-type: none;
   padding: @spacing-xx-sm;
+  height: 46px;
 
   .upf-contextual-nav__item {
+    .upf-nav__item;
+
     a.active, a:hover {
       border-bottom: none;
       border-radius: @default-radius;
