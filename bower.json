@@ -1,6 +1,6 @@
 {
   "name": "upfluence-oss",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "summernote": "^0.8.2",
