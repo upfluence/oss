@@ -8,6 +8,7 @@
  */
 .upf-tag {
   .outline(@upf-gray);
+  background-color: rgba(255,255,255,0.25);
   border-radius: @default-radius;
   float: left;
   min-width: 65px;
@@ -15,16 +16,15 @@
 }
 
 .upf-tag__text {
-  color: @upf-primary-white;
-  text-transform: capitalize;
+  color: @upf-gray;
 }
 
-// Orange Tag
 .upf-tag--orange {
   .fill(@upf-primary-orange);
 
   .upf-tag__text {
     color: @upf-primary-white;
+    opacity: 0.5;
   }
 }
 
@@ -33,21 +33,6 @@
 
   .upf-tag__text {
     color: @upf-primary-white;
-  }
-}
-
-.upf-tag--alert {
-  .fill(@upf-feedback-success);
-
-  .upf-tag__text {
-    color: @upf-primary-white;
-  }
-}
-
-.upf-tag--error {
-  .fill(@upf-feedback-error);
-
-  .upf-tag__text {
-    color: @upf-primary-white;
+    opacity: 0.5;
   }
 }
