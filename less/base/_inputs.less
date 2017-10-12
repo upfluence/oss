@@ -147,3 +147,24 @@ label {
   appearance: none;
 }
 
+// some global Selectize styling
+.selectize-input {
+  border: 1px solid @upf-gray;
+  border-radius: @default-radius;
+  height: 37px;
+  color: @upf-primary-rock-blue;
+  background-color: @upf-gray-light;
+  box-shadow: none !important;
+
+  input {
+    &::placeholder {
+      color: @upf-primary-rock-blue-light;
+    }
+  }
+
+  &:focus, &:active {
+    .remove-outline;
+    border: 1px solid @upf-gray-dark;
+    box-shadow: none;
+  }
+}
