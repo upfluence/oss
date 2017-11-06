@@ -145,3 +145,27 @@ label {
   -moz-appearance: none;
   appearance: none;
 }
+
+//
+// Radio buttons
+//
+.ufp-input--radio {
+  display: table;
+  width: 100%;
+
+    .btn.btn-primary {
+      border: 1px solid @upf-gray;
+      color: @upf-primary-rock-blue;
+      background-color: @upf-gray-light;
+      font-weight: 100;
+      font-family: @font-text-body;
+      box-shadow: none;
+      outline: none;
+      height: 35px;
+
+        &.active {
+          color: @upf-feedback-success;
+          transition: color 0.5s linear;
+        }
+    }
+}
