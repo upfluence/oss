@@ -191,27 +191,57 @@
 //
 .upf-toggle-btn {}
 
-  //
-  // Larger than x-toggle component's "miedum size", but less than its
-  // "large size".
-  //
-  .upf-toggle-btn .x-toggle-container { width: 4.75em; }
-  .upf-toggle-btn .x-toggle-component {
-    display: block;
+//
+// Larger than x-toggle component's "miedum size", but less than its
+// "large size".
+//
+.upf-toggle-btn .x-toggle-container { width: 4.75em; }
+.upf-toggle-btn .x-toggle-component {
+  display: block;
+}
+
+.upf-toggle-btn .x-toggle-btn {
+  background-color: @upf-gray; // Switch color when OFF
+  border-radius: 20px !important;
+  padding: 2px;
+
+  &:after {
+    border-radius: 30px !important;
+    background-color: @color-text-contrast;
   }
+}
 
-  .upf-toggle-btn .x-toggle-btn {
-    background-color: @upf-gray; // Switch color when OFF
-    border-radius: 20px !important;
-    padding: 2px;
+// Switch color when ON.
+.upf-toggle-btn .x-toggle-container-checked .x-toggle-btn {
+  background-color: @upf-primary-bright-purple !important;
+}
 
-    &:after {
-      border-radius: 30px !important;
-      background-color: @color-text-contrast;
+//
+// Radio buttons
+//
+.upf-radio-group {
+  display: table;
+  width: 100%;
+
+  .btn.upf-radio-btn {
+    border: 1px solid @upf-gray;
+    color: @upf-primary-rock-blue;
+    background-color: @upf-gray-light;
+    font-weight: 100;
+    font-family: @font-text-body;
+    box-shadow: none;
+    outline: none;
+    height: 37px;
+    line-height: 25px;
+    border-radius: @default-radius;
+
+    input{
+      display: none;
+    }
+
+    &.active {
+      color: @upf-feedback-success;
+      transition: color 0.5s linear;
     }
   }
-
-  // Switch color when ON.
-  .upf-toggle-btn .x-toggle-container-checked .x-toggle-btn {
-    background-color: @upf-primary-bright-purple !important;
-  }
+}
