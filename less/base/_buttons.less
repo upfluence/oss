@@ -35,6 +35,7 @@
   .btn;
   .btn-md;
   border-radius: @default-radius;
+  font-family: @font-text-body;
 
   &:focus,
   &:active {
@@ -145,6 +146,58 @@
 
   &:hover {
     color: @upf-primary-orange;
+  }
+}
+
+.upf-btn--default {
+  .outline(@upf-primary-rock-blue-light);
+  background-color: @upf-primary-white;
+
+  &:hover {
+    background-color: @upf-gray-light;
+    color: @upf-primary-rock-blue-dark;
+    transition: color 0.2s linear, background 0.2s linear;
+  }
+
+  &:focus, &:active {
+    border-color: @upf-primary-rock-blue-dark;
+    box-shadow: none;
+    color: @upf-primary-rock-blue-dark;
+  }
+
+  &.disabled, &.disabled:hover, &:disabled:hover, &.disabled:focus, &:disabled:focus {
+    .disabled-button;
+  }
+}
+
+.upf-btn--primary {
+  .upf-btn--purple;
+  border: 1px solid @upf-primary-bright-purple;
+}
+.upf-btn--primary.upf-btn--dark-bg {
+  .fill(@upf-primary-white);
+  color: @upf-primary-bright-purple;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.upf-btn--secondary { .upf-btn--purple--reversed; }
+.upf-btn--secondary.upf-btn--dark-bg {
+  .outline(@upf-primary-white);
+  color: @upf-primary-white;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.upf-btn.upf-btn--dark-bg {
+  &:disabled, &.disabled {
+    border-color: transparent;
+    background-color: fade(@upf-gray, 75%);
+    opacity: 1;
   }
 }
 
