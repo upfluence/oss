@@ -142,3 +142,14 @@
   display: block;
   opacity: 1;
 }
+
+.upf-table__container--compact {
+  .upf-datatable__row {
+    border-bottom: none;
+  }
+
+  .upf-datatable__row:not(.upf-datatable__row--header) td {
+    border-right: none;
+    padding-right: @spacing-sm;
+  }
+}
