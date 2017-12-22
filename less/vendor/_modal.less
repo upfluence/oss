@@ -7,23 +7,42 @@
     box-shadow: none;
     border-radius: @default-radius;
 
-    .modal-header {
-      background-color: @upf-primary-white;
-      border-bottom: 1px solid @upf-gray-dark;
+    .modal-title {
+      font-weight: bold;
+      color: @upf-primary-rock-blue;
       border: none;
+      padding-top: @spacing-xxx-sm;
+      padding-bottom: @spacing-md;
+
+      .text-size-5;
+    }
+
+    .modal-header {
+      background-color: @upf-gray-light;
       border-radius: @default-radius;
       box-shadow: none;
       color: @upf-primary-bright-purple;
       text-align: center;
+      border: none;
 
       button {
         color: @upf-primary-black;
       }
+
+      .close {
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
     }
 
     .modal-footer {
+      border: none;
       background-color: @upf-gray-light;
-      border-top: 1px solid @upf-gray-dark;
+      border-radius: @default-radius;
+      text-align: center;
+      padding: @spacing-sm 0;
     }
   }
 }
