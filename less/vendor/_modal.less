@@ -4,8 +4,9 @@
 
 .modal {
   .modal-content {
-    box-shadow: none;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
     border-radius: @default-radius;
+    border: none;
 
     .modal-title {
       font-weight: bold;
@@ -38,9 +39,8 @@
     }
 
     .modal-footer {
-      border: none;
       background-color: @upf-gray-light;
-      border-radius: @default-radius;
+      border-radius: 0 0 @default-radius @default-radius;
       text-align: center;
       padding: @spacing-sm 0;
     }
