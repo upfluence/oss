@@ -1,0 +1,35 @@
+// Custom nav-tabs in modal
+.modal-content .nav-tabs {
+  padding: 0 16px 0 16px;
+  display: flex;
+  flex-direction: row;
+  background-color: @upf-gray-light;
+
+  li {
+    text-align: center;
+    flex-grow: 1;
+    float: none;
+
+    > a {
+      border-radius: @default-radius @default-radius 0 0;
+      color: @upf-primary-bright-purple;
+
+
+      &:hover {
+        border: 1px solid transparent;
+        background-color: inherit;
+      }
+    }
+
+    &.active > a {
+      border: 1px solid @upf-gray;
+      border-bottom-color: transparent;
+      color: @upf-gray-dark;
+      background-color: @upf-primary-white;
+
+      &:hover {
+        background-color: @upf-primary-white;
+      }
+    }
+  }
+}
