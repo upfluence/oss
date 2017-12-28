@@ -3,6 +3,8 @@
 @import '../mixins/_coloring';
 @import '../mixins/_inputs';
 
+@input-height: 37px;
+
 //
 // Offer some feedback on an input.
 // Feedbacks can be either an Error or a Help offer.
@@ -72,6 +74,12 @@
   }
 }
 
+.upf-input-container {
+  // Override selectize height
+  .selectize-input {
+    height: @input-height;
+  }
+}
 
 //
 // A standard text field.
@@ -80,7 +88,7 @@
 .upf-input {
   border: 1px solid @upf-gray;
   border-radius: @default-radius;
-  height: 37px;
+  height: @input-height;
   padding: 0 1em;
   color: @upf-primary-rock-blue;
   background-color: @upf-gray-light;
