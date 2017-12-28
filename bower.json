@@ -1,6 +1,6 @@
 {
   "name": "upfluence-oss",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "money-formatter": "^0.1.4",
