@@ -7,8 +7,6 @@
 @import '../mixins/_coloring';
 @import '../mixins/_inputs';
 
-@input-height: 37px;
-
 label {
   color: @upf-primary-rock-blue;
   font-weight: 100;
@@ -22,7 +20,7 @@ label {
 .upf-input {
   border: 1px solid @upf-gray;
   border-radius: @default-radius;
-  height: @input-height;
+  height: @input-size-default;
   padding: 0 1em;
   color: @upf-primary-rock-blue;
   background-color: @upf-gray-light;
@@ -75,7 +73,7 @@ label {
 // --------------------------------------------------
 
 .upf-input--small {
-  height: 34px;
+  height: @input-size-sm;
 }
 
 
