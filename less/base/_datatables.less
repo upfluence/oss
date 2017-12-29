@@ -23,6 +23,24 @@
   }
 }
 
+.upf-datatable__contextual-actions {
+  display: inline-flex;
+  flex-grow: 1;
+
+  .upf-datatable__selected-count {
+    background-color: @upf-primary-rock-blue;
+    border-radius: @default-radius;
+    color: @upf-primary-white;
+    font-size: 18/@rem;
+
+    line-height: 1.4;
+    height: 34px;
+    padding: @spacing-xxx-sm @spacing-xx-sm;
+
+    text-align: center;
+  }
+}
+
 .upf-datatable__row {
   border-bottom: 1px solid lighten(@upf-gray, 15%);
 
