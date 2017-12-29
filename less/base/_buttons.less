@@ -1,3 +1,7 @@
+//
+// Buttons
+// --------------------------------------------------
+
 @import '../core/_colors';
 @import '../core/_variables';
 @import '../mixins/_buttons';
@@ -23,19 +27,27 @@
   padding: 1.1rem 5rem;
 }
 
-//
-// Extend the bootstrap buttons for upf-btn class.
-//
-// This way, we can skip using the btn class in HTML code, but it's still
-// compatible with code mentioning it. This is a good way to be only use
-// Upfluence OSS classes in HTML code.And to be independent from Bootstrap on
-// the markup side.
-//
+
+// Base styles
+// --------------------------------------------------
+
 .upf-btn {
-  .btn;
-  .btn-md;
+  background-image: none;
   border-radius: @default-radius;
+  cursor: pointer;
+  display: inline-block;
   font-family: @font-text-body;
+
+  height: 37px;
+  padding: @spacing-xxx-sm @spacing-x-sm;
+
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+
+  a& {
+    line-height: 2;
+  }
 
   &:focus,
   &:active {
@@ -51,103 +63,22 @@
     }
   }
 
-  // make inversed buttons 1px smaller since there is no borders.
-  &.upf-btn--purple--reversed,
-  &.upf-btn--orange--reversed,
-  &.upf-btn--rock-blue--reversed,
-  &.upf-btn.disabled {
-    padding: 0.7rem 3rem;
-  }
-  &.upf-btn--x-small.upf-btn--purple--reversed,
-  &.upf-btn--x-small.upf-btn--orange--reversed,
-  &.upf-btn--x-small.upf-btn--rock-blue--reversed,
-  &.upf-btn--x-small.disabled {
-    padding: 0.1rem 1.5rem;
-  }
-  &.upf-btn--small.upf-btn--purple--reversed,
-  &.upf-btn--small.upf-btn--orange--reversed,
-  &.upf-btn--small.upf-btn--rock-blue--reversed,
-  &.upf-btn--small.disabled {
-    padding: 0.5rem 2rem;
-  }
-  &.upf-btn--large.upf-btn--purple--reversed,
-  &.upf-btn--large.upf-btn--orange--reversed,
-  &.upf-btn--large.upf-btn--rock-blue--reversed,
-  &.upf-btn--large.disabled {
-    padding: 1rem 5rem;
+  &.upf-btn--dark-bg {
+    &:disabled, &.disabled {
+      border-color: transparent;
+      background-color: fade(@upf-gray, 75%);
+      color: @upf-primary-white;
+      opacity: 1;
+
+      .fa { color: @upf-primary-white; }
+    }
   }
 }
-.upf-btn--x-small { .btn-xs; border-radius: @default-radius }
-.upf-btn--small { .btn-sm; border-radius: @default-radius }
-.upf-btn--large { .btn-lg; border-radius: @default-radius }
 
-//
-// Main Buttons
-// Those buttons can be used for both Call to Actions or Primary actions.
-// There should be only one main button in a given page or components group.
-//
 
-.upf-btn--purple {
-  .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
-}
 
-.upf-btn--orange { // depreciated
-  .build-button(@upf-primary-orange, @upf-primary-orange-dark);
-}
-
-.upf-btn--rock-blue { // depreciated
-  .build-button(@upf-primary-rock-blue, darken(@upf-primary-rock-blue, 10%));
-}
-
-// secondary buttons
-.upf-btn--yellow {
-  .build-button(@upf-secondary-yellow, @upf-secondary-yellow-dark);
-}
-
-.upf-btn--pink {
-  .build-button(@upf-secondary-pink, @upf-secondary-pink-dark);
-}
-
-.upf-btn--green {
-  .build-button(@upf-secondary-green, @upf-secondary-green-dark);
-}
-
-.upf-btn--blue {
-  .build-button(@upf-secondary-blue, @upf-secondary-blue-dark);
-}
-
-//
-// Secondary Buttons
-// Those can be used to back main buttons. As there can be only one main button
-// in a given page or components group, a Secondary buttons is the way to go
-// if you want to have an alternative button.
-//
-.upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange); }
-.upf-btn--purple--reversed { .reversed-colors(@upf-primary-bright-purple); }
-.upf-btn--rock-blue--reversed { .reversed-colors(@upf-primary-rock-blue); }
-
-//
-// Tertiary Buttons
-// Buttons extending the Secondary buttons but with no background nor border.
-// They then have the look and feel of a Link and are usable as tertiary buttons
-// if a page or components group already have a Main and a Secondary button.
-//
-.upf-btn--purple--transparent {
-  &:extend(.upf-btn--purple--reversed);
-  .remove-outer-colors;
-
-  &:hover {
-    color: @upf-primary-bright-purple;
-  }
-}
-.upf-btn--orange--transparent {
-  &:extend(.upf-btn--orange--reversed);
-  .remove-outer-colors;
-
-  &:hover {
-    color: @upf-primary-orange;
-  }
-}
+// Alternate buttons
+// --------------------------------------------------
 
 .upf-btn--default {
   .outline(@upf-primary-rock-blue-light);
@@ -165,64 +96,45 @@
     color: @upf-primary-rock-blue-dark;
   }
 
-  &.disabled, &.disabled:hover, &:disabled:hover, &.disabled:focus, &:disabled:focus {
+  &.disabled,
+  &.disabled:hover,
+  &:disabled:hover,
+  &.disabled:focus,
+  &:disabled:focus {
     .disabled-button;
   }
 }
 
 .upf-btn--primary {
-  .upf-btn--purple;
+  .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
   border: 1px solid @upf-primary-bright-purple;
-}
 
-.upf-btn--primary.upf-btn--dark-bg {
-  .fill(@upf-primary-white);
-  color: @upf-primary-bright-purple;
-
-  .fa {
+  &.upf-btn--dark-bg {
+    .fill(@upf-primary-white);
     color: @upf-primary-bright-purple;
-  }
-
-  &:hover {
-    opacity: 0.85;
-  }
-}
-
-.upf-btn--secondary { .upf-btn--purple--reversed; }
-.upf-btn--secondary.upf-btn--dark-bg {
-  .outline(@upf-primary-white);
-  color: @upf-primary-white;
-
-  .fa {
-    color: @upf-primary-white;
-  }
-
-  &:hover {
-    opacity: 0.75;
-  }
-}
-
-.upf-btn.upf-btn--dark-bg {
-  &:disabled, &.disabled {
-    border-color: transparent;
-    background-color: fade(@upf-gray, 75%);
-    color: @upf-primary-white;
-    opacity: 1;
 
     .fa {
-      color: @upf-primary-white;
+      color: @upf-primary-bright-purple;
+    }
+
+    &:hover {
+      opacity: 0.85;
     }
   }
 }
 
-//
-// Destructive Button
-// Destructive Buttons, are buttons used to perform any action that leads to
-// dangerous/undoable changes.
-//
-// Any action that leads to huge changes or loss of data, must be considered as
-// dangerous.
-//
+.upf-btn--secondary {
+  .reversed-colors(@upf-primary-bright-purple);
+
+  &.upf-btn--dark-bg {
+    .outline(@upf-primary-white);
+    color: @upf-primary-white;
+
+    .fa { color: @upf-primary-white; }
+    &:hover { opacity: 0.75; }
+  }
+}
+
 .upf-btn--destructive {
   .outline(@upf-feedback-error);
   color: @upf-feedback-error;
@@ -231,6 +143,28 @@
     color: @upf-feedback-error;
   }
 }
+
+
+
+// Button Sizes
+// --------------------------------------------------
+
+.upf-btn--small {
+  height: @input-size-sm;
+  line-height: 1.8;
+
+  a& {
+    line-height: 1.8;
+  }
+}
+
+.upf-btn--x-small {
+  height: @input-size-x-sm;
+  line-height: 1.6;
+  padding: 0 @spacing-xx-sm;
+}
+
+
 
 // A Button with a right icon
 // This type is of button can be typically used to announce that clicking it
@@ -298,7 +232,7 @@
     font-family: @font-text-body;
     box-shadow: none;
     outline: none;
-    height: 37px;
+    height: @input-size-default;
     line-height: 25px;
     border-radius: @default-radius;
 
@@ -311,5 +245,39 @@
       background-color: @upf-primary-white;
       transition: all 0.2s linear;
     }
+  }
+}
+
+
+
+// Deprecated
+// --------------------------------------------------
+
+.upf-btn--purple {
+  .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
+}
+
+.upf-btn--orange {
+  .build-button(@upf-primary-orange, @upf-primary-orange-dark);
+}
+
+.upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange); }
+.upf-btn--purple--reversed { .reversed-colors(@upf-primary-bright-purple); }
+.upf-btn--rock-blue--reversed { .reversed-colors(@upf-primary-rock-blue); }
+
+.upf-btn--purple--transparent {
+  &:extend(.upf-btn--purple--reversed);
+  .remove-outer-colors;
+
+  &:hover {
+    color: @upf-primary-bright-purple;
+  }
+}
+.upf-btn--orange--transparent {
+  &:extend(.upf-btn--orange--reversed);
+  .remove-outer-colors;
+
+  &:hover {
+    color: @upf-primary-orange;
   }
 }
