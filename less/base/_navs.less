@@ -19,7 +19,7 @@
   line-height: 2.6rem;
   margin-left: @spacing-x-sm;
 
-  a:not(.upf-btn) {
+  >a:not(.upf-btn) {
     color: @color-text-contrast-light;
     font-size: 16/@rem;
     padding: @spacing-xxx-sm @spacing-xx-sm;
@@ -27,7 +27,7 @@
     text-decoration: none !important;
   }
 
-  a.active, a:hover:not(.upf-btn):not(.skip-hover-style) {
+  >a.active, >a:hover:not(.upf-btn):not(.skip-hover-style) {
     border-bottom: none;
     border-radius: @default-radius;
     transition: color 0.2s linear, background 0.2s linear;
@@ -35,7 +35,7 @@
     color: @color-text-contrast;
   }
 
-  a:active {
+  >a:active {
     color: @color-text-contrast-light;
   }
 
