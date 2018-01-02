@@ -54,7 +54,7 @@
     outline: none !important; // fix that bootstrap outline once and for all
   }
 
-  &.disabled {
+  &.disabled, &:disabled {
     opacity: 0.5;
 
     &:hover,
@@ -97,6 +97,7 @@
   }
 
   &.disabled,
+  &:disabled,
   &.disabled:hover,
   &:disabled:hover,
   &.disabled:focus,
