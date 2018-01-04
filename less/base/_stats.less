@@ -1,7 +1,32 @@
 @import '../core/_variables';
 
+.upf-stat--new {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+
+  .upf-stat__name {
+    color: @upf-primary-bright-purple;
+    font-family: @font-text-title;
+    font-size: 18/@rem;
+  }
+
+  .upf-stat__icon {
+    color: @upf-primary-bright-purple;
+    display: inline-flex;
+    font-size: 12/@rem;
+  }
+
+  .upf-stat__data {
+    font-family: @font-text-title;
+    color: @upf-primary-bright-purple;
+    font-size: 72/@rem;
+    margin-top: @spacing-xxx-sm;
+  }
+}
+
 /*
- * Standard Stat.
+ * Standard Stat. DEPRECATED
  * A standard stat is the tiniest item of the Stats widget. It only provides a
  * number about a given indicator.
 */
