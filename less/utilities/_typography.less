@@ -1,7 +1,10 @@
 @import '../core/_variables';
 
+// Text Size Utility classeso
+// --------------------------------------------------
+
 @min_font_size: 8;
-@breaking_size: 18; // size after what the step is 6px;
+@breaking_size: 18; // size after what the step is 6px
 
 .text-size(@id, @size) {
   .text-size-@{id} {
@@ -25,17 +28,16 @@
 .text-size-loop(0, @min_font_size, 10);
 .text-size(normal, @font-size-body);
 
-//
 // Line height configurations.
-// Sometimes, the nature of the text inside a paragraph makes that the line
-// height must be increased or decreased for better readability.
 .upf-text-lines--big {
   line-height: 1.8;
 }
 
-//
-// Utility classes for changing the color of the text
-//
+
+
+// Text Color Utility classeso
+// --------------------------------------------------
+
 .text-color-default { color: @color-text; }
 .text-color-default-light { color: @color-text-light; }
 .text-color-default-lighter { color: @color-text-lighter; }
@@ -43,18 +45,22 @@
 .text-color-contrast-light { color: @color-text-contrast-light; }
 .text-color-contrast-lighter { color: @color-text-contrast-lighter; }
 
-//
-// Utility classes for setting Brand Colors on text
-//
+.text-color-info { color: @upf-feedback-info; }
+.text-color-alert { color: @upf-feedback-alert; }
+.text-color-success { color: @upf-feedback-success; }
+.text-color-error { color: @upf-feedback-error; }
+
 .text-color-facebook { color: @facebook-brand-color; }
 .text-color-pinterest { color: @pinterest-brand-color; }
 .text-color-instagram { color: @instagram-brand-color; }
 .text-color-youtube { color: @youtube-brand-color; }
 .text-color-twitter { color: @twitter-brand-color; }
 
-//
-// Utility classes for changing the weight or style of the text
-//
+
+
+// Text Style Utility classeso
+// --------------------------------------------------
+
 .text-style-normal { font-style: normal }
 .text-style-bold { font-weight: bold }
 .text-style-italic { font-style: italic }
