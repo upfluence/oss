@@ -8,23 +8,26 @@
     border-radius: @default-radius;
     border: none;
 
-    .modal-title {
-      .text-size-5;
-
-      font-weight: bold;
-      color: @upf-primary-rock-blue;
-      border: none;
-      padding-top: @spacing-xxx-sm;
-      padding-bottom: @spacing-md;
-    }
-
     .modal-header {
       background-color: @upf-gray-light;
-      border-radius: @default-radius;
+      border-radius: @default-radius @default-radius 0 0;
       box-shadow: none;
       color: @upf-primary-bright-purple;
       text-align: center;
-      border: none;
+
+      &.modal-header__borderless {
+        border: 0;
+      }
+
+      .modal-title, h4 { // Please use the .modal-title class and not H4.
+        .text-size-5;
+
+        display: inline-block;
+        font-family: @font-text-title;
+        color: @upf-primary-rock-blue;
+        padding-top: @spacing-xxx-sm;
+        padding-bottom: @spacing-md;
+      }
 
       button {
         color: @upf-primary-black;
@@ -36,6 +39,10 @@
         right: 0;
         top: 0;
       }
+    }
+
+    .modal-body {
+      padding: @spacing-x-lg @spacing-x-sm;
     }
 
     .modal-footer {
