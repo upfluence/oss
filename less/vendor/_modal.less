@@ -8,15 +8,6 @@
     border-radius: @default-radius;
     border: none;
 
-    .modal-title {
-      .text-size-5;
-
-      color: @upf-primary-rock-blue;
-      border: none;
-      padding-top: @spacing-xxx-sm;
-      padding-bottom: @spacing-md;
-    }
-
     .modal-header {
       background-color: @upf-gray-light;
       border-radius: @default-radius;
@@ -24,6 +15,15 @@
       color: @upf-primary-bright-purple;
       text-align: center;
       border: none;
+
+      h4, .modal-title { // Please use the .modal-title class and not only H4.
+        .text-size-5;
+
+        color: @upf-primary-rock-blue;
+        border: none;
+        padding-top: @spacing-xxx-sm;
+        padding-bottom: @spacing-md;
+      }
 
       button {
         color: @upf-primary-black;
@@ -35,6 +35,10 @@
         right: 0;
         top: 0;
       }
+    }
+
+    .modal-body {
+      padding: @spacing-x-lg @spacing-x-sm;
     }
 
     .modal-footer {
