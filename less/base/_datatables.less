@@ -1,6 +1,16 @@
 @import '../core/_colors';
 @import '../core/_variables';
 
+@keyframes progress {
+  0% {
+    background-position: -200px 0;
+  }
+
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
 .upf-datatable__table {
   position: absolute;
   left: 0;
@@ -72,6 +82,19 @@
       color: @upf-primary-bright-purple;
       transition: color 0.4s;
     }
+  }
+
+  .upf-datatable__column--locked .skeleton-placeholder {
+    height: 10px;
+    animation: progress 1.2s ease-in-out infinite;
+    background-color: #eee;
+    background-image: linear-gradient(90deg, #eee, #f5f5f5, #eee);
+    background-size: 200px 100%;
+    background-repeat: no-repeat;
+    border-radius: @default-radius;
+    display: inline-block;
+    line-height: 1;
+    width: 100%;
   }
 
   td:not(:last-child) {
