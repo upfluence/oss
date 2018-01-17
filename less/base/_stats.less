@@ -15,6 +15,7 @@
     color: @upf-primary-bright-purple;
     display: inline-flex;
     font-size: 12/@rem;
+    margin-left: @spacing-xxx-sm;
   }
 
   .upf-stat__data {
@@ -23,6 +24,21 @@
     font-size: 72/@rem;
     line-height: 6rem;
     margin-top: 8px;
+  }
+
+  .upf-stat__data--null {
+    color: darken(@upf-gray-light, 5%);
+  }
+
+  .upf-stat__label {
+    color: @color-text-lighter;
+  }
+}
+
+.upf-stat--new--small {
+  .upf-stat__data {
+    font-size: 30/@rem;
+    line-height: 1.4;
   }
 }
 
