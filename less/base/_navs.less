@@ -74,6 +74,25 @@
   }
 }
 
+.upf-nav__item.upf-nav__item-access-panel {
+  a, a:hover, a:active, a.active {
+    background-color: @upf-primary-white !important;
+    color: @upf-primary-bright-purple !important;
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-left: 1px solid @upf-primary-bright-purple !important;
+      border-radius: @default-radius;
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+    }
+  }
+}
+
 // A Subnavigation, with tabs that are more contextual to the current page.
 //
 .upf-contextual-nav {
