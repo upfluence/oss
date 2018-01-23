@@ -38,6 +38,7 @@
   display: inline-block;
   font-family: @font-text-body;
 
+  line-height: 1rem;
   height: 37px;
   padding: @spacing-xxx-sm @spacing-x-sm;
 
@@ -45,10 +46,6 @@
   text-decoration: none !important;
   touch-action: manipulation;
   vertical-align: middle;
-
-  a& {
-    line-height: 2;
-  }
 
   &:focus,
   &:active {
@@ -153,17 +150,12 @@
 
 .upf-btn--small {
   height: @input-size-sm;
-  line-height: 1.8;
-
-  a& {
-    line-height: 1.8;
-  }
 }
 
 .upf-btn--x-small {
   height: @input-size-x-sm;
-  line-height: 1.6;
   padding: 0 @spacing-xx-sm;
+  line-height: 2rem;
 }
 
 
