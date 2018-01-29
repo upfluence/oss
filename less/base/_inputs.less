@@ -87,7 +87,17 @@ label {
   // Override selectize height
   .selectize-input {
     height: @input-size-default;
+    border-radius: @default-radius;
   }
+}
+
+.selectize-control.multi .selectize-input > div {
+  border-radius: @default-radius;
+  padding-left: 8px;
+}
+
+.selectize-control.multi .selectize-input.has-items {
+  padding-top: 7px;
 }
 
 .upf-input-container--has-feedback {
