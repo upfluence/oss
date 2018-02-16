@@ -8,6 +8,7 @@
   .logo-container {
     position: relative;
     width: 100%;
+    padding: @spacing-xxx-sm @spacing-xxx-sm;
 
     a, a:hover {
       /*.reset-link;*/
@@ -28,6 +29,7 @@
 
     a, i {
       color: @color-text-contrast;
+      text-decoration: none !important;
     }
   }
 }
@@ -46,6 +48,7 @@
   .logo-container {
     margin-top: 0;
     text-align: center;
+    padding: @spacing-xx-sm @spacing-xx-sm @spacing-md @spacing-xx-sm;
 
     img {
       width: 100%;
@@ -54,21 +57,55 @@
 
   .header-item {
     font-size: 1.5em;
-    margin-top: 0;
-    padding: @spacing-xx-sm;
+    margin-top: @spacing-xxx-sm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      border-radius: @default-radius;
+      max-width: 24px;
+      height: 24px;
+      padding: 24px;
+      color: @upf-gray-light;
+
+      &.notification--small {
+        background-image: url('images/notification-small.png');
+        background-position: right 6px top 6px;
+        background-repeat: no-repeat;
+      }
+
+      img {
+        flex: 1;
+        max-width: 18px;
+        height: 18px;
+        align: middle;
+      }
+
+      &:hover {
+        background-color: @upf-primary-bright-purple;
+        transition: all 0.2s ease;
+      }
+
+      &:active {
+        img {
+          opacity: 0.8;
+        }
+      }
+    }
 
     // Only change the color of the icons in the sidebar when it's active
     // route.
     a.active, a.active i {
-      color: @upf-primary-orange;
+      color: @upf-primary-white;
       border-bottom: none;
+      background-color: @upf-primary-bright-purple;
+      transition: all 0.5s ease;
     }
-  }
-
-  //
-  // Makes the logo bigger than the menu icons.
-  .header-item:first-child {
-    padding: @spacing-xx-sm @spacing-xxx-sm;
   }
 
   .app-header__bottom {
