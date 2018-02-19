@@ -1,12 +1,13 @@
-<svg class='upf-icon upf-icon-envelope-open' width="25px" height="31px" viewBox="40 13 25 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <desc>Created by the Upfluence's Design Squad with Sketch.</desc>
-  <defs>
-    <path d="M0.757575758,13.6767655 C0.757575758,12.9714847 1.51235993,12.3997416 2.42772115,12.3997416 L22.5722789,12.3997416 C23.4946747,12.3997416 24.2424242,12.9768635 24.2424242,13.6767655 L24.2424242,29.0796655 C24.2424242,29.7849464 23.4876401,30.3566895 22.5722789,30.3566895 L2.42772115,30.3566895 C1.50532532,30.3566895 0.757575758,29.7795676 0.757575758,29.0796655 L0.757575758,13.6767655 Z" id="envelope-open-path-1"></path>
-    <path d="M5.25993471,7.8984483 C5.3910791,6.80542003 6.38404227,5.81337774 7.48036461,5.68235094 L19.1714373,4.28509414 C20.2666024,4.15420564 21.1544092,4.9398696 21.1544092,6.05530963 L21.1544092,19.5386018 C21.1544092,20.6471533 20.2608957,21.5458118 19.160344,21.5458118 L5.61655355,21.5458118 C4.51526172,21.5458118 3.72866327,20.6608923 3.85994623,19.5667091 L5.25993471,7.8984483 Z" id="envelope-open-path-3"></path>
-  </defs>
-  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(40.000000, 13.000000)">
-    <use id="envelope-open-Rectangle-33" stroke="#F5A623" stroke-width="4" xlink:href="#envelope-open-path-1"></use>
-    <use id="envelope-open-Rectangle-34" stroke="#F5A623" stroke-width="4" fill="#FFFFFF" transform="translate(12.500022, 12.908333) rotate(-315.000000) translate(-12.500022, -12.908333) " xlink:href="#envelope-open-path-3"></use>
-    <path d="M23.4848485,19.6857064 L13.9928977,28.1791264 C13.1683931,28.916895 11.8293844,28.9149062 11.0071023,28.1791264 L1.51515152,19.6857064" id="envelope-open-Triangle-5-Copy-2" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" transform="translate(12.500000, 24.208707) rotate(-180.000000) translate(-12.500000, -24.208707) "></path>
-  </g>
+<svg class='upf-icon upf-icon-envelope-open' width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g stroke="#212121" stroke-width="2">
+            <g transform="translate(1.500000, -1.500000)">
+                <path d="M1.88767166,10.3997833 C1.77328739,10.4641553 1.68950984,10.5234176 1.63636364,10.5735094 L1.63636364,23.3893969 C1.63636364,23.3586303 1.76934467,23.4604492 2.03928576,23.4604492 L18.9607142,23.4604492 C19.2296354,23.4604492 19.3636364,23.3584438 19.3636364,23.3893969 L19.3636364,10.4708356 C19.3636364,10.5016022 19.2306553,10.3997833 18.9607142,10.3997833 L1.88767166,10.3997833 Z" id="Rectangle-33"></path>
+                <path d="M13.2315092,16.3628367 L16.5380602,13.0590206 L16.7894223,4.05485568 L5.78218086,5.0059748 C5.44281577,5.03529882 5.17382533,5.30465316 5.14496012,5.64405758 L4.2106089,16.6303963 L13.2315092,16.3628367 Z" id="Rectangle-34" transform="translate(10.500016, 10.342601) rotate(-315.000000) translate(-10.500016, -10.342601) "></path>
+                <path d="M18.7272727,15.5602526 L11.7032946,22.5984282 C11.0400739,23.2629895 9.96369397,23.2640762 9.29913274,22.6008555 C9.29832282,22.6000473 9.29751372,22.5992382 9.29670543,22.5984282 L2.27272727,15.5602526" id="Triangle-5-Copy-2" stroke-linecap="round" stroke-linejoin="round" transform="translate(10.500000, 19.328907) rotate(-180.000000) translate(-10.500000, -19.328907) "></path>
+            </g>
+        </g>
+    </g>
 </svg>
