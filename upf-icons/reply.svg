@@ -1,8 +1,12 @@
-<svg class='upf-icon upf-icon-reply' width="26px" height="21px" viewBox="38 20 26 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <desc>Created by the Upfluence's Design Squad with Sketch.</desc>
-  <defs></defs>
-  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(40.000000, 21.000000)">
-    <path d="M12.5172414,9.39439655 L18.3891359,9.39439655 C20.7630569,9.39439655 22.6875,11.3256619 22.6875,13.6971983 L22.6875,18" id="Path-18" stroke="#00B489" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-    <path d="M0.20425142,9.46947569 C-0.0687253081,9.27727605 -0.067441549,8.96475498 0.20425142,8.77345921 L11.4380558,0.863872238 C11.7110325,0.671672597 11.9323239,0.859664385 11.9323239,1.30011742 L11.9323239,16.9428175 C11.9323239,17.3759487 11.7097488,17.5703584 11.4380558,17.3790627 L0.20425142,9.46947569 Z" id="Triangle-5" stroke="#00B489" stroke-width="2"></path>
-  </g>
+<svg class='upf-icon upf-icon-reply' width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g stroke="#00B489" stroke-width="2">
+            <g transform="translate(2.000000, 4.500000)">
+                <path d="M11,7 L12,7 C16.418278,7 20,10.581722 20,15" id="Path-18" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M0.188292377,7.31393792 C-0.0633555036,7.14092893 -0.0621720501,6.85961232 0.188292377,6.68741697 L10.5443512,-0.432417331 C10.7959991,-0.605426314 11,-0.436205041 11,-0.0397301486 L11,14.041085 C11,14.4309692 10.7948156,14.6059676 10.5443512,14.4337722 L0.188292377,7.31393792 Z" id="Triangle-5"></path>
+            </g>
+        </g>
+    </g>
 </svg>
