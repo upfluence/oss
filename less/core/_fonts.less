@@ -11,3 +11,28 @@
        url(fonts/GT-Eesti-Text-Book.eot),
        url(fonts/GT-Eesti-Text-Book.woff),
 }
+
+@font-face {
+    font-family: 'upf-icons';
+    src: url('fonts/upf-icons.eot?40562763');
+    src: url('fonts/upf-icons.eot?40562763#iefix') format('embedded-opentype'),
+         url('fonts/upf-icons.woff?40562763') format('woff'),
+         url('fonts/upf-icons.ttf?40562763') format('truetype'),
+         url('fonts/upf-icons.svg?40562763#upf-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.upf-icon {
+  font-family: 'upf-icons';
+}
+
+.upf-icon--search:before { content: '\e800'; }
+.upf-icon--monitor:before { content: '\e801'; }
+.upf-icon--finance:before { content: '\e802'; }
+.upf-icon--list:before { content: '\e803'; }
+.upf-icon--help:before { content: '\e804'; }
+.upf-icon--workflow:before { content: '\e805'; }
+.upf-icon--inbox:before { content: '\e806'; }
+.upf-icon--cog:before { content: '\e807'; }
+.upf-icon--exit:before { content: '\e808'; }

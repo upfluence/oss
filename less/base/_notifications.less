@@ -1,0 +1,34 @@
+@import '../core/_variables';
+
+/*
+ * Notifications
+ * Notifications come in the form of a littre red dot. Different sizes exist
+ * to maintain scale hierarchy troughout the apps. Notifications can be applied
+ * on user interface elements in the upper right corner on as inline text
+ * information.
+ */
+
+.upf-notification--corner {
+  position: relative;
+}
+
+.upf-notification--corner::after {
+  content: '';
+  position: absolute;
+  background-color: @upf-primary-orange;
+  top: 6px;
+  right: 6px;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+}
+
+.upf-notification--inline::after {
+  content: '';
+  display: inline-block;
+  background-color: @upf-primary-orange;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  margin-left: @spacing-xxx-sm;
+}
