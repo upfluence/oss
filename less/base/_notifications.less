@@ -23,17 +23,12 @@
   border-radius: 50%;
 }
 
-.upf-notification--md {
-  position: relative;
-}
-
 .upf-notification--inline::after {
   content: '';
-  position: absolute;
+  display: inline-block;
   background-color: @upf-primary-orange;
-  top: 6px;
-  right: 6px;
   height: 6px;
   width: 6px;
   border-radius: 50%;
+  margin-left: @spacing-xxx-sm;
 }
