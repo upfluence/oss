@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>selection</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="6.25" cy="6.25" r="5.75"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-19" transform="translate(0.750000, 0.750000)">
+            <g>
+                <g stroke-width="1" fill-rule="evenodd" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill-opacity="0" fill="#D8D8D8" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" id="Group-18">
+                        <g transform="translate(0.000000, 1.923077)">
+                            <g transform="translate(0.480769, 0.000000)">
+                                <path d="M5.21923082,2.24038462 C5.21923082,3.33562271 4.33827844,4.24038462 3.21923082,4.24038462 C2.1001832,4.24038462 1.21923082,3.35943223 1.21923082,2.24038462 C1.21923082,1.14514652 2.1001832,0.240384615 3.21923082,0.240384615 C4.33827844,0.240384615 5.21923082,1.14514652 5.21923082,2.24038462 Z" id="Path" fill="#FFFFFF"></path>
+                                <path d="M10.319231,2.24038462 C10.319231,3.33562271 9.43827858,4.24038462 8.31923096,4.24038462 C7.20018334,4.24038462 6.31923096,3.35943223 6.31923096,2.24038462 C6.31923096,1.14514652 7.20018334,0.240384615 8.31923096,0.240384615 C9.43827858,0.240384615 10.319231,1.14514652 10.319231,2.24038462 Z" id="Path-Copy-2" fill="#FFFFFF"></path>
+                                <path d="M11.4041685,7.69230769 C11.2229259,5.59485085 10.6253478,3.84615385 8.29184925,3.84615385 C7.06846166,3.84615385 6.27552525,4.48969174 5.77710808,5.39541174 C5.27869092,4.48969174 4.48575451,3.84615385 3.26236692,3.84615385 C0.951523684,3.84615385 0.203897932,5.59485085 0,7.69230769 C0.747231136,8.65839216 1.37899615,9.28228101 1.89529504,9.56397423 C2.66279795,9.98272464 3.95673563,10.4095012 5.77710808,10.844304 L10.0069958,9.74625808" id="Path" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <circle id="Oval-2" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="3.099999904632568,2.589999914169312" cx="8.25" cy="8.25" r="8.25"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
