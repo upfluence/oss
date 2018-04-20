@@ -1,0 +1,70 @@
+@import '../core/_colors';
+@import '../core/_variables';
+@import '../utilities/_typography';
+
+// font-size: none is not really accepted by browsers but is enough to cancel
+// Shepherd's inherit rule. Sorry for that.
+.shepherd-element.shepherd-theme-arrows.upf-shepherd .shepherd-content {
+  border-radius: @default-radius;
+  color: @color-text-light;
+  animation: backdrop 2.5s;
+  margin: 12px 100px 20px 80px;
+
+  @keyframes backdrop {
+    0% {
+      box-shadow: 0 0 0 3000px rgba(0,0,0, 0);
+    }
+    50% {
+      box-shadow: 0 0 0 3000px rgba(0,0,0, 0.4);
+    }
+    90% {
+      box-shadow: 0 0 0 3000px rgba(0,0,0, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 0 3000px rgba(0,0,0, 0);
+    }
+  }
+
+  .shepherd-text {
+    padding: @spacing-xx-sm @spacing-lg @spacing-lg @spacing-lg;
+    text-align: center;
+
+    .shepherd-text__title {
+      color: @upf-primary-bright-purple;
+      font-size: 30/@rem;
+      font-family: @font-text-title;
+    }
+  }
+
+  .text-size-5 { .text-size-5; }
+  .text-size-6 { .text-size-6; }
+  .text-size-7 { .text-size-7; }
+  .text-size-8 { .text-size-8; }
+  .text-size-9 { .text-size-9; }
+
+  .text-style-bold { .text-style-bold }
+
+  .text-color-bright-purple { .text-color-bright-purple; }
+}
+
+.shepherd-target.shepherd-enabled {
+  animation: pulse 1.5s infinite;
+  border-radius: @default-radius;
+
+  @onboarded-signal-color: rgb(0,185,255);
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 @onboarded-signal-color;
+    }
+    10% {
+      box-shadow: 0 0 0 4px fadeout(@onboarded-signal-color, 25%);
+    }
+    70% {
+      box-shadow: 0 0 0 12px fadeout(@onboarded-signal-color, 100%);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0,185,255, 0);
+    }
+  }
+}
