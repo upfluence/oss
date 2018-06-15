@@ -5,10 +5,11 @@
 
 /* Toastr messages styling */
 #toast-container {
-  margin-bottom: 16px;
+  margin-bottom: @spacing-xxx-sm;
 
   &.upf-toastr--container {
     .toast {
+      width: 100%;
       max-width: 700px;
       box-shadow: none;
       border: 1px solid @upf-primary-white;
@@ -35,9 +36,8 @@
         align-items: center;
 
         .toast-title__avatar {
-          width: @avatar-thumbnail;
-          height: @avatar-thumbnail;
-          border-radius: @avatar-thumbnail / 2;
+          .upf-image;
+          .upf-image--round-36;
           background-size: cover;
         }
 
