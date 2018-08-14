@@ -3,6 +3,11 @@
  * All image styles.
  */
 
+.squared-image(@size) {
+  width: @size;
+  height: @size;
+}
+
 .upf-image {
   border-radius: 50%;
 }
@@ -19,29 +24,15 @@
 }
 
 .upf-image--round-36 {
-  width: 36px;
-  height: 36px;
+  .squared-image(36px);
   font-size: 16/@rem;
 }
 
 .upf-image--round-48 {
-  width: 48px;
-  height: 48px;
+  .squared-image(48px);
   font-size: 18/@rem;
 }
 
-.upf-image--round-96 {
-  width: 96px;
-  height: 96px;
-}
-
-.upf-image--round-144 {
-  width: 144px;
-  height: 144px;
-}
-
-.upf-image--round-288 {
-  width: 288px;
-  height: 288px;
-}
-
+.upf-image--round-96  { .squared-image(96px);  }
+.upf-image--round-144 { .squared-image(144px); }
+.upf-image--round-288 { .squared-image(288px); }
