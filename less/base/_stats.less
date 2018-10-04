@@ -4,12 +4,12 @@
   display: flex;
   flex-flow: column;
   text-align: center;
+}
 
-  .upf-stat__name {
-    color: @upf-primary-bright-purple;
-    font-family: @font-text-title;
-    font-size: 18/@rem;
-  }
+.upf-stat__name {
+  color: @upf-primary-bright-purple;
+  font-family: @font-text-title;
+  font-size: 18/@rem;
 
   .upf-stat__icon {
     color: @upf-primary-bright-purple;
@@ -17,22 +17,29 @@
     font-size: 12/@rem;
     margin-left: @spacing-xxx-sm;
   }
+}
 
-  .upf-stat__data {
-    font-family: @font-text-title;
-    color: @upf-primary-bright-purple;
-    font-size: 72/@rem;
-    line-height: 6rem;
-    margin-top: 8px;
-  }
+.upf-stat__data {
+  font-family: @font-text-title;
+  color: @upf-primary-bright-purple;
+  font-size: 72/@rem;
+  line-height: 6rem;
+  margin-top: 8px;
 
-  .upf-stat__data--null {
-    color: darken(@upf-gray-light, 10%);
+  .upf-stat__icon {
+    color: inherit;
+    font-size: 16/@rem;
+    margin-left: 0;
+    vertical-align: baseline;
   }
+}
 
-  .upf-stat__label {
-    color: @color-text-lighter;
-  }
+.upf-stat__data--null {
+  color: darken(@upf-gray-light, 10%);
+}
+
+.upf-stat__label {
+  color: @color-text-lighter;
 }
 
 .upf-stat--new--small {
