@@ -1,6 +1,6 @@
 @import '../core/_variables';
 
-.upf-stat--new {
+.upf-stat {
   display: flex;
   flex-flow: column;
   text-align: center;
@@ -47,97 +47,4 @@
     font-size: 30/@rem;
     line-height: 1.4;
   }
-}
-
-/*
- * Standard Stat. DEPRECATED
- * A standard stat is the tiniest item of the Stats widget. It only provides a
- * number about a given indicator.
-*/
-.upf-stat {
-  text-align: center;
-  display: block;
-}
-
-.upf-stat__number-container {
-  padding: @spacing-xx-sm;
-}
-
-.upf-stat__icon {
-  font-size: 24/@rem;
-  color: @color-text-light;
-
-  .upf-icon {
-    display: block;
-  }
-}
-
-// The number value of a given stat
-.upf-stat__number {
-  font-weight: bold;
-  font-size: 30/@rem;
-  display: inherit;
-}
-
-// The title of a given stat. Generally the indicator the stat provides an
-// insight for
-.upf-stat__title {
-  font-size: 18/@rem;
-  color: @color-text-light;
-  display: inherit;
-  text-transform: uppercase;
-}
-
-//
-// Alternative Sizes
-//
-.upf-stat--sm {
-  .upf-stat__number {
-    font-size: 18/@rem;
-  }
-
-  .upf-stat__title {
-    font-size: 14/@rem;
-  }
-}
-
-/*
- * Standard Stat Block.
- * A Standard stat block is a group of stats relative to a the same context.
- * Along with providing some stats, it also comes with a Title and a Description
- * for introducing the displayed stats and explain the context to the user.
-*/
-.upf-stat-block {
-  text-align: center;
-  padding: 0;
-}
-
-// The title of a standard stat block.
-.upf-stat-block__title {
-  text-align: center;
-  font-size: 18/@rem;
-}
-
-// The description of a standard stat block.
-.upf-stat-block__description {
-  text-align: center;
-  font-size: 16/@rem;
-  margin-top: 2%;
-}
-
-// As the stats grouped in the standard stats block are more likely to be parts
-// of a bigger number, one common pattern is to highlight that total number.
-.upf-stat-block__stats-total {
-  font-weight: bold;
-}
-
-// The container of the displayed stats.
-.upf-stat-block__stats {
-  display: inline-flex;
-  margin-top: 1%;
-}
-
-// Give those stats some space, please!
-.upf-stat-block__stat:not(:first-child) {
-  margin-left: 5em;
 }
