@@ -2,14 +2,68 @@
 @import '../core/_variables';
 
 /*
- * Alerts
- * Alerts are used to provide contextual feedback to users, whether to ask them
- * to perform an action, or tell them about a faulty or blocking state.
- *
- * Any alert shoud come with an icon widely understood (exclamation triangle for
- * warnings, burning fire for erros, for example), and with a text explaining the
- * reason of the alert in clear wording.
- */
+---
+name: Alerts
+category: Components
+---
+
+Provide contextual feedback to users, whether to ask them to perform an action,
+or tell them about a faulty or blocking state.
+
+```alert.html
+<div class="upf-alert margin-bottom-x-sm">
+  <div class="upf-alert__text">
+    <span>A simple alert - check it out</span>
+  </div>
+</div>
+
+<div class="upf-alert upf-alert--info margin-bottom-x-sm">
+  <div class="upf-alert__text">
+    <span>A simple alert - check it out</span>
+  </div>
+</div>
+
+<div class="upf-alert upf-alert--success margin-bottom-x-sm">
+  <div class="upf-alert__text">
+    <span>A simple alert - check it out</span>
+  </div>
+</div>
+
+<div class="upf-alert upf-alert--warning margin-bottom-x-sm">
+  <div class="upf-alert__text">
+    <span>A simple alert - check it out</span>
+  </div>
+</div>
+
+<div class="upf-alert upf-alert--error">
+  <div class="upf-alert__text">
+    <span>A simple alert - check it out</span>
+  </div>
+</div>
+```
+
+### Options
+-----------
+
+#### Using an icon in alerts
+
+Alerts can also carry an icon to emphasize the reason of the alert. Examples of
+icon usages include:
+* Using a Exclamation Triangle for Warnings
+* Using a Fire icon for Errors
+
+```icon.html
+<div class="upf-alert upf-alert--error">
+  <div class="upf-alert__icon">
+    <i class="fa fa-trash"></i>
+  </div>
+  <div class="upf-alert__text">
+    <span>This is an alert carying an icon</span>
+  </div>
+</div>
+```
+
+*/
 
 .upf-alert {
   .text-size-6;

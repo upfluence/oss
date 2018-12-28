@@ -28,8 +28,97 @@
 }
 
 
-// Base styles
-// --------------------------------------------------
+/*
+---
+name: Buttons
+category: Components
+---
+
+Buttons are best used to enable a user to perform a change or complete steps in a task.
+They are typically found inside forms, modal dialogs, or as calls to action.
+
+We have 3 main types of buttons:
+* **Default** (via `.upf-btn--default`) that can be used when you need multiple buttons
+  with no clear hierarchy between them.
+* **Primary** (via `.upf-btn--primary`) that is to be used to emphasize the most important
+action in a form (Example: "Save" or "Continue" in a form).
+* **Secondary** (via `.upf-btn--secondary), that is to be used as a companion to primary action
+to represent a secondary action a user can perform. Because they can have negative consequences,
+especially when used unintentionally, Secondary Buttons have less visual weight.
+
+```buttons.html
+<div class="col-xs-4">
+  <div class="margin-top-xxx-sm">
+    <button class="upf-btn upf-btn--default">Default</button>
+  </div>
+  <div class="margin-top-xxx-sm">
+    <button class="upf-btn upf-btn--default disabled">Disabled</button>
+  </div>
+</div>
+
+<div class="col-xs-4">
+  <div class="margin-top-xxx-sm">
+    <button class="upf-btn upf-btn--primary">Primary</button>
+  </div>
+  <div class="margin-top-xxx-sm">
+    <button class="upf-btn upf-btn--primary disabled">Disabled Primary</button>
+  </div>
+</div>
+
+<div class="col-xs-4">
+  <div class="margin-top-xxx-sm">
+    <button class="upf-btn upf-btn--secondary">Secondary</button>
+  </div>
+  <div class="margin-top-xxx-sm">
+    <button class="upf-btn upf-btn--secondary disabled">Disabled Secondary</button>
+  </div>
+</div>
+```
+
+### Available Sizes
+-------------------
+
+Need different sizes to fit your design. Use `.upf-btn--small` or `.upf-btn--x-small`
+as size modifiers.
+
+```sizes.html
+<div class="col-xs-4">
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--default">Standard Size</button>
+  </div>
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--primary">Standard Size</button>
+  </div>
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--secondary">Standard Size</button>
+  </div>
+</div>
+
+<div class="col-xs-4">
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--default upf-btn--small">Size Small</button>
+  </div>
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--primary upf-btn--small">Size Small</button>
+  </div>
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--secondary upf-btn--small">Size Small</button>
+  </div>
+</div>
+
+<div class="col-xs-4">
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--default upf-btn--x-small">Size Extra Small</button>
+  </div>
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--primary upf-btn--x-small">Size Extra Small</button>
+  </div>
+  <div class="margin-bottom-xxx-sm">
+    <button class="upf-btn upf-btn--secondary upf-btn--x-small">Size Extra Small</button>
+  </div>
+</div>
+```
+*/
 
 .upf-btn {
   background-image: none;
