@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/upfluence/oss.git"
   },
-  "author": "Philippe Ndiaye <phndiaye@gmail.com>",
+  "author": "Philippe Ndiaye <philippe.ndiaye@upfluence.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/upfluence/oss/issues"
