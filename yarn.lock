@@ -10,6 +10,10 @@ bootstrap@^3.3.7:
   version "1.1.0"
   resolved "git+ssh://git@github.com/gumroad/countdown.js.git#9ddcd60500d687841769df1b4be3d6e3e4422683"
 
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+
 money-formatter@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/money-formatter/-/money-formatter-0.1.4.tgz#ab3f6df702d93704671b12e64f867fb1304f602f"
