@@ -15,7 +15,7 @@ might come handy.
 |  Name                       | Value                 |
 | --------------------------- | --------------------- |
 | color-text                  | rgba(0, 0, 0, 87%)    |
-| color-text                  | rgba(0, 0, 0, 54%)    |
+| color-text-light            | rgba(0, 0, 0, 54%)    |
 | color-text-lighter          | rgba(0, 0, 0, 46%)    |
 
 In case you need the displayed text to contrast with a dark or colorful background, these
@@ -26,7 +26,141 @@ are the one you might need.
 | color-text-contrast         | rgba(255, 255, 255, 100%) |
 | color-text-contrast-light   | rgba(255, 255, 255, 70%)  |
 | color-text-contrast-lighter | rgba(255, 255, 255, 50%)  |
+
+``` variables-color-text.html
+<div style="rgba(0, 0, 0, 87%);">
+  Color text
+</div>
+
+<div style="rgba(0, 0, 0, 54%);">
+  Color text light
+</div>
+
+<div style="rgba(0, 0, 0, 46%);">
+  Color text lighter
+</div>
+
+<div style="background-color: #1b0059;">
+  <div style="color: rgba(255, 255, 255, 100%);">
+    Color text contrast
+  </div>
+
+  <div style="color: rgba(255, 255, 255, 70%);">
+    Color text contrast light
+  </div>
+
+  <div style="color: rgba(255, 255, 255, 50%);">
+    Color text contrast lighter
+  </div>
+</div>
+```
 */
+
+/*
+---
+name: Font stacks
+category: Core
+---
+The default font used for title text is `GT Eesti`. It falls back to `Helvetica Neue`, `Helvetica` and sans-serif font.
+
+The default font used for body text is `GT Eesti Text Book`. It falls back to `Helvetica Neue`, `Helvetica` and sans-serif font.
+*/
+
+/*
+---
+name: Spacers
+category: Core
+---
+Create some spacing with `spacing-<size modifier>`. This is really useful when modifying custom properties for example `padding: @spacing-xxx-sm @spacing-x-sm;`.
+
+Here is a range of size modifiers and their respective values.
+
+|  Size modifier              | Value                 |
+| --------------------------- | --------------------- |
+| none                        | 0                     |
+| xxx-sm                      | 0.5em                 |
+| xx-sm                       | 1em                   |
+| x-sm                        | 1.5em                 |
+| sm                          | 2em                   |
+| md                          | 2.5em                 |
+| lg                          | 3em                   |
+| x-lg                        | 4em                   |
+| xx-lg                       | 5em                   |
+
+``` variables-spacers.html
+<div style="padding: 0.5em 1.5em;">
+  An element with padding: @spacing-xxx-sm @spacing-x-sm applied.
+</div>
+```
+*/
+
+/*
+---
+name: Brand colors
+category: Core
+---
+These colors are not directly part of our UI, but we mention these brands regularly within the Upfluence software.
+
+``` variables-brands.html
+<div class="row">
+  <div class="col-xs-3" style="background-color: #3b5998; padding: 0">
+    <div style="height: 150px"></div>
+    <div style="background-color: rgba(0, 0, 0, 0.3); padding: 1em 2em; color: white; width: 100%;">
+      <div>#3b5998</div>
+      <div>rgb(59, 89, 152)</div>
+      <div>@facebook-brand-color</div>
+    </div>
+  </div>
+
+  <div class="col-xs-3" style="background-color: #bd081c; padding: 0">
+    <div style="height: 150px"></div>
+    <div style="background-color: rgba(0, 0, 0, 0.3); padding: 1em 2em; color: white; width: 100%;">
+      <div>#bd081c</div>
+      <div>rgb(189, 8, 28)</div>
+      <div>@pinterest-brand-color</div>
+    </div>
+  </div>
+
+  <div class="col-xs-3" style="background-color: #bc2a8d; padding: 0">
+    <div style="height: 150px"></div>
+    <div style="background-color: rgba(0, 0, 0, 0.3); padding: 1em 2em; color: white; width: 100%;">
+      <div>#bc2a8d</div>
+      <div>rgb(188, 42, 141)</div>
+      <div>@instagram-brand-color</div>
+    </div>
+  </div>
+
+  <div class="col-xs-3" style="background-color: #cd201f; padding: 0">
+    <div style="height: 150px"></div>
+    <div style="background-color: rgba(0, 0, 0, 0.3); padding: 1em 2em; color: white; width: 100%;">
+      <div>#cd201f</div>
+      <div>rgb(205, 32, 31)</div>
+      <div>@youtube-brand-color</div>
+    </div>
+  </div>
+
+  <div class="col-xs-3" style="background-color: #1da1f2; padding: 0">
+    <div style="height: 150px"></div>
+    <div style="background-color: rgba(0, 0, 0, 0.3); padding: 1em 2em; color: white; width: 100%;">
+      <div>#1fa1f2</div>
+      <div>rgb(31, 161, 242)</div>
+      <div>@twitter-brand-color</div>
+    </div>
+  </div>
+
+  <div class="col-xs-3" style="background-color: #6441a5; padding: 0">
+    <div style="height: 150px"></div>
+    <div style="background-color: rgba(0, 0, 0, 0.3); padding: 1em 2em; color: white; width: 100%;">
+      <div>#6441a5</div>
+      <div>rgb(100, 65, 165)</div>
+      <div>@twitch-brand-color</div>
+    </div>
+  </div>
+</div>
+```
+
+*/
+
 
 //
 // Font stacks
