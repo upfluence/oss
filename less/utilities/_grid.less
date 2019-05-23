@@ -1,6 +1,83 @@
 @import '../core/_variables';
 @import '../mixins/_grid';
 
+/*
+---
+name: Spacing
+category: Utilities
+---
+Utility classes for spacing (padding/margin) and alignment of elements.
+
+### Alignment
+--------------
+Use `center-block` to horizontally center a block in a row.
+
+Use `upf-align--absolute-center` to center the element vertically and horizontally.
+
+``` spacing-blocks.html
+<div class="center-block">
+  Horizontally center a block in a row
+</div>
+
+<div class="upf-align--absolute-center">
+  Fully center element vertically and horizontally
+</div>
+```
+
+Align elements using `upf-align--*` (`upf-align--left`, `upf-align--center`, `upf-align--right`) classes, as long as they support the text-align rule on the right, left or center.
+
+``` spacing-align-text.html
+<div class="upf-align--left">
+  Left
+</div>
+
+<div class="upf-align--center">
+  Center
+</div>
+
+<div class="upf-align--right">
+  Right
+</div>
+```
+
+### Spacing
+------------
+
+Spacers variable and helper classes can be used to increase or decrease the space between multiple elements (margins) or within one (paddings).
+
+The spacer utility classes are in the format of `<margin/padding>-<optional: position>-<size>` for example `margin-top-xx-sm`.
+
+The (optional) position modifiers available are: `top`, `right`, `bottom`, `left`.
+If a position modifier is not stated, the margin/padding will be applied on every side of the element.
+
+The size modifiers available are: `xxx-sm`, `xx-sm`, `x-sm`, `sm`, `md`, `lg`, `x-lg`, `xx-lg`.
+
+|  Size modifier              | Value                 |
+| --------------------------- | --------------------- |
+| xxx-sm                      | 0.5em                 |
+| xx-sm                       | 1em                   |
+| x-sm                        | 1.5em                 |
+| sm                          | 2em                   |
+| md                          | 2.5em                 |
+| lg                          | 3em                   |
+| x-lg                        | 4em                   |
+| xx-lg                       | 5em                   |
+
+``` spacing-spacers.html
+<div class="margin-top-md">
+  Medium margin applied to just the top
+</div>
+
+<div class="margin-lg">
+  Large margin on every side of the element
+</div>
+
+<div class="padding-left-x-sm">
+  Extra small padding applied to the left
+</div>
+```
+*/
+
 //
 // Horizontally center a block in a row. The float rule is initially missing.
 //

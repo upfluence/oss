@@ -42,7 +42,7 @@ We have 3 main types of buttons:
   with no clear hierarchy between them.
 * **Primary** (via `.upf-btn--primary`) that is to be used to emphasize the most important
 action in a form (Example: "Save" or "Continue" in a form).
-* **Secondary** (via `.upf-btn--secondary), that is to be used as a companion to primary action
+* **Secondary** (via `.upf-btn--secondary`), that is to be used as a companion to primary action
 to represent a secondary action a user can perform. Because they can have negative consequences,
 especially when used unintentionally, Secondary Buttons have less visual weight.
 
@@ -73,6 +73,47 @@ especially when used unintentionally, Secondary Buttons have less visual weight.
     <button class="upf-btn upf-btn--secondary disabled">Disabled Secondary</button>
   </div>
 </div>
+```
+
+### Alternative buttons
+------------------------
+* **For dark background** (via `.upf-btn--dark-bg`) can be used for buttons on dark backgrounds to ensure that the button is still visible.
+
+* **Destructive buttons** (via `.upf-btn--destructive`) can be used to signify a call-to-action that is negative (such as deletion)
+
+```buttons-alternative.html
+<div style="background-color: #1b0059;" class="col-xs-4">
+  <div class="margin-top-xxx-sm">
+    <button class="upf-btn upf-btn--dark-bg">Dark background</button>
+  </div>
+  <div class="margin-top-xxx-sm">
+    <button class="upf-btn upf-btn--dark-bg disabled">Disabled dark background</button>
+  </div>
+</div>
+
+<div class="col-xs-4">
+  <button class="upf-btn upf-btn--destructive">
+    Destructive button
+  </button>
+</div>
+```
+
+```buttons-destructive-demo.hbs
+    {{#destructive-button destructiveAction="deleteCampaign" record=model
+      <i class="fa fa-trash"></i> &nbsp; Delete
+    {{/destructive-button}}
+```
+TODO: Finish this (font-awesome imports not working correctly?)
+* **Button with social media**
+* **Button with right icon** can be used to announce that clicking it will lead somewhere, making it useful for multistep processes.
+```buttons-alternative-2.html
+<button class="upf-btn upf-btn--has-right-icon">
+  Button with right icon
+
+  <span class="upf-btn__right-icon">
+    <i class="fa fa-long-arrow-right"></i>
+  </span>
+</button>
 ```
 
 ### Available Sizes
