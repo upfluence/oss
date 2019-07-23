@@ -74,26 +74,45 @@
   }
 }
 
+// max-width to be over-written in each application
+// to fit the top navigation accordingly
+.upf-nav__item-access-panel {
+  display: flex;
+  max-width: 50%;
+}
+
 .upf-nav__item.upf-nav__item-access-panel {
-  a, a:hover, a:active, a.active {
-    background-color: @upf-primary-white !important;
-    color: @upf-primary-bright-purple !important;
+  background-color: @upf-primary-white !important;
+  color: @upf-primary-bright-purple !important;
+  border-radius: 0 @default-radius @default-radius 0;
+  font-size: 16/@rem;
+  user-select: none;
 
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+  > * {
+    padding: .1em @spacing-xx-sm;
+  }
 
-    &:last-child {
-      border-left: 1px solid @upf-primary-bright-purple !important;
-      border-radius: @default-radius;
-      border-top-left-radius: 0 !important;
-      border-bottom-left-radius: 0 !important;
+  > :first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex: 1;
+    min-width: 0;
+
+    .upf-nav__item-name {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
+  }
+
+  > :last-child {
+    border-left: 1px solid @upf-primary-bright-purple !important;
   }
 
  .upf-icon:before {
     color: @upf-primary-bright-purple;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
