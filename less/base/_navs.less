@@ -19,6 +19,10 @@
   line-height: 2.6rem;
   margin-left: @spacing-x-sm;
 
+  .upf-btn {
+    height: 31px;
+  }
+
   >a:not(.upf-btn) {
     color: @color-text-contrast-light;
     font-size: 16/@rem;
@@ -84,19 +88,21 @@
 .upf-nav__item.upf-nav__item-access-panel {
   background-color: @upf-primary-white !important;
   color: @upf-primary-bright-purple !important;
-  border-radius: 0 @default-radius @default-radius 0;
+  border-radius: @default-radius;
+  border: 1px solid @upf-primary-white;
   font-size: 16/@rem;
   user-select: none;
+  height: 31px;
 
-  > * {
-    padding: .1em @spacing-xx-sm;
-  }
-
-  > :first-child {
+  .upf-nav__item-container {
+    display: flex;
+    align-items: center;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     flex: 1;
     min-width: 0;
+    padding-left: @spacing-xx-sm;
+    padding-right: @spacing-xx-sm;
 
     .upf-nav__item-name {
       text-overflow: ellipsis;
@@ -105,8 +111,11 @@
     }
   }
 
-  > :last-child {
+  .upf-nav__item-toggle {
     border-left: 1px solid @upf-primary-bright-purple !important;
+    padding: .1em @spacing-xx-sm;
+    display: flex;
+    align-items: center;
   }
 
  .upf-icon:before {
