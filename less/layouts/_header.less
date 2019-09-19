@@ -3,7 +3,7 @@
 @import '../mixins/_links';
 
 .app-header {
-  background-color: @upf-primary-dark-purple;
+  background-color: @upf-primary-white;
 
   .logo-container {
     position: relative;
@@ -44,6 +44,7 @@
   top: 0;
   width: 5em;
   z-index: 9999999;
+  box-shadow: 10px 0 10px -10px rgba(0,0,0,0.1);
 
   .logo-container {
     margin-top: 0;
@@ -74,6 +75,10 @@
       padding: 24px;
       color: @upf-gray-light;
 
+      .upf-icon {
+        color: @upf-primary-bright-purple;
+      }
+
       img {
         flex: 1;
         max-width: 18px;
@@ -84,6 +89,10 @@
       &:hover {
         background-color: @upf-primary-bright-purple;
         transition: all 0.2s ease;
+
+        .upf-icon {
+          color: @upf-primary-white;
+        }
       }
 
       &:active {
