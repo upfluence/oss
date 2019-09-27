@@ -20,22 +20,17 @@
 //
 .build-button(@base-color, @darker-color) {
   .fill(@base-color);
-  .icon-color(@color-text-contrast);
-  color: rgba(255,255,255,0.9);
+  .icon-color(@darker-color);
+  color: @darker-color;
   border: 0px;
 
-  &:hover {
+  &:hover, &:focus, &:active {
     .remove-outline;
     .fill(@darker-color);
-    color: @color-text-contrast;
+    .icon-color(@base-color);
+    color: @base-color;
     opacity: 1;
     transition: all 200ms ease-out;
-  }
-
-  &:focus,
-  &:active {
-    color: rgba(255,255,255,0.9);
-    background-color: @base-color;
   }
 
   &:disabled, &.disabled {
