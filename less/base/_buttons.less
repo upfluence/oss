@@ -238,8 +238,17 @@ as size modifiers.
 }
 
 .upf-btn--primary {
-  .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
+  .fill(@upf-primary-bright-purple);
+  .icon-color(@upf-primary-white);
   border: 1px solid @upf-primary-bright-purple;
+  color: @upf-primary-white !important;
+
+  &:hover, &:focus, &:active {
+    .remove-outline;
+    .fill(@upf-primary-bright-purple-dark);
+    opacity: 1;
+    transition: all 200ms ease-out;
+  }
 
   &.upf-btn--dark-bg {
     .fill(@upf-primary-white);
