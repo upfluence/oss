@@ -177,9 +177,6 @@ as size modifiers.
   touch-action: manipulation;
   vertical-align: middle;
 
-
-  // a& { line-height: 2.4rem; }
-
   &:focus,
   &:active {
     outline: none !important; // fix that bootstrap outline once and for all
@@ -447,10 +444,12 @@ as size modifiers.
 
 .upf-btn--purple {
   .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
+  color: @upf-primary-white !important;
 }
 
 .upf-btn--orange {
   .build-button(@upf-primary-orange, @upf-primary-orange-dark);
+  color: @upf-primary-white !important;
 }
 
 .upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange); }

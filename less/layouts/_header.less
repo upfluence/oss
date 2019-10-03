@@ -127,10 +127,11 @@
 
 .app-header--topbar {
   .app-header;
-  background-color: @upf-primary-bright-purple;
+  background-color: transparent;
 
-  height: 5em;
+  height: 10em;
   display: inline-flex;
+  position: absolute;
 
   .app-header__left-side, .app-header__right-side {
     display: flex;
@@ -149,7 +150,7 @@
   }
 
   .logo-container {
-    left: 50%;
+    left: 20%;
     top: 50%;
 
     // Horizontally center the Upfluence logo
@@ -160,14 +161,13 @@
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    width: 45%;
+    width: 150px;
 
     a {
       text-align: center;
       display: block;
 
       img {
-        width: 45%;
         vertical-align: baseline;
       }
     }
