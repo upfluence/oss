@@ -182,13 +182,13 @@ as size modifiers.
     outline: none !important; // fix that bootstrap outline once and for all
   }
 
+  &:hover, &:focus {
+    color: inherit;
+  }
+
   &.disabled, &:disabled {
     opacity: 0.5;
-
-    &:hover,
-    &:focus {
-      color: inherit;
-    }
+    .disabled-button;
   }
 
   &.upf-btn--dark-bg {
@@ -445,11 +445,19 @@ as size modifiers.
 .upf-btn--purple {
   .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
   color: @upf-primary-white;
+
+  &:hover {
+    color: @upf-primary-white !important;
+  }
 }
 
 .upf-btn--orange {
   .build-button(@upf-primary-orange, @upf-primary-orange-dark);
   color: @upf-primary-white;
+
+  &:hover {
+    color: @upf-primary-white !important;
+  }
 }
 
 .upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange); }
