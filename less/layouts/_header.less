@@ -3,7 +3,7 @@
 @import '../mixins/_links';
 
 .app-header {
-  background-color: @upf-primary-dark-purple;
+  background-color: @upf-primary-white;
 
   .logo-container {
     position: relative;
@@ -44,6 +44,7 @@
   top: 0;
   width: 5em;
   z-index: 9999999;
+  box-shadow: 10px 0 10px -10px rgba(0,0,0,0.1);
 
   .logo-container {
     margin-top: 0;
@@ -74,6 +75,10 @@
       padding: 24px;
       color: @upf-gray-light;
 
+      .upf-icon {
+        color: @upf-primary-bright-purple;
+      }
+
       img {
         flex: 1;
         max-width: 18px;
@@ -84,6 +89,10 @@
       &:hover {
         background-color: @upf-primary-bright-purple;
         transition: all 0.2s ease;
+
+        .upf-icon {
+          color: @upf-primary-white;
+        }
       }
 
       &:active {
@@ -95,7 +104,7 @@
 
     // Only change the color of the icons in the sidebar when it's active
     // route.
-    a.active, a.active i {
+    a.active, a.active i, a.active .upf-icon {
       color: @upf-primary-white;
       border-bottom: none;
       background-color: @upf-primary-bright-purple;
@@ -118,9 +127,11 @@
 
 .app-header--topbar {
   .app-header;
+  background-color: transparent;
 
-  height: 5em;
+  height: 10em;
   display: inline-flex;
+  position: absolute;
 
   .app-header__left-side, .app-header__right-side {
     display: flex;
@@ -139,7 +150,7 @@
   }
 
   .logo-container {
-    left: 50%;
+    left: 20%;
     top: 50%;
 
     // Horizontally center the Upfluence logo
@@ -150,14 +161,13 @@
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    width: 45%;
+    width: 150px;
 
     a {
       text-align: center;
       display: block;
 
       img {
-        width: 45%;
         vertical-align: baseline;
       }
     }

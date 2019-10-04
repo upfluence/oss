@@ -177,9 +177,6 @@ as size modifiers.
   touch-action: manipulation;
   vertical-align: middle;
 
-
-  a& { line-height: 2.4rem; }
-
   &:focus,
   &:active {
     outline: none !important; // fix that bootstrap outline once and for all
@@ -215,6 +212,10 @@ as size modifiers.
   .outline(@upf-primary-rock-blue-light);
   background-color: @upf-primary-white;
 
+  a& {
+    line-height: 2.4rem;
+  }
+
   &:hover {
     background-color: @upf-gray-light;
     color: @upf-primary-rock-blue-dark;
@@ -238,8 +239,21 @@ as size modifiers.
 }
 
 .upf-btn--primary {
-  .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
+  .fill(@upf-primary-bright-purple);
+  .icon-color(@upf-primary-white);
   border: 1px solid @upf-primary-bright-purple;
+  color: @upf-primary-white;
+
+  a& {
+    line-height: 2.4rem;
+  }
+
+  &:hover, &:focus, &:active {
+    .remove-outline;
+    .fill(@upf-primary-bright-purple-dark);
+    opacity: 1;
+    transition: all 200ms ease-out;
+  }
 
   &.upf-btn--dark-bg {
     .fill(@upf-primary-white);
@@ -258,6 +272,10 @@ as size modifiers.
 .upf-btn--secondary {
   .reversed-colors(@upf-primary-bright-purple);
 
+  a& {
+    line-height: 2.4rem;
+  }
+
   &.upf-btn--dark-bg {
     .outline(@upf-primary-white);
     color: @upf-primary-white;
@@ -270,6 +288,10 @@ as size modifiers.
 .upf-btn--destructive {
   .outline(@upf-feedback-error);
   color: @upf-feedback-error;
+
+  a& {
+    line-height: 2.4rem;
+  }
 
   &:hover, &:focus {
     color: @upf-feedback-error;
@@ -422,10 +444,12 @@ as size modifiers.
 
 .upf-btn--purple {
   .build-button(@upf-primary-bright-purple, @upf-primary-bright-purple-dark);
+  color: @upf-primary-white;
 }
 
 .upf-btn--orange {
   .build-button(@upf-primary-orange, @upf-primary-orange-dark);
+  color: @upf-primary-white;
 }
 
 .upf-btn--orange--reversed { .reversed-colors(@upf-primary-orange); }
