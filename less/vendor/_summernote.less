@@ -10,7 +10,6 @@
 
     .note-toolbar {
       background-color: @upf-gray-light;
-      text-align: center;
       padding: 1em;
 
       .note-btn {
@@ -23,12 +22,14 @@
       }
 
       .btn-group {
+        margin-left: 3px;
+
         button:last-child {
-          border-radius: 0 4px 4px 0;
+          border-radius: 0 @default-radius @default-radius 0;
         }
 
         button:only-child {
-          border-radius: 4px;
+          border-radius: @default-radius;
         }
       }
 
