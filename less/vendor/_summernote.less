@@ -11,15 +11,46 @@
     .note-toolbar {
       background-color: @upf-gray-light;
       text-align: center;
-
       padding: 1em;
 
       .note-btn {
-        border: none;
-        border-radius: @default-radius;
         box-shadow: none;
         padding-right: 1em;
         padding-left: 1em;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        line-height: 20px;
+      }
+
+      .btn-group {
+        button:last-child {
+          border-radius: 0 4px 4px 0;
+        }
+
+        button:only-child {
+          border-radius: 4px;
+        }
+      }
+
+      .note-color-all {
+        .dropdown-toggle {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+
+      .dropdown-menu {
+        .note-color-row {
+          button:last-child {
+            border-radius: 0;
+          }
+        }
+
+        .note-align, .note-list {
+          button {
+            border: 0;
+          }
+        }
       }
     }
 
