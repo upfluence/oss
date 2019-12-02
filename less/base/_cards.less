@@ -4,27 +4,24 @@
   width: 330px;
   margin: @spacing-xx-sm;
   padding: @spacing-x-lg @spacing-x-sm;
-  border: 2px solid @upf-gray;
   border-radius: @default-radius;
   text-align: center;
+  box-shadow: 0 5px 20px 10px darken(@upf-gray-light, 2%);
+  transition: transform 0.3s ease;
 }
 
 .upf-card__icon {
   img {
-    height: 80px;
+    height: 85px;
   }
-  max-height: 6em;
 }
 
 .upf-card__title {
-  padding-top: @spacing-xxx-sm;
-  padding-bottom: @spacing-xx-sm;
+  padding-top: @spacing-xx-sm;
 }
 
 .upf-card:hover {
-  border-color: @upf-primary-bright-purple;
-  transition: border-color 0.2s linear;
-
+  transform: scale(1.03);
   .upf-card__title {
     color: @upf-primary-bright-purple;
   }
