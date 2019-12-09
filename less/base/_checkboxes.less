@@ -41,6 +41,16 @@
   }
 }
 
+.upf-checkbox--disabled {
+  cursor: not-allowed;
+
+  .upf-checkbox__input:checked + .upf-checkbox__fake-checkbox {
+    background-color: @upf-gray;
+    border-color: @upf-gray;
+    cursor: not-allowed;
+  }
+}
+
 //
 // For one checkbox to be styled, one checkbox must disappear
 //
