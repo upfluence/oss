@@ -51,9 +51,10 @@
 // We then make it look like a checkbox square.
 //
 .upf-checkbox__fake-checkbox {
-	border: 1px solid @upf-primary-bright-purple;
+	border: 1px solid @upf-primary-rock-blue;
   border-radius: @default-radius;
-	cursor: pointer;
+  cursor: pointer;
+  background-color: white;
 
   margin-bottom: 0;
 	height: 20px;
@@ -67,6 +68,7 @@
 // Checked state of the "checkbox"
 //
 .upf-checkbox__input:checked + .upf-checkbox__fake-checkbox {
+  border-color: @upf-primary-bright-purple;
   background-color: @upf-primary-bright-purple;
 
   //

@@ -205,23 +205,24 @@ as size modifiers.
 // --------------------------------------------------
 
 .upf-btn--default {
-  .outline(@upf-primary-rock-blue-light);
+  .outline(@upf-primary-rock-blue-dark);
   background-color: @upf-primary-white;
+  color: @upf-primary-rock-blue-dark;
 
   a& {
     line-height: 2.4rem;
   }
 
   &:hover {
-    background-color: @upf-gray-light;
-    color: @upf-primary-rock-blue-dark;
     transition: color 0.2s linear, background 0.2s linear;
+    border-color: darken(@upf-primary-rock-blue-dark, 20%);
+    color: darken(@upf-primary-rock-blue-dark, 20%);
   }
 
   &:focus, &:active {
-    border-color: @upf-primary-rock-blue-dark;
+    border-color: darken(@upf-primary-rock-blue-dark, 20%);
     box-shadow: none;
-    color: @upf-primary-rock-blue-dark;
+    color: darken(@upf-primary-rock-blue-dark, 20%);
   }
 
   &.disabled,
@@ -291,8 +292,8 @@ as size modifiers.
   }
 
   &:hover, &:focus {
-    color: @upf-feedback-error;
-    background-color: #feddd9;
+    color: white;
+    background-color: @upf-bright-orange;
   }
 }
 
