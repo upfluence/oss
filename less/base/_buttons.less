@@ -207,19 +207,21 @@ as size modifiers.
 .upf-btn--default {
   .outline(@upf-primary-rock-blue);
   background-color: @upf-primary-white;
-  color: @upf-primary-rock-blue;
+  color: @color-text;
 
   a& {
     line-height: 2.4rem;
   }
 
   &:hover {
-    transition: color 0.2s linear, background 0.2s linear;
+    background-color: @field-background-color;
     border-color: @upf-primary-rock-blue-dark;
-    color: @upf-primary-rock-blue-dark;
+    color: @color-text;
+    transition: color 0.2s linear, background 0.2s linear;
   }
 
   &:focus, &:active {
+    background-color: @field-background-color;
     border-color: @upf-primary-rock-blue-dark;
     box-shadow: none;
     color: @upf-primary-rock-blue-dark;
