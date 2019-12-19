@@ -18,20 +18,20 @@ label {
 // --------------------------------------------------
 
 .upf-input {
-  border: 1px solid @upf-gray;
+  border: 1px solid transparent;
   border-radius: @default-radius;
   height: @input-size-default;
   padding: 0 1em;
-  color: @upf-primary-rock-blue;
-  background-color: @upf-gray-light;
+  color: @color-text;
+  background-color: @field-background-color;
   box-shadow: none;
 
   &:focus {
     .remove-outline;
-    border: 1px solid @upf-gray-dark;
+    border: 1px solid @border-color;
   }
 
-  &::placeholder { color: @upf-primary-rock-blue-light; }
+  &::placeholder { color: @color-text-lighter }
 
   &--inverse {
     background-color: @upf-primary-white;
