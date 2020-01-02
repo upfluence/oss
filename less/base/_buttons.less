@@ -436,6 +436,47 @@ as size modifiers.
   }
 }
 
+.upf-radio-group.upf-radio-group--block {
+  display: flex;
+  flex-direction: column;
+
+  .btn.upf-radio-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    height: auto;
+    width: 100%;
+
+    text-align: left;
+
+    &::before {
+      background-color: white;
+      border: 2px solid white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px @border-color;
+      box-sizing: border-box;
+      content: ' ';
+
+      margin-right: @spacing-xxx-sm;
+      width: 10px;
+      height: 10px;
+      padding: 4px;
+    }
+
+    &.active {
+      &::before {
+        background-color: @upf-primary-bright-purple;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 
 
 // Deprecated
