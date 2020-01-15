@@ -38,9 +38,16 @@
     }
 
     .irs-single {
-      display: none;
-      top: -31px;
+      opacity: 0;
+      top: -42px;
+      padding: 8px 10px;
       background-color: black;
+      transition: opacity 0.3s ease;
+
+      .fa {
+        font-weight: bold;
+      }
+
       &:before {
         border-top-color: black;
       }
@@ -48,7 +55,7 @@
 
     &:hover {
       .irs-single {
-        display: block;
+        opacity: 1;
       }
     }
   }
