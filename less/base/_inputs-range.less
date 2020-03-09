@@ -1,0 +1,39 @@
+.upf-numeric-range {
+  display: flex;
+}
+
+.upf-numeric-range.upf-numeric-range--small {
+  .upf-numeric-range__separator {
+    height: @input-size-sm;
+  }
+}
+
+.upf-numeric-range__from, .upf-numeric-range__to {
+  -moz-appearance: textfield;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.upf-numeric-range__from {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.upf-numeric-range__to {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.upf-numeric-range__separator {
+  background-color: @field-background-color;
+  cursor: default;
+
+  display: flex;
+  align-items: center;
+
+  height: @input-size-default;
+  padding: 0 @spacing-xx-sm;
+}
