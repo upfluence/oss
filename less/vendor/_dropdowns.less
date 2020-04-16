@@ -6,15 +6,28 @@
 //
 .upf-dropdown {
   background-color: @upf-primary-white;
-  border: 1px solid @upf-gray-dark;
-  border-radius: @default-radius;
-  box-shadow: none;
+  border: 1px solid @upf-gray-light;
+  border-radius: 3px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+              rgba(9, 30, 66, 0.31) 0px 0px 1px;
   margin-top: 0.5em;
 
   // Do not style the divider the same the same way as the dropdown items
   //
   li:not(.divider) {
     padding: @spacing-xxx-sm 1.2em;
+    font-size: 16/@rem;
+    display: flex;
+    align-items: center;
+
+    .fa {
+      color: @color-text-light;
+      min-width: 15px;
+    }
+
+    &:hover {
+      background-color: @upf-gray-light !important;
+    }
 
     a {
       color: @color-text;
