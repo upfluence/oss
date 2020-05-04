@@ -66,10 +66,10 @@ icon usages include:
 */
 
 .upf-alert {
-  .text-size-6;
   border-radius: @default-radius;
   background-color: @upf-gray-light;
   display: flex;
+  font-size: 16/@rem;
   padding: 1%;
 }
 
@@ -129,10 +129,12 @@ icon usages include:
 
 // Info Alerts
 .upf-alert--info {
-  background-color: #e9e9fc;
+  background-color: lighten(@upf-primary-bright-purple, 50%);
+  border: 1px solid @upf-primary-bright-purple;
+  border-radius: @default-radius;
 
   .upf-alert__icon,
   .upf-alert__text span {
-    color: #0d0de6;
+    color: @upf-primary-bright-purple;
   }
 }
