@@ -9,9 +9,8 @@
 .setup-input-group-addon(@color) {
   .input-group-addon {
     background-color: @color;
-    border: 1px solid @color;
-    color: @color-text-contrast;
-    font-weight: bold;
+    border: 1px solid @field-background-color;
+    color: @color-text-light;
     padding: 0 1.5em;
     text-align: center;
   }
@@ -33,7 +32,7 @@
 //
 .upf-input-container {
   .input-group {
-    .setup-input-group-addon(@upf-primary-dark-purple);
+    .setup-input-group-addon(@upf-primary-white);
   }
 }
 
