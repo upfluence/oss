@@ -3,8 +3,8 @@
 
 
 bootstrap@^3.3.7:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.0.tgz#f8d77540dd3062283d2ae7687e21c1e691961640"
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.4.1.tgz#c3a347d419e289ad11f4033e3c4132b87c081d72"
 
 "countdown.js@git+ssh://git@github.com/gumroad/countdown.js.git":
   version "1.1.0"
