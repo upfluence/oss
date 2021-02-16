@@ -160,8 +160,15 @@
   overflow-y: auto;
   padding: @spacing-md;
   width: 22%;
+  opacity: 0;
 
   transform: translate(-30px, 18px);
+
+  &.side-panel--appearance {
+    animation-name: appearance;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
 
   .upf-checkbox__label span {
     color: @color-text;
@@ -176,6 +183,16 @@
   border-bottom: 12px solid @upf-gray-light;
 
   transform: translate(35px, 6px);
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .upf-table__container--compact {
