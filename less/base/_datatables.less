@@ -151,26 +151,31 @@
 }
 
 .upf-datatable__side-panel {
+  position: absolute;
   background-color: @upf-gray-light;
   box-shadow: 0px 0px 75px 0px rgba(0,0,0,0.25);
-  display: none;
-  opacity: 0;
+  display: block;
   z-index: 1;
   height: 500px;
   overflow-y: auto;
   padding: @spacing-md;
-  position: absolute;
-  right: 0;
-  width: 25%;
+  width: 22%;
+
+  transform: translate(-30px, 18px);
 
   .upf-checkbox__label span {
     color: @color-text;
   }
 }
 
-.upf-datatable__side-panel--visible {
-  display: block;
-  opacity: 1;
+.upf-datatable__side-panel--arrow-up {
+  position: absolute;
+  z-index: 2;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid @upf-gray-light;
+
+  transform: translate(35px, 6px);
 }
 
 .upf-table__container--compact {
