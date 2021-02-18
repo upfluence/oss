@@ -29,6 +29,7 @@
   margin-bottom: 0px;
 
   .upf-datatable__actions-pull-right {
+    display: flex;
     margin-left: auto !important;
   }
 }
@@ -151,26 +152,48 @@
 }
 
 .upf-datatable__side-panel {
+  position: absolute;
   background-color: @upf-gray-light;
   box-shadow: 0px 0px 75px 0px rgba(0,0,0,0.25);
-  display: none;
-  opacity: 0;
+  display: block;
   z-index: 1;
   height: 500px;
   overflow-y: auto;
   padding: @spacing-md;
-  position: absolute;
-  right: 0;
-  width: 25%;
+  width: 21%;
+  opacity: 0;
+
+  transform: translate(-30px, 18px);
+
+  &.side-panel--appearance {
+    animation-name: appearance;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+  }
 
   .upf-checkbox__label span {
     color: @color-text;
   }
 }
 
-.upf-datatable__side-panel--visible {
-  display: block;
-  opacity: 1;
+.upf-datatable__side-panel--arrow-up {
+  position: absolute;
+  z-index: 2;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid @upf-gray-light;
+
+  transform: translate(35px, 6px);
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .upf-table__container--compact {
