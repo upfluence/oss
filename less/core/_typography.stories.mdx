@@ -1,0 +1,50 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta
+  title="Core/Typography"
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: { canvas: { hidden: true } }
+  }}
+/>
+
+# Typography
+
+Headers size are defined from `h1` to `h5` :
+- h1 (3rem, 30px)
+- h2 (2.5rem, 25px)
+- h3 (2rem, 20px)
+- h4 (1.5rem, 15px)
+- h5 (1.166666667rem)
+
+<Canvas>
+  <p>
+    <span>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+    </span>
+    <span>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+    </span>
+    <span>
+      <h3>Lorem ipsum dolor sit amet.</h3>
+    </span>
+    <span>
+      <h4>Lorem ipsum dolor sit amet.</h4>
+    </span>
+    <span>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+    </span>
+  </p>
+</Canvas>
+
+`label` definition
+
+<Canvas>
+  <label>Lorem ipsum dolor sit amet.</label>
+</Canvas>
+
+Default body text definition
+
+<Canvas>
+  Lorem ipsum dolor sit amet.
+</Canvas>
