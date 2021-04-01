@@ -1,0 +1,56 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta
+  title="Base/Alerts"
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: { canvas: { hidden: true } }
+  }}
+/>
+
+# Alerts
+
+Alerts are used to provide contextual feedback to the user about an action or state or to convey informational and/or critical account-related messages.
+
+Built around the `upf-alert` class, alert messages are categorized into four types based on severity. The different severities
+are applied using matching BEM Modifiers:
+
+**Info**: provides neutral information related to a performed action. Modifier Class: `upf-alert--info`.
+
+<Canvas>
+  <div class="upf-alert upf-alert--info margin-bottom-x-sm">
+    <div class="upf-alert__text">
+      <span>A simple alert - check it out</span>
+    </div>
+  </div>
+</Canvas>
+
+**Success**: indicates that an action processed successfully or that there are no account-related issues. Modifier Class: `upf-alert--success`.
+
+<Canvas>
+  <div class="upf-alert upf-alert--success">
+    <div class="upf-alert__text">
+      <span>Your settings have been successfully saved.</span>
+    </div>
+  </div>
+</Canvas>
+
+**Warning**: indicates a faulty state that's not blocking for the user. Modifier Class: `upf-alert--warning`.
+
+<Canvas>
+  <div class="upf-alert upf-alert--warning margin-bottom-x-sm">
+    <div class="upf-alert__text">
+      <span>This warning message is dismissible.</span>
+    </div>
+  </div>
+</Canvas>
+
+**Error**: indicates that an action failed completely. Modifier Class: `upf-alert--error`.
+
+<Canvas>
+  <div class="upf-alert upf-alert--error">
+    <div class="upf-alert__text">
+      <span>Oh no, something went wrong!</span>
+    </div>
+  </div>
+</Canvas>
