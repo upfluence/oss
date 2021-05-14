@@ -24,31 +24,31 @@ css-attribute: @custom-vaiables
 In case you need to display some text on a bright background, the following variables
 might come handy.
 
-|  Name                       | Value                 |
-| --------------------------- | --------------------- |
-| color-text                  | rgba(0, 0, 0, 87%)    |
-| color-text-light            | rgba(0, 0, 0, 54%)    |
-| color-text-lighter          | rgba(0, 0, 0, 46%)    |
+|  Name                       | Value                 | HTML class          |
+| --------------------------- | --------------------- | ------------------- |
+| color-text                  | rgba(0, 0, 0, 87%)    | text-color-default  |
+| color-text-light            | rgba(0, 0, 0, 54%)    | text-color-light    |
+| color-text-lighter          | rgba(0, 0, 0, 46%)    | text-color-lighter  |
 
 <Canvas>
-  <span class="color-text"> color-text </span>
-  <span class="color-text-light"> color-text-light </span>
-  <span class="color-text-lighter"> color-text-lighter </span>
+  <span class="text-color-default"> color-text </span>
+  <span class="text-color-default-light"> color-text-light </span>
+  <span class="text-color-default-lighter"> color-text-lighter </span>
 </Canvas>
 
 In case you need the displayed text to contrast with a dark or colorful background, these
 are the one you might need.
 
-|  Name                       | Value                     |
-| --------------------------- | ------------------------- |
-| color-text-contrast         | rgba(255, 255, 255, 100%) |
-| color-text-contrast-light   | rgba(255, 255, 255, 70%)  |
-| color-text-contrast-lighter | rgba(255, 255, 255, 50%)  |
+|  Name                       | Value                     | HTML class                   |
+| --------------------------- | ------------------------- | ---------------------------- |
+| color-text-contrast         | rgba(255, 255, 255, 100%) | text-color-contrast          |
+| color-text-contrast-light   | rgba(255, 255, 255, 70%)  | text-color-contrast-light    |
+| color-text-contrast-lighter | rgba(255, 255, 255, 50%)  | text-color-contrast-lighter  |
 
 <Canvas>
-  <span class="color-text-contrast dark"> color-text-contrast </span>
-  <span class="color-text-contrast-light dark"> color-text-contrast-light </span>
-  <span class="color-text-contrast-lighter dark"> color-text-contrast-lighter </span>
+  <span class="text-color-contrast dark"> color-text-contrast </span>
+  <span class="text-color-contrast-light dark"> color-text-contrast-light </span>
+  <span class="text-color-contrast-lighter dark"> color-text-contrast-lighter </span>
 </Canvas>
 
 ## Font stacks
