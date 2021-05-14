@@ -1,0 +1,113 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta
+  title="Core/Variables"
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: { canvas: { hidden: true } }
+  }}
+/>
+
+# Variables
+
+Variables are used in .less files to standardize css values. This is an exemple how to use
+Upfluence css variables:
+
+`
+.your-css-class {
+css-attribute: @custom-vaiables
+}
+`
+
+## Text Color
+
+In case you need to display some text on a bright background, the following variables
+might come handy.
+
+|  Name                       | Value                 | HTML class          |
+| --------------------------- | --------------------- | ------------------- |
+| color-text                  | rgba(0, 0, 0, 87%)    | text-color-default  |
+| color-text-light            | rgba(0, 0, 0, 54%)    | text-color-light    |
+| color-text-lighter          | rgba(0, 0, 0, 46%)    | text-color-lighter  |
+
+<Canvas>
+  <span class="text-color-default"> color-text </span>
+  <span class="text-color-default-light"> color-text-light </span>
+  <span class="text-color-default-lighter"> color-text-lighter </span>
+</Canvas>
+
+In case you need the displayed text to contrast with a dark or colorful background, these
+are the one you might need.
+
+|  Name                       | Value                     | HTML class                   |
+| --------------------------- | ------------------------- | ---------------------------- |
+| color-text-contrast         | rgba(255, 255, 255, 100%) | text-color-contrast          |
+| color-text-contrast-light   | rgba(255, 255, 255, 70%)  | text-color-contrast-light    |
+| color-text-contrast-lighter | rgba(255, 255, 255, 50%)  | text-color-contrast-lighter  |
+
+<Canvas>
+  <span class="text-color-contrast dark"> color-text-contrast </span>
+  <span class="text-color-contrast-light dark"> color-text-contrast-light </span>
+  <span class="text-color-contrast-lighter dark"> color-text-contrast-lighter </span>
+</Canvas>
+
+## Font stacks
+
+In case you need to change values related to the font, these are the one you might need.
+
+Definition of font value.
+
+|  Name             | Value                                                   |
+| ----------------- | ------------------------------------------------------- |
+| font-text         | 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif  |
+| font-size-body    | 12 (in px)                                              |
+| rem               | @font-size-body * 1rem                                  |
+
+## Input size
+
+In case you need to custom the height of an input, these are the one you might need.
+
+|  Name                       | Value     |
+| --------------------------- | --------- |
+| input-size-default          | 37px      |
+| input-size-sm               | 34px      |
+| input-size-x-sm             | 22px      |
+
+<Canvas>
+  <input type="text" class="input-size-default" placeholder="input-size-default" />
+  <input type="text" class="input-size-sm" placeholder="input-size-sm" />
+  <input type="text" class="input-size-x-sm" placeholder="input-size-x-sm" />
+</Canvas>
+
+## Borders
+
+In case you need to custom values of border, these are the one you might need.
+
+|  Name                  | Value     |
+| ---------------------- | --------- |
+| default-radius         | 4px       |
+| border-color           | #bfc5cb   |
+
+<Canvas>
+  <div class="border-box">
+    Border: 1px solid; <br/>
+    Border Radius: @default-radius; <br/>
+    Border Color: @border-color;
+  </div>
+</Canvas>
+
+## Spacing
+Create some spacing with `spacing-<size modifier>`. This is really useful when modifying custom properties for example `padding: @spacing-xxx-sm @spacing-x-sm;`.
+Here is a range of size modifiers and their respective values.
+
+|  Name                  | Value     |
+| ---------------------- | --------- |
+| spacing-none           | 0         |
+| spacing-xxx-sm         | 0.5em     |
+| spacing-xx-sm          | 1em       |
+| spacing-x-sm           | 1.5em     |
+| spacing-sm             | 2em       |
+| spacing-md             | 2.5em     |
+| spacing-lg             | 3em       |
+| spacing-x-lg           | 4em       |
+| spacing-xx-lg          | 5em       |
