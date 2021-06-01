@@ -1,0 +1,40 @@
+@import '../core/_variables.less';
+@import '../utilities/_base.less';
+
+
+.split-settings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  &__info {
+    flex: 1;
+    .padding-right-xx-lg;
+
+    .title {
+      .text-size-6;
+      .text-style-bold;
+    }
+
+    .description {
+      .padding-none;
+      .text-color-default-light;
+    }
+  }
+
+  &__content {
+    box-shadow: @box-shadow;
+    border-radius: @default-radius;
+    padding: @spacing-md @spacing-lg;
+    background-color: white;
+    flex: 1.5;
+    min-width: 600px;
+  }
+}
+
+// Will remove when proper documentation will be added.
+// Usage:
+// <div class="split-settings">
+//   <div class="split-settings__info"></div>
+//   <div class="split-settings__content"></div>
+// </div>
