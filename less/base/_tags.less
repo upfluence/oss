@@ -1,39 +1,57 @@
 @import '../core/_colors';
 @import '../core/_variables';
 @import '../mixins/_coloring';
+@import '../utilities/_typography';
 
 /*
  * Tags
  * Tags are used to provide additional informations about something.
  */
+
 .upf-tag {
-  background-color: @field-background-color;
-  border: 1px solid transparent;
-  border-radius: 20px;
-  float: left;
-  padding: 0 @spacing-xx-sm;
-  text-align: center;
-  vertical-align: middle;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.upf-tag__text {
-  color: @color-text-light;
-}
+  padding: 0 @spacing-xxx-sm;
+  border-radius: @default-radius;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
-.upf-tag--orange {
-  .fill(@upf-primary-orange);
-
-  .upf-tag__text {
-    color: @upf-primary-white;
-    opacity: 0.5;
+  span {
+    .text-ellipsis-80;
   }
-}
 
-.upf-tag--success {
-  .fill(@upf-feedback-success);
+  .fa {
+    margin-right: 5px;
+  }
 
-  .upf-tag__text {
+  &--regular {
+    background-color: lighten(@upf-primary-bright-purple, 47%);
+    color: @upf-primary-bright-purple;
+  }
+
+  &--success {
+    background-color: lighten(@upf-feedback-success, 45%);
+    color: @upf-feedback-success;
+  }
+
+  &--alert {
+    background-color: lighten(@upf-feedback-alert, 33%);
+    color: @upf-feedback-alert;
+  }
+
+  &--neutral {
+    background-color: lighten(@upf-primary-black, 90%);
+    color: @upf-primary-black;
+  }
+
+  &--critical {
+    background-color: lighten(@upf-feedback-error, 40%);
+    color: @upf-feedback-error;
+  }
+
+  &--inactive {
+    background-color: lighten(@upf-primary-black, 87%);
     color: @upf-primary-white;
-    opacity: 0.5;
   }
 }

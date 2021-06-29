@@ -1,0 +1,17 @@
+@text_ellipsis_step: 20;
+
+.text-ellipsis(@max-width) {
+  .text-ellipsis-@{max-width} {
+    max-width: ~"@{max-width}px";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.text-ellipsis-loop(@start, @end) when (@end > @start) {
+  .text-ellipsis(@start);
+  .text-ellipsis-loop(@start + @text_ellipsis_step, @end);
+}
+
+.text-ellipsis-loop(80, 200);

@@ -2,7 +2,7 @@
 
 <!-- A brief description of the context of this pull request and its purpose. -->
 
-Fixes #<!-- enter issue number here -->
+Related to #<!-- enter issue number here -->
 
 ### What are the observable changes?
 <!-- This question could be adequate with multiple use cases, for example: -->
@@ -13,7 +13,6 @@ Fixes #<!-- enter issue number here -->
 <!-- Feature: Implements X thrift service / Z HTTP REST API added, provide instructions on how leverage your feature from staging or your workstation -->
 
 ### Good PR checklist
-
 
 - [ ] Title makes sense
 - [ ] Is against the correct branch

@@ -1,0 +1,59 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta
+  title="Utilities/Typography"
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: { canvas: { hidden: true } }
+  }}
+/>
+
+# Typography
+
+Typography utilities group all classes to format text like is color, size, etc
+
+## Text-ellipsis
+
+This utility help to add text ellipsis in `<p>` or `<span>`
+
+### Description
+
+In an application, it is not always possible to display all the text. In this case, the text need to be cut and the
+excess of text is replaced by `...`. Different attributes in CSS are used to have this result: `max-width`, `overflow`, `text-overflow` and
+`white-space`. Built around the `text-ellipsis` class, the text overflow can be applied simply on `<p>` or `<span>`.
+
+The `text-ellipsis` class has multiple variants to determine the max length of the text. It can be use by adding number
+of px for `max-width` like `text-ellipsis-80`. The variant start at `80` and finish to `200` with step of `20`
+
+### Variants
+
+All variants are the following :
+
+<Canvas>
+  <div class="flex-column">
+    <span class="text-ellipsis-80">
+      Ellipsis 80px with text too long to read
+    </span>
+    <span class="text-ellipsis-100">
+      Ellipsis 100px with text too long to read
+    </span>
+    <span class="text-ellipsis-120">
+      Ellipsis 120px with text too long to read
+    </span>
+    <span class="text-ellipsis-140">
+      Ellipsis 140px with text too long to read
+    </span>
+    <span class="text-ellipsis-160">
+      Ellipsis 160px with text too long to read
+    </span>
+    <span class="text-ellipsis-180">
+      Ellipsis 180px with text too long to read
+    </span>
+    <span class="text-ellipsis-200">
+      Ellipsis 200px with text too long to read
+    </span>
+    <span>
+      With no ellipsis, you can read all this text
+    </span>
+  </div>
+</Canvas>
