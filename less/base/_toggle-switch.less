@@ -1,0 +1,30 @@
+.upf-toggle {
+  background-color: @upf-gray;
+  border: 1px solid @upf-gray;
+  border-radius: 20px;
+  height: 20px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  .upf-toggle__switch {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    background-color: #fff;
+    transition: transform 0.4s;
+  }
+}
+
+.upf-toggle.upf-toggle--toggled {
+  background-color: @upf-primary-bright-purple;
+  border: 1px solid @upf-primary-bright-purple;
+
+  .upf-toggle__switch {
+    transform: translateX(110%);
+  }
+}
