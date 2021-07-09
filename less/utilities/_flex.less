@@ -1,0 +1,51 @@
+.fx {
+  &-1 { flex: 1 }
+
+  // Flex Direction definition
+  &-row {
+    flex-direction: row;
+    display: flex;
+  }
+  &-col {
+    flex-direction: column;
+    display: flex;
+  }
+
+  // Main Axis Alignment
+  &-malign {
+    &-center { justify-content: center }
+    &-start { justify-content: start }
+    &-end { justify-content: end }
+    &-space-between { justify-content: space-between }
+    &-space-around { justify-content: space-around }
+    &-space-evenly { justify-content: space-evenly }
+  }
+
+  // Cross Axis Alignment
+  &-xalign {
+    &-center { align-items: center }
+    &-start { align-items: start }
+    &-end { align-items: end }
+  }
+}
+
+// Keep in my mind that the Alignment axis are switched based on the flex-direction: 
+
+// flex-direction: row
+// <----- Main Axis ----->
+// ^
+// | C
+// | r
+// | o
+// | s
+// | s
+// v
+
+// flex-direction: column
+// <----- Cross Axis ----->
+// ^
+// | M
+// | a
+// | i
+// | n
+// v
