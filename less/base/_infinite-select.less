@@ -1,0 +1,27 @@
+.upf-infinite-select {
+  .upf-floating-menu;
+
+  background-color: #ffffff;
+  border-radius: @default-radius;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: inherit;
+  padding: @spacing-xxx-sm;
+  position: absolute;
+  z-index: 22;
+  width: 100%;
+}
+
+.upf-infinite-select__items-container {
+  overflow: hidden scroll;
+  max-height: 250px;
+  min-width: 200px;
+  max-width: 350px;
+}
+
+.upf-infinite-select__item {
+  .upf-floating-menu__item;
+}
