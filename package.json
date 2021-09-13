@@ -19,7 +19,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "countdown.js": "git+https://git@github.com/gumroad/countdown.js.git",
-    "font-awesome": "^4.7.0",
+    "@fortawesome/fontawesome-free": "^5.x",
     "money-formatter": "^0.1.4"
   }
 }
