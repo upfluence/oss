@@ -1,8 +1,10 @@
 {
-  "name": "upfluence-oss",
+  "name": "@upfluence/oss",
   "version": "2.8.0",
-  "description": "![Mr Bonisseur de La Bath](http://flat-tv.net/uploads/posts/2015-07/1437715605_agent-117.jpg)",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
