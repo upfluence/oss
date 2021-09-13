@@ -54,3 +54,33 @@ are applied using matching BEM Modifiers:
     </div>
   </div>
 </Canvas>
+
+## Options
+
+Alerts can also carry an icon to emphasize the reason of the alert. Examples of
+icon usages include:
+* Using an Exclamation Triangle for Warnings
+* Using a Fire icon for Errors
+
+<Canvas>
+  <div class="upf-alert upf-alert--error">
+    <div class="upf-alert__icon">
+      <i class="fa fa-fire"></i>
+    </div>
+    <div class="upf-alert__text">
+      <span>This is an alert carrying an icon</span>
+    </div>
+  </div>
+</Canvas>
+
+<Canvas>
+  <div class="upf-alert upf-alert--warning">
+    <div class="upf-alert__icon">
+      <i class="fa fa-exclamation-triangle margin-right-xxx-sm"></i>
+      <span>Warning</span>
+    </div>
+    <div class="upf-alert__text">
+      <span>This is an alert carrying an icon and a title</span>
+    </div>
+  </div>
+</Canvas>
