@@ -1,0 +1,140 @@
+import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+
+<Meta
+  title="Utilities/Flexbox"
+  parameters={{
+    viewMode: 'docs',
+    previewTabs: { canvas: { hidden: true } }
+  }}
+/>
+
+# Flexbox
+
+The Flexbox system aims to provide a more efficient way of arranging, aligning and distributing space between the elements
+of a container. The goal of the flexible layout is to give the container the ability to change the width and height of its
+elements to best fill the available space.
+
+Keep in mind that the alignment of the axes are switched based on the flex-direction:
+
+- flex-direction: row : &larr; Main Axis &rarr; / &uarr; Cross &darr;
+- flex-direction: column : &larr; Cross Axis &rarr; / &uarr; Main &darr;
+
+## Flexbox properties for the Children (flex items)
+
+`fx-1` class equivalent of `{flex: 1}`
+
+## Flexbox properties for the Parent (flex container)
+
+The following classes are to be put in the parent container
+
+### Flex direction definition
+
+`fx-row` class equivalent of `{display: flex; flex-direction: row;}`
+
+`fx-col` class equivalent of `{display: flex; flex-direction: column;}`
+
+### Main axis alignment
+
+`fx-malign-start` class equivalent of `{justify-content: flex-start;}`
+
+`fx-malign-center` class equivalent of `{justify-content: center;}`
+
+`fx-malign-end` class equivalent of `{justify-content: flex-end;}`
+
+`fx-malign-space-between` class equivalent of `{justify-content: space-between;}`
+
+`fx-malign-space-around` class equivalent of `{justify-content: space-around;}`
+
+`fx-malign-space-evenly` class equivalent of `{justify-content: space-evenly;}`
+
+### Cross axis alignment
+
+`fx-xalign-start` class equivalent of `{align-items: start;}`
+
+`fx-xalign-center` class equivalent of `{align-items: center;}`
+
+`fx-xalign-end` class equivalent of `{align-items: end;}`
+
+### Example
+
+`fx-row`
+
+<Canvas>
+  <div class="fx-row flexbox-container width-lg">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</Canvas>
+
+`fx-col`
+
+<Canvas>
+  <div class="fx-col flexbox-container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</Canvas>
+
+### Main axis alignment
+
+`fx-malign-start`
+
+<Canvas>
+  <div class="fx-row fx-malign-start flexbox-container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</Canvas>
+
+`fx-malign-center`
+
+<Canvas>
+  <div class="fx-row fx-malign-center flexbox-container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</Canvas>
+
+`fx-malign-end`
+
+<Canvas>
+  <div class="fx-row fx-malign-end flexbox-container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</Canvas>
+
+`fx-malign-space-between`
+
+<Canvas>
+  <div class="fx-row fx-malign-space-between flexbox-container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</Canvas>
+
+`fx-malign-space-around`
+
+<Canvas>
+  <div class="fx-row fx-malign-space-around flexbox-container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</Canvas>
+
+`fx-malign-space-evenly`
+
+<Canvas>
+  <div class="fx-row fx-malign-space-evenly flexbox-container">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</Canvas>
