@@ -6,7 +6,8 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "mkdir -p dist/css && lessc less/upfluence-oss.less > dist/css/upfluence-oss.css"
   },
   "repository": {
     "type": "git",
