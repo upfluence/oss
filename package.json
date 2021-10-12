@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "mkdir -p dist/css && lessc less/upfluence-oss.less > dist/css/upfluence-oss.css"
+    "prepare": "mkdir -p dist/css && node_modules/less/bin/lessc less/upfluence-oss.less > dist/css/upfluence-oss.css"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/upfluence/oss#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.x",
     "bootstrap": "^3.3.7",
     "countdown.js": "git+https://git@github.com/gumroad/countdown.js.git",
-    "@fortawesome/fontawesome-free": "^5.x",
     "money-formatter": "^0.1.4"
+  },
+  "devDependencies": {
+    "less": "^4.1.2"
   }
 }
