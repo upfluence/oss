@@ -7,7 +7,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "mkdir -p dist/css && node_modules/less/bin/lessc less/upfluence-oss.less > dist/css/upfluence-oss.css"
+    "prepare": "mkdir -p dist/css && node_modules/less/bin/lessc less/upfluence-oss.less --include-path=node_modules/bootstrap/less > dist/css/upfluence-oss.css"
   },
   "repository": {
     "type": "git",
