@@ -27,6 +27,20 @@
     &-start { align-items: flex-start }
     &-end { align-items: flex-end }
   }
+
+  &-basis {
+    &-pc-33 { flex-basis: 33.33% }
+    &-pc-66 { flex-basis: 66.66% }
+
+    // Generates fx-basis-pc-0, fx-basis-pc-5, fx-basis-pc-10... up until 100
+    .generate-fx-basis(100);
+    .generate-fx-basis(@n, @i: 0) when (@i =< @n) {
+      &-pc-@{i} {
+        flex-basis: @i * 1%;
+      }
+      .generate-fx-basis(@n, (@i + 5));
+    }
+  }
 }
 
 // Keep in my mind that the Alignment axis are switched based on the flex-direction: 
