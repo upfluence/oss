@@ -4,6 +4,24 @@
 @import '_typography';
 @import '_variables';
 
+* {
+  &::-webkit-scrollbar {
+    width: 16px;
+    background-color: @field-background-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: @upf-gray;
+
+    &:hover{
+      background-color: @upf-gray-dark;
+    }
+  }
+}
+
 .upf-icon { .upf-icon--; }
 
 [class*="upf-icon--"]:before {
