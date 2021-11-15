@@ -43,6 +43,7 @@
   }
 
   &-gap {
+    .generate-fx-gap(100);
     .generate-fx-gap(@n, @i: 0) when (@i =< @n) {
       &-pc-@{i} {
         gap: @i * 1%;
