@@ -41,6 +41,18 @@
       .generate-fx-basis(@n, (@i + 5));
     }
   }
+
+  &-gap {
+    .generate-fx-gap(@n, @i: 0) when (@i =< @n) {
+      &-pc-@{i} {
+        gap: @i * 1%;
+      }
+      &-px-@{i} {
+        gap: @i * 1%;
+      }
+      .generate-fx-gap(@n, (@i + 5));
+    }
+  }
 }
 
 // Keep in my mind that the Alignment axis are switched based on the flex-direction: 
