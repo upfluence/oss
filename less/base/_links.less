@@ -2,24 +2,35 @@
 @import '../core/_variables';
 @import '../mixins/_links';
 
-/*
----------------------
-name: Links
-category: Components
----------------------
+.upf-link {
+  display: flex;
+  align-items: center;
+  color: @upf-primary-bright-purple;
 
-There are different link styles to suit your needs.
+  i {
+    color: @upf-primary-bright-purple;
+  }
 
-Use `upf-link--contrast` for links updated to dark backgrounds.
+  &:hover {
+    span {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
 
-To remove default behavior from a link, use `upf-link--reset`.
+  &:focus {
+    outline: none;
+  }
 
-```links.html
-<div class="upf-link--emphasized">
-Emphasized link
-</div>
-```
-*/
+  &:hover,
+  &:active {
+    color: @upf-primary-dark-purple;
+
+    i {
+      color: @upf-primary-dark-purple;
+    }
+  }
+}
 
 //
 // Removes all default behavior from a link
