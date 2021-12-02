@@ -299,23 +299,61 @@ as size modifiers.
   }
 }
 
+.upf-btn--alert {
+  .outline(@upf-feedback-alert);
+  color: @upf-feedback-alert;
+  transition: all 0.2s ease;
+
+  a& {
+    line-height: 2.4rem;
+  }
+
+  &:hover, &:focus {
+    color: white;
+    background-color: @upf-feedback-alert;
+  }
+}
+
+.upf-btn--success {
+  .outline(@upf-feedback-success);
+  color: @upf-feedback-success;
+  transition: all 0.2s ease;
+
+  a& {
+    line-height: 2.4rem;
+  }
+
+  &:hover, &:focus {
+    color: white;
+    background-color: @upf-feedback-success;
+  }
+}
+
 
 
 // Button Sizes
 // --------------------------------------------------
 
-.upf-btn--small {
+.upf-btn--small, .upf-btn--sm {
   height: @input-size-sm;
 
   a& { line-height: 2rem; }
 }
 
-.upf-btn--x-small {
+.upf-btn--x-small, .upf-btn--xs {
   height: @input-size-x-sm;
   padding: 0 @spacing-xx-sm;
   line-height: 2rem;
 }
 
+.upf-btn--medium, .upf-btn--md {
+  height: 34px;
+}
+
+.upf-btn--large, .upf-btn--lg {
+  height: 48px;
+  padding: 0 @spacing-md;
+}
 
 //
 // Social Medias
