@@ -1,0 +1,48 @@
+.upf-badge {
+  .border;
+  .border-color-default;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.upf-badge__text {
+  color: @upf-primary-bright-purple;
+  font-weight: bold;
+  font-size: 14/@rem;
+}
+
+.upf-badge--shape-round {
+  border-radius: 50%;
+}
+
+.upf-badge--size-sm {
+  width: 24px;
+  height: 24px;
+}
+
+.upf-badge--size-md {
+  width: 36px;
+  height: 36px;
+
+  .upf-badge__text {
+    font-size: 18 / @rem;
+  }
+}
+
+.upf-badge--size-lg {
+  width: 48px;
+  height: 48px;
+
+  .upf-badge__text {
+    font-size: 18 / @rem;
+  }
+}
