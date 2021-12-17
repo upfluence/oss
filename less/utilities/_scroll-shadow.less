@@ -1,0 +1,20 @@
+.scroll-shadow {
+  padding-bottom: @spacing-x-sm !important;
+}
+
+.scroll-shadow::after {
+  position: absolute;
+  content: '';
+  height: 18px;
+  left: 0;
+  right: 17px;
+  bottom: 0;
+}
+
+.scroll-shadow--default::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, @upf-primary-white 100%);
+}
+
+.scroll-shadow--field::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, @field-background-color 100%);
+}
