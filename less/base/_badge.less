@@ -1,3 +1,22 @@
+.build-badge(@base) {
+  background-color: fade(@base, 10%);
+  border-color: @base;
+  color: @base;
+
+  i {
+    color: @base;
+  }
+}
+
+.build-plain-badge(@base) {
+  background-color: @base;
+  color: @upf-primary-white;
+
+  i {
+    color: @upf-primary-white;
+  }
+}
+
 .upf-badge {
   .border;
   .border-color-default;
@@ -45,4 +64,33 @@
   .upf-badge__text {
     font-size: 18 / @rem;
   }
+}
+
+.upf-badge--primary {
+  .build-badge(@upf-primary-bright-purple);
+}
+.upf-badge--alert {
+  .build-badge(@upf-feedback-alert);
+}
+.upf-badge--error {
+  .build-badge(@upf-feedback-error);
+}
+.upf-badge--success {
+  .build-badge(@upf-feedback-success);
+}
+
+.upf-badge--primary.upf-badge--plain {
+  .build-plain-badge(@upf-primary-bright-purple);
+}
+
+.upf-badge--alert.upf-badge--plain {
+  .build-plain-badge(@upf-feedback-alert);
+}
+
+.upf-badge--error.upf-badge--plain {
+  .build-plain-badge(@upf-feedback-error);
+}
+
+.upf-badge--success.upf-badge--plain {
+  .build-plain-badge(@upf-feedback-success);
 }
