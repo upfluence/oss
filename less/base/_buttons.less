@@ -284,6 +284,24 @@ as size modifiers.
   }
 }
 
+.upf-btn--borderless {
+  color: @upf-primary-bright-purple;
+
+  i {
+    color: @upf-primary-bright-purple;
+  }
+
+  &:hover {
+    span {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
+
+  border: none;
+  background-color: transparent;
+}
+
 .upf-btn--destructive {
   .outline(@upf-feedback-error);
   color: @upf-feedback-error;
