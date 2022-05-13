@@ -19,34 +19,22 @@ Primary and secondary color.
 <div class="fx-col fx-gap-px-20">
   <div class="fx-row">
     <div class="palette-container">
-      <div class="color-container-v2 color-primary-50">
-        <span>--color-primary-50</span>
-        <span>#ECECFD</span>
-      </div>
-      <div class="color-container-v2 color-primary-400">
-        <span>--color-primary-400</span>
-        <span>#3232F6</span>
-      </div>
-      <div class="color-container-v2 color-primary-500">
-        <span>--color-primary-500</span>
-        <span>#0D0DE6</span>
-      </div>
-      <div class="color-container-v2 color-primary-600">
-        <span>--color-primary-600</span>
-        <span>#0404C7</span>
-      </div>
-      <div class="color-container-v2 color-primary-900">
-        <span>--color-primary-900</span>
-        <span>#060666</span>
-      </div>
-    </div>
-  </div>
-  <div class="fx-row fx-gap-px-20">
-    <div class="palette-container">
-      <div class="color-container-v2 color-accent">
-        <span>--color-accent</span>
-        <span>#FF4331</span>
-      </div>
+      {
+        [
+          {variable: 'color-primary-50', hex: '#ECECFD'},
+          {variable: 'color-primary-400', hex: '#3232F6'},
+          {variable: 'color-primary-500', hex: '#0D0DE6'},
+          {variable: 'color-primary-600', hex: '#0404C7'},
+          {variable: 'color-primary-900', hex: '#060666'}
+        ].map((token, i) => {
+          return(
+            <div key={i} class={token.variable + " color-container-v2"}>
+              <span>--{token.variable}</span>
+              <span>{token.hex}</span>
+            </div>
+          )
+        })
+      }
     </div>
   </div>
 </div>
@@ -64,34 +52,24 @@ All type of gray and generic black and white color.
       </div>
     </div>
     <div class="palette-container">
-      <div class="color-container-v2 color-gray-50">
-        <span>--color-gray-50</span>
-        <span>#F9FAFB</span>
-      </div>
-      <div class="color-container-v2 color-gray-100">
-        <span>--color-gray-100</span>
-        <span>#F3F4F6</span>
-      </div>
-      <div class="color-container-v2 color-gray-200">
-        <span>--color-gray-200</span>
-        <span>#E5E7EB</span>
-      </div>
-      <div class="color-container-v2 color-gray-300">
-        <span>--color-gray-300</span>
-        <span>#D1D5DB</span>
-      </div>
-      <div class="color-container-v2 color-gray-400">
-        <span>--color-gray-400</span>
-        <span>#9CA3AF</span>
-      </div>
-      <div class="color-container-v2 color-gray-500">
-        <span>--color-gray-500</span>
-        <span>#6B7280</span>
-      </div>
-      <div class="color-container-v2 color-gray-900">
-        <span>--color-gray-900</span>
-        <span>#1B1E21</span>
-      </div>
+      {
+        [
+          {variable: 'color-gray-50', hex: '#F9FAFB'},
+          {variable: 'color-gray-100', hex: '#F3F4F6'},
+          {variable: 'color-gray-200', hex: '#E5E7EB'},
+          {variable: 'color-gray-300', hex: '#D1D5DB'},
+          {variable: 'color-gray-400', hex: '#9CA3AF'},
+          {variable: 'color-gray-500', hex: '#6B7280'},
+          {variable: 'color-gray-900', hex: '#1B1E21'},
+        ].map((token, i) => {
+          return(
+            <div key={i} class={token.variable + " color-container-v2"}>
+              <span>--{token.variable}</span>
+              <span>{token.hex}</span>
+            </div>
+          )
+        })
+      }
     </div>
     <div class="palette-container">
       <div class="color-container-v2 color-black">
@@ -109,26 +87,22 @@ All type of status: succes, info, warning and error
 <div class="fx-col fx-gap-px-20">
   <div class="fx-row fx-gap-px-20">
     <div class="palette-container">
-      <div class="color-container-v2 color-success-50">
-        <span>--color-success-50</span>
-        <span>#ECFDF5</span>
-      </div>
-      <div class="color-container-v2 color-success-400">
-        <span>--color-success-400</span>
-        <span>#34D399</span>
-      </div>
-      <div class="color-container-v2 color-success-500">
-        <span>--color-success-500</span>
-        <span>#10B981</span>
-      </div>
-      <div class="color-container-v2 color-success-600">
-        <span>--color-success-600</span>
-        <span>#059669</span>
-      </div>
-      <div class="color-container-v2 color-success-900">
-        <span>--color-success-900</span>
-        <span>#064E3B</span>
-      </div>
+      {
+        [
+          {variable: 'color-success-50', hex: '#ECFDF5'},
+          {variable: 'color-success-400', hex: '#34D399'},
+          {variable: 'color-success-500', hex: '#10B981'},
+          {variable: 'color-success-600', hex: '#059669'},
+          {variable: 'color-success-900', hex: '#064E3B'},
+        ].map((token, i) => {
+          return(
+            <div key={i} class={token.variable + " color-container-v2"}>
+              <span>--{token.variable}</span>
+              <span>{token.hex}</span>
+            </div>
+          )
+        })
+      }
     </div>
     <div class="palette-container">
       <div class="color-container-v2 color-info-50">
