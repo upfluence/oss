@@ -29,6 +29,8 @@ The following values represent box shadow level. The following values represent 
 | --box-shadow-md | 0 10px 15px -3px #1B1E2110  |
 | --box-shadow-lg | 0 25px 50px -10px #1B1E2120 |
 
+Note: Box-shadows are also defined as classes to be called directly from the template : .box-shadow-sm, .box-shadow-md, .box-shadow-lg
+
 ## Backdrop color
 
 Defines the color for modal backdrops.
@@ -57,3 +59,27 @@ The following values represent border radius level. There are 2 types of levels:
 |--------------------|-------|
 | --border-radius-sm | 4px   |
 | --border-radius-md | 8px   |
+
+## Spacers
+
+These are variables that can be used alongside size css attributes (padding, margin, etc.).
+They are available from 0 to 60 incremented each time by 6 (3 is also an option).
+
+| Name               | Value                                                |
+|--------------------|------------------------------------------------------|
+| --spacing-px-XX    | Where XX is a number that reprensents the pixel size |
+
+These spacers are also defined as margin & padding classes to use directly in the templates :
+
+| Class                | Value                                                 |
+|----------------------|-------------------------------------------------------|
+| margin-px-XX         | Where XX is a number that reprensents the pixel size  |
+| margin-left-px-XX    |                                                       |
+| margin-right-px-XX   |                                                       |
+| margin-top-px-XX     |                                                       |
+| margin-bottom-px-XX  |                                                       |
+| padding-px-XX        |                                                       |
+| padding-left-px-XX   |                                                       |
+| padding-right-px-XX  |                                                       |
+| padding-top-px-XX    |                                                       |
+| padding-bottom-px-XX |                                                       |
