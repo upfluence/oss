@@ -18,20 +18,20 @@
   --spacing-px-9: 9px;
   .generate-spacing-vars(60);
   .generate-spacing-vars(@n, @i: 0) when (@i =< @n) {
-    --spacing-px-@{i}: @i * 1px;
+    --spacing-px-@{i}: calc(@i * 1px);
     .margin {
-      &-px-@{i} { margin: @i * 1px; }
-      &-left-px-@{i} { margin-left: @i * 1px; }
-      &-right-px-@{i} { margin-right: @i * 1px; }
-      &-top-px-@{i} { margin-top: @i * 1px; }
-      &-bottom-px-@{i} { margin-bottom: @i * 1px; }
+      &-px-@{i} { margin: calc(@i * 1px); }
+      &-left-px-@{i} { margin-left: calc(@i * 1px); }
+      &-right-px-@{i} { margin-right: calc(@i * 1px); }
+      &-top-px-@{i} { margin-top: calc(@i * 1px); }
+      &-bottom-px-@{i} { margin-bottom: calc(@i * 1px); }
     }
     .padding {
-      &-px-@{i} { padding: @i * 1px; }
-      &-left-px-@{i} { padding-left: @i * 1px; }
-      &-right-px-@{i} { padding-right: @i * 1px; }
-      &-top-px-@{i} { padding-top: @i * 1px; }
-      &-bottom-px-@{i} { padding-bottom: @i * 1px; }
+      &-px-@{i} { padding: calc(@i * 1px); }
+      &-left-px-@{i} { padding-left: calc(@i * 1px); }
+      &-right-px-@{i} { padding-right: calc(@i * 1px); }
+      &-top-px-@{i} { padding-top: calc(@i * 1px); }
+      &-bottom-px-@{i} { padding-bottom: calc(@i * 1px); }
     }
 
     .generate-spacing-vars(@n, (@i + 6));
