@@ -353,15 +353,14 @@ as size modifiers.
 // --------------------------------------------------
 
 .upf-btn--small, .upf-btn--sm {
-  height: @input-size-sm;
+  height: 24px;
 
   a& { line-height: 2rem; }
 }
 
+// Deprecated in favor of small.
 .upf-btn--x-small, .upf-btn--xs {
-  height: @input-size-x-sm;
-  padding: 0 @spacing-xx-sm;
-  line-height: 2rem;
+  &:extend(.upf-btn--small);
 }
 
 .upf-btn--medium, .upf-btn--md {
