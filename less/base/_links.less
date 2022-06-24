@@ -2,14 +2,29 @@
 @import '../core/_variables';
 @import '../mixins/_links';
 
-.upf-link {
-  display: flex;
-  align-items: center;
-  color: @upf-primary-bright-purple;
+.upf-link-base {
+  color: var(--color-primary-500);
 
   i {
-    color: @upf-primary-bright-purple;
+    color: var(--color-primary-500);
   }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-primary-900);
+
+    i {
+      color: var(--color-primary-900);
+    }
+  }
+}
+
+.upf-link {
+  .upf-link-base;
+
+  display: flex;
+  align-items: center;
 
   &:hover {
     span {
@@ -20,15 +35,6 @@
 
   &:focus {
     outline: none;
-  }
-
-  &:hover,
-  &:active {
-    color: @upf-primary-dark-purple;
-
-    i {
-      color: @upf-primary-dark-purple;
-    }
   }
 }
 
