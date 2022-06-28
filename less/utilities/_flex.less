@@ -12,7 +12,7 @@
   }
 
   // Main Axis Alignment
-  &-malign {
+  &-malign {
     &-center { justify-content: center }
     &-start { justify-content: flex-start }
     &-end { justify-content: flex-end }
@@ -53,6 +53,10 @@
       }
       .generate-fx-gap(@n, (@i + 1));
     }
+  }
+
+  &-wrap {
+    flex-wrap: wrap;
   }
 }
 
