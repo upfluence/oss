@@ -25,4 +25,12 @@
 
 .upf-infinite-select__item {
   .upf-floating-menu__item;
+
+  &:not(:first-child)  {
+    margin-top: var(--spacing-px-3);
+  }
+
+  &:hover {
+    background-color: var(--color-gray-100);
+  }
 }
